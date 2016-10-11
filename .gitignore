@@ -1,0 +1,6 @@
+/dist/
+/node_modules/
+/tmp/
+npm-debug.log
+.sw*
+.idea
