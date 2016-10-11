@@ -6,8 +6,8 @@
   "author": "Marc Laval",
   "scripts": {
     "clean": "rm -rf dist/",
-    "vendors": "./scripts/vendors.sh",
-    "public": "npm run clean  && mkdir -p dist/ && cp -a public/* dist/ && npm run vendors",
+    "vendors": "bash ./scripts/vendors.sh",
+    "public": "npm run clean && mkdir dist && cp -a public/* dist/ && npm run vendors",
     "dev": "npm run public && tsc -w -p tsconfig-systemjs.json",
     "systemjs": "npm run public && tsc -p tsconfig-systemjs.json",
     "bundling-app": "npm run systemjs && node ./scripts/app-system-bundler.js",
