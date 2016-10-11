@@ -11,6 +11,7 @@
     "dev": "npm run public && tsc -w -p tsconfig-systemjs.json",
     "systemjs": "npm run public && tsc -p tsconfig-systemjs.json",
     "bundling-app": "npm run systemjs && node ./scripts/app-system-bundler.js",
+    "bundling-full": "npm run bundling-app && node ./scripts/full-system-bundler.js",
     "serve": "http-server ./dist"
   },
   "repository": {
