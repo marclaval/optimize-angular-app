@@ -12,6 +12,7 @@
     "systemjs": "npm run public && tsc -p tsconfig-systemjs.json",
     "bundling-app": "npm run systemjs && node ./scripts/app-system-bundler.js",
     "bundling-full": "npm run bundling-app && node ./scripts/full-system-bundler.js",
+    "treeshaking-rollup": "npm run public && rollup -c rollup-jit.js &> /dev/null",
     "serve": "http-server ./dist"
   },
   "repository": {
@@ -45,6 +46,11 @@
   "devDependencies": {
     "@angular/compiler-cli": "0.6.4",
     "http-server": "^0.9.0",
+    "rollup": "0.36.3",
+    "rollup-plugin-commonjs": "5.0.5",
+    "rollup-plugin-node-resolve": "2.0.0",
+    "rollup-plugin-typescript": "0.8.1",
+    "rollup-plugin-uglify": "1.0.1",
     "systemjs": "0.19.39",
     "systemjs-builder": "0.15.32",
     "typescript": "2.0.3"

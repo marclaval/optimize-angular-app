@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Optimized Angular app</title>
-    <base href=".">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css">
-    <script src="../vendors_with_system.js"></script>
-    <script src="./bundles/Rx.min.js"></script>
-</head>
-<body>
-    <my-app>Loading...</my-app>
-</body>
+    <head>
+        <title>Optimized Angular app</title>
+        <base href=".">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css">
+        <script src="../vendors_with_system.js"></script>
+        <script src="./bundles/Rx.min.js"></script>
+    </head>
+    <body>
+        <div style="position: absolute;top: 0; right: 0; z-index: 5; color: white;"><i>dev</i></div>
+        <my-app>Loading...</my-app>
+    </body>
 
-<script>
-    System.config({
-        map: {
-            '@angular/common': './bundles/@angular/common.umd.min.js',
-            '@angular/compiler': './bundles/@angular/compiler.umd.min.js',
-            '@angular/core': './bundles/@angular/core.umd.min.js',
-            '@angular/forms': './bundles/@angular/forms.umd.min.js',
-            '@angular/http': './bundles/@angular/http.umd.min.js',
-            '@angular/platform-browser': './bundles/@angular/platform-browser.umd.min.js',
-            '@angular/platform-browser-dynamic': './bundles/@angular/platform-browser-dynamic.umd.min.js',
-            '@angular/platform-server': './bundles/@angular/platform-server.umd.min.js',
-            '@angular/router': './bundles/@angular/router.umd.min.js',
-            '@ng-bootstrap/ng-bootstrap': './bundles/ng-bootstrap.js'
-        },
-        packages: {
-            app: {
-                main: './main.jit',
-                defaultExtension: 'js'
+    <script>
+        System.config({
+            map: {
+                '@angular/common': './bundles/@angular/common.umd.min.js',
+                '@angular/compiler': './bundles/@angular/compiler.umd.min.js',
+                '@angular/core': './bundles/@angular/core.umd.min.js',
+                '@angular/forms': './bundles/@angular/forms.umd.min.js',
+                '@angular/http': './bundles/@angular/http.umd.min.js',
+                '@angular/platform-browser': './bundles/@angular/platform-browser.umd.min.js',
+                '@angular/platform-browser-dynamic': './bundles/@angular/platform-browser-dynamic.umd.min.js',
+                '@angular/platform-server': './bundles/@angular/platform-server.umd.min.js',
+                '@angular/router': './bundles/@angular/router.umd.min.js',
+                '@ng-bootstrap/ng-bootstrap': './bundles/ng-bootstrap.js'
+            },
+            packages: {
+                app: {
+                    main: './main.jit',
+                    defaultExtension: 'js'
+                }
             }
-        }
-    });
-</script>
-<script>
-    System.import('app')
-            .catch(console.error.bind(console));
-</script>
+        });
+    </script>
+    <script>
+        System.import('app')
+                .catch(console.error.bind(console));
+    </script>
 </html>
