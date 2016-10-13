@@ -15,8 +15,11 @@
     "treeshaking-rollup": "npm run public && rollup -c rollup-jit.js &> /dev/null",
     "treeshaking-webpack": "npm run public && MODE=build webpack --config webpack-jit.js --progress --profile --bail",
     "ngc": "ngc -p tsconfig-ngc.json",
+    "ngc-lazy": "ngc -p tsconfig-lazy.json",
     "aot-rollup": "npm run public && npm run ngc && rollup -c rollup-aot.js &> /dev/null",
     "aot-webpack": "npm run public && MODE=build webpack --config webpack-aot.js --progress --profile --bail",
+    "lazyloading": "npm run public && npm run ngc-lazy && MODE=build webpack --config webpack-lazyloading.js --progress --profile --bail",
+    "foo": "MODE=build webpack --config webpack-lazyloading.js --progress --profile --bail",
     "serve": "http-server ./dist"
   },
   "repository": {
@@ -62,6 +65,7 @@
     "html-webpack-plugin": "2.22.0",
     "awesome-typescript-loader": "2.2.4",
     "raw-loader": "0.5.1",
-    "@ngtools/webpack": "1.1.0"
+    "@ngtools/webpack": "1.1.0",
+    "angular2-router-loader": "0.3.2"
   }
 }
