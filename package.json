@@ -13,6 +13,7 @@
     "bundling-app": "npm run systemjs && node ./scripts/app-system-bundler.js",
     "bundling-full": "npm run bundling-app && node ./scripts/full-system-bundler.js",
     "treeshaking-rollup": "npm run public && rollup -c rollup-jit.js &> /dev/null",
+    "treeshaking-webpack": "npm run public && MODE=build webpack --config webpack-jit.js --progress --profile --bail",
     "serve": "http-server ./dist"
   },
   "repository": {
@@ -53,6 +54,10 @@
     "rollup-plugin-uglify": "1.0.1",
     "systemjs": "0.19.39",
     "systemjs-builder": "0.15.32",
-    "typescript": "2.0.3"
+    "typescript": "2.0.3",
+    "webpack": "2.1.0-beta.25",
+    "html-webpack-plugin": "2.22.0",
+    "awesome-typescript-loader": "2.2.4",
+    "raw-loader": "0.5.1"
   }
 }
