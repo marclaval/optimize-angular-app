@@ -13,10 +13,12 @@
     "bundling-app": "npm run systemjs && node ./scripts/app-system-bundler.js",
     "bundling-full": "npm run bundling-app && node ./scripts/full-system-bundler.js",
     "treeshaking-rollup": "npm run public && rollup -c rollup-jit.js &> /dev/null",
-    "treeshaking-webpack": "npm run public && MODE=build webpack --config webpack-jit.js --progress --profile --bail",
+    "treeshaking-webpack": "npm run public && webpack --config webpack-jit.js --progress --profile --bail",
     "ngc": "ngc -p tsconfig-ngc.json",
+    "ngc-lazy": "ngc -p tsconfig-lazy.json",
     "aot-rollup": "npm run public && npm run ngc && rollup -c rollup-aot.js &> /dev/null",
-    "aot-webpack": "npm run public && MODE=build webpack --config webpack-aot.js --progress --profile --bail",
+    "aot-webpack": "npm run public && webpack --config webpack-aot.js --progress --profile --bail",
+    "lazyloading": "npm run public && npm run ngc-lazy && webpack --config webpack-lazyloading.js --progress --profile --bail",
     "serve": "http-server ./dist"
   },
   "repository": {
@@ -62,6 +64,7 @@
     "html-webpack-plugin": "2.22.0",
     "awesome-typescript-loader": "2.2.4",
     "raw-loader": "0.5.1",
-    "@ngtools/webpack": "1.1.0"
+    "@ngtools/webpack": "1.1.0",
+    "angular2-router-loader": "0.3.2"
   }
 }

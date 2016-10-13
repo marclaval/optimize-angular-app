@@ -24,7 +24,7 @@ module.exports = function makeWebpackConfig() {
    * Reference: http://webpack.github.io/docs/configuration.html#entry
    */
   config.entry = {
-    'app': './app/main.jit.ts' // our angular app
+    'app': './app/main.lazy.ts' // our angular app
   };
 
   /**
@@ -32,7 +32,7 @@ module.exports = function makeWebpackConfig() {
    * Reference: http://webpack.github.io/docs/configuration.html#output
    */
   config.output = {
-    path: root('dist', 'treeshaking-webpack'),
+    path: root('dist', 'lazyloading-webpack'),
     publicPath: '',
     filename: 'js/[name].js',
     chunkFilename: '[id].chunk.js'
@@ -43,7 +43,7 @@ module.exports = function makeWebpackConfig() {
    * Reference: http://webpack.github.io/docs/configuration.html#resolve
    */
   config.resolve = {
-    modules: [root('app'), root('public', 'tresshaking-webpack'), 'node_modules'],
+    modules: [root('app'), root('public', 'lazyloading-webpack'), 'node_modules'],
     // only discover files that have those extensions
     extensions: ['.ts', '.js', '.html']
   };
@@ -59,15 +59,17 @@ module.exports = function makeWebpackConfig() {
       // Support for .ts files.
       {
         test: /\.ts$/,
-        loader: 'awesome-typescript-loader',
-        include: root('app'),
-        query: {
-          target: 'es5',
-          module: 'commonjs',
-          experimentalDecorators: true,
-          emitDecoratorMetadata: true,
-          lib: ['es2015', 'dom']
-        }
+        loaders: [
+          'awesome-typescript-loader?' + JSON.stringify({
+            target: 'es5',
+            module: 'commonjs',
+            experimentalDecorators: true,
+            emitDecoratorMetadata: true,
+            lib: ['es2015', 'dom'],
+            ignoreDiagnostics: [2304] //Cannot find name 'require'
+          }),
+          'angular2-router-loader?aot=true&genDir=./app'],
+        include: [root('app'), root('node_modules')]
       },
       // support for .html as raw text
       {test: /\.html$/, loader: 'raw'}
@@ -94,7 +96,7 @@ module.exports = function makeWebpackConfig() {
     // Inject script and link tags into html files
     // Reference: https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
-      template: './public/treeshaking-webpack/index.html',
+      template: './public/lazyloading-webpack/index.html',
       chunksSortMode: 'dependency'
     }),
 
