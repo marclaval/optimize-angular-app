@@ -14,6 +14,9 @@
     "bundling-full": "npm run bundling-app && node ./scripts/full-system-bundler.js",
     "treeshaking-rollup": "npm run public && rollup -c rollup-jit.js &> /dev/null",
     "treeshaking-webpack": "npm run public && MODE=build webpack --config webpack-jit.js --progress --profile --bail",
+    "ngc": "ngc -p tsconfig-ngc.json",
+    "aot-rollup": "npm run public && npm run ngc && rollup -c rollup-aot.js &> /dev/null",
+    "aot-webpack": "npm run public && MODE=build webpack --config webpack-aot.js --progress --profile --bail",
     "serve": "http-server ./dist"
   },
   "repository": {
@@ -58,6 +61,7 @@
     "webpack": "2.1.0-beta.25",
     "html-webpack-plugin": "2.22.0",
     "awesome-typescript-loader": "2.2.4",
-    "raw-loader": "0.5.1"
+    "raw-loader": "0.5.1",
+    "@ngtools/webpack": "1.1.0"
   }
 }
