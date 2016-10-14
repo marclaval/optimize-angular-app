@@ -11,6 +11,7 @@ import {Welcome} from './welcome/welcome';
 import {List} from './list/list';
 import {Subscribe} from './subscribe/subscribe';
 import {Search} from './search/search';
+import {WelcomeModule} from "./welcome/welcome.module";
 
 const appRoutes: Routes = [
   {path: '', component: Welcome},
@@ -20,8 +21,8 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  imports: [BrowserModule, CommonModule, RouterModule.forRoot(appRoutes, {useHash: true}), FormsModule, HttpModule, JsonpModule, NgbModule],
-  declarations: [App, Welcome, List, Subscribe, Search],
+  imports: [BrowserModule, CommonModule, RouterModule.forRoot(appRoutes, {useHash: true}), FormsModule, HttpModule, JsonpModule, NgbModule, WelcomeModule],
+  declarations: [App, List, Subscribe, Search],
   providers: [NgbPaginationConfig],
   bootstrap: [App]
 })
