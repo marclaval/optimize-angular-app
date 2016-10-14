@@ -5,7 +5,7 @@
   "keywords": "Angular",
   "author": "Marc Laval",
   "scripts": {
-    "clean": "rm -rf dist/",
+    "clean": "rm -rf dist/ && rm -rf tmp/",
     "vendors": "bash ./scripts/vendors.sh",
     "public": "npm run clean && mkdir dist && cp -a public/* dist/ && npm run vendors",
     "dev": "npm run public && tsc -w -p tsconfig-systemjs.json",
@@ -19,6 +19,7 @@
     "aot-rollup": "npm run public && npm run ngc && rollup -c rollup-aot.js &> /dev/null",
     "aot-webpack": "npm run public && webpack --config webpack-aot.js --progress --profile --bail",
     "lazyloading": "npm run public && npm run ngc-lazy && webpack --config webpack-lazyloading.js --progress --profile --bail",
+    "universal": "npm run public && ngc -p tsconfig-universal.json && node ./scripts/universal-prerender.js && webpack --config webpack-universal.js --progress --profile --bail",
     "serve": "http-server ./dist"
   },
   "repository": {
@@ -44,6 +45,7 @@
     "@angular/platform-server": "2.1.0",
     "@angular/router": "3.1.0",
     "@ng-bootstrap/ng-bootstrap": "1.0.0-alpha.7",
+    "angular2-universal": "~2.1.0-rc.1",
     "classlist-polyfill": "1.0.3",
     "core-js": "2.4.1",
     "rxjs": "5.0.0-beta.12",
