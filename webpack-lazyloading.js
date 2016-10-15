@@ -66,7 +66,7 @@ module.exports = function makeWebpackConfig() {
             experimentalDecorators: true,
             emitDecoratorMetadata: true,
             lib: ['es2015', 'dom'],
-            types: ['node']
+            typeRoots: ['./node_modules/@types']
           }),
           'angular2-router-loader?aot=true&genDir=./app'],
         include: [root('app'), root('node_modules')]
