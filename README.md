@@ -1,9 +1,9 @@
-# optimized-angular-app
+# optimize-angular-app
 Let's optimize an Angular application for production.
 
 This repository shows how to apply a number of technics on a technical demo application. This includes bundling, tree shaking, ahead of time compilation, lazy loading and pre-rendering with universal.
 
-You can build the demo yourself, or check it at: [http://mlaval.github.io/optimized-angular-app/](http://mlaval.github.io/optimized-angular-app/)
+You can build the demo yourself, or check it at: [http://mlaval.github.io/optimize-angular-app/](http://mlaval.github.io/optimize-angular-app/)
 
 ## Running scripts
 - `npm install` to prepare your environment

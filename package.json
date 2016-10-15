@@ -1,7 +1,7 @@
 {
-  "name": "optimized-angular-app",
+  "name": "optimize-angular-app",
   "version": "1.0.0-alpha.0",
-  "description": "Optimized Angular application",
+  "description": "Optimize Angular application",
   "keywords": "Angular bundling treeshaking aot lazyloading universal webpack rollup",
   "author": "Marc Laval",
   "scripts": {
@@ -22,16 +22,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mlaval/optimized-angular-app.git"
+    "url": "https://github.com/mlaval/optimize-angular-app.git"
   },
   "license": {
     "type": "MIT",
-    "url": "https://raw.githubusercontent.com/mlaval/optimized-angular-app/master/LICENSE"
+    "url": "https://raw.githubusercontent.com/mlaval/optimize-angular-app/master/LICENSE"
   },
   "bugs": {
-    "url": "https://github.com/mlaval/optimized-angular-app/issues"
+    "url": "https://github.com/mlaval/optimize-angular-app/issues"
   },
-  "homepage": "https://github.com/mlaval/optimized-angular-app#readme",
+  "homepage": "https://github.com/mlaval/optimize-angular-app#readme",
   "dependencies": {
     "@angular/core": "2.1.0",
     "@angular/compiler": "2.1.0",
