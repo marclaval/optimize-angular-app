@@ -3,6 +3,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {RouterModule, Routes} from '@angular/router';
 
 import {App} from './app';
+import {WelcomeModule} from './welcome/welcome.module';
 import {Welcome} from './welcome/welcome';
 
 const appRoutes: Routes = [
@@ -13,8 +14,8 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  imports: [BrowserModule, RouterModule.forRoot(appRoutes, {useHash: true})],
-  declarations: [App, Welcome],
+  imports: [BrowserModule, RouterModule.forRoot(appRoutes, {useHash: true}), WelcomeModule],
+  declarations: [App],
   bootstrap: [App]
 })
 export class AppLazyModule {}

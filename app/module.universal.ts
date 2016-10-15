@@ -4,6 +4,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {UniversalModule} from 'angular2-universal';
 
 import {App} from './app';
+import {WelcomeModule} from './welcome/welcome.module';
 import {Welcome} from './welcome/welcome';
 
 const appRoutes: Routes = [
@@ -14,8 +15,8 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  imports: [BrowserModule, RouterModule.forRoot(appRoutes, {useHash: true}), UniversalModule],
-  declarations: [App, Welcome],
+  imports: [BrowserModule, RouterModule.forRoot(appRoutes, {useHash: true}), UniversalModule, WelcomeModule],
+  declarations: [App],
   bootstrap: [App]
 })
 export class AppModule {}
