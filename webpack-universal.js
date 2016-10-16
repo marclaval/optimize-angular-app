@@ -3,6 +3,7 @@ var webpack = require('webpack');
 
 // Webpack Plugins
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 
 module.exports = function makeWebpackConfig() {
   /**
@@ -98,6 +99,10 @@ module.exports = function makeWebpackConfig() {
     new HtmlWebpackPlugin({
       template: './tmp/universal/index.html',
       chunksSortMode: 'dependency'
+    }),
+
+    new ScriptExtHtmlWebpackPlugin({
+      defaultAttribute: 'async'
     }),
 
     new webpack.LoaderOptionsPlugin({

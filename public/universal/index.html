@@ -5,11 +5,20 @@
         <base href=".">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css">
+        <script type="text/javascript">
+            var begin = Date.now();
+            var id = setInterval(function() {
+                if (document.querySelector('#perf')) {
+                    document.querySelector('#output').innerHTML = Date.now() - begin;
+                    clearInterval(id);
+                }
+            })
+        </script>
+        <link rel="stylesheet" href="bootstrap.min.css">
         <script src="vendors.js"></script>
     </head>
     <body>
-        <div style="position: absolute;top: 0; right: 0; z-index: 5; color: white;"><i>universal</i></div>
+        <div style="position: absolute;top: 0; right: 0; z-index: 5; color: white;"><i>universal</i><div id="output" style="color: rgba(0,0,0,0);"></div></div>
         <my-app>Loading...</my-app>
     </body>
 </html>
