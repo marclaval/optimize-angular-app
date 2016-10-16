@@ -30,3 +30,7 @@ To develop the application itself, here is the workflow:
 - `npm run public`
 - `npm run watch`: watch and transpile the application source code
 - `npm start` to serve the files at [http://localhost:8080/](http://localhost:8080/)
+To run integration tests:
+- `npm run build`
+- `npm test`
+
