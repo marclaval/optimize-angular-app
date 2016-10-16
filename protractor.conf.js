@@ -17,7 +17,11 @@ exports.config = {
   directConnect: true,
 
   capabilities: {
-    browserName: 'chrome'
+    browserName: 'chrome',
+    chromeOptions: {
+      'args': ['--no-sandbox'],
+      'binary': process.env.CHROME_BIN
+    }
   },
 
   useAllAngular2AppRoots: true
