@@ -6,7 +6,7 @@ import uglify from 'rollup-plugin-uglify';
 export default {
   entry: 'app/main.aot.ts',
   dest: 'dist/aot-rollup/app.min.js',
-  sourceMap: false,
+  sourceMap: true,
   format: 'iife',
   plugins: [
     typescript({

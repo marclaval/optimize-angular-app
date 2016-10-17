@@ -6,7 +6,7 @@ import uglify from 'rollup-plugin-uglify';
 export default {
   entry: 'app/main.jit.ts',
   dest: 'dist/treeshaking-rollup/app.min.js',
-  sourceMap: false,
+  sourceMap: true,
   format: 'iife',
   plugins: [
     typescript({
