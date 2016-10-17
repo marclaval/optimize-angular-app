@@ -37,3 +37,7 @@ To run integration tests:
 - `npm run build`
 - `npm test`
 
+To generate a performance report:
+- `npm run build`
+- `npm run perf`
+- `npm run report`

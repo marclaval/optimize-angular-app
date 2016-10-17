@@ -21,7 +21,8 @@
     "watch": "tsc -w -p tsconfig-systemjs.json",
     "e2e": "tsc -p tsconfig-protractor.json && concurrently -k -s first \"npm start\" \"protractor\"",
     "test": "webdriver-manager update && npm run e2e",
-    "perf_loadtime": "tsc -p tsconfig-protractor.json && concurrently -k -s first \"npm start\" \"protractor --restartBrowserBetweenTests\""
+    "perf": "tsc -p tsconfig-protractor.json && concurrently -k -s first \"npm start\" \"protractor --restartBrowserBetweenTests\"",
+    "report": "node ./scripts/report.js"
   },
   "repository": {
     "type": "git",
@@ -58,6 +59,7 @@
     "http-server": "^0.9.0",
     "protractor": "4.0.9",
     "concurrently": "3.1.0",
+    "filesize": "3.3.0",
     "rollup": "0.36.3",
     "rollup-plugin-commonjs": "5.0.5",
     "rollup-plugin-node-resolve": "2.0.0",
