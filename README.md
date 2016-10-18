@@ -40,4 +40,5 @@ To run integration tests:
 To generate a performance report:
 - `npm run build`
 - `npm run perf`
+- `npm run lighthouse`
 - `npm run report`

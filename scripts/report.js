@@ -57,6 +57,7 @@ scenarios.forEach((scenario) => {
   metrics.gzip_pretty = filesize(gzip);
   metrics.perf = avgArray(perf[scenario]);
   metrics.score = 100 - Math.round(100 * (metrics.perf - minPerf) / (maxPerf - minPerf));
+  metrics.lighthouse = require('../tmp/lighthouse-' + scenario + '.json');
   report[scenario] = metrics;
 });
 
@@ -67,4 +68,4 @@ for (let key in package.devDependencies) {
 
 const now = new Date();
 const reportName = `${now.getFullYear()}-${now.getMonth()+1}-${now.getDate()}-${now.getHours()}-${now.getMinutes()}_report.json`;
-fs.writeFileSync('./tmp/' + reportName, JSON.stringify({report: report, dependencies: dep}), 'utf-8');
+fs.writeFileSync('./tmp/' + reportName, JSON.stringify({date: (new Date()).toString(), report: report, dependencies: dep}), 'utf-8');
