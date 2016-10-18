@@ -6,28 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css">
     <style media="screen" type="text/css">
-        a {
-            display: block;
-            margin-left: 80px;
-        }
+        a.btn, div.white { background-color: white; }
+        div.lead > * {vertical-align: top;}
     </style>
+    <script src="http://code.highcharts.com/adapters/standalone-framework.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script type="application/javascript">
+        function renderChart(container, title, subtitle, yLegend, series, categories) {
+            new Highcharts.Chart({
+                chart: {
+                    renderTo: container
+                },
+                title: {
+                    text: title
+                },
+                subtitle: {
+                    text: subtitle
+                },
+                xAxis: {
+                    categories: categories,
+                    labels: {enabled: false}
+                },
+                yAxis: {
+                    title: {
+                        text: yLegend
+                    }
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle',
+                    borderWidth: 0
+                },
+                tooltip: {
+                    shared: true,
+                    crosshairs: true
+                },
+                series: series
+            });
+        }
+    </script>
 </head>
 <body>
-    <h1>Optimize Angular app</h1>
-    <h2>Dev mode</h2>
-    <a href="./dev/index.html">Dev mode</a>
-    <h2>Bundling</h2>
-    <a href="./bundling-app/index.html">Only the application</a>
-    <a href="./bundling-full/index.html">The application and all dependencies</a>
-    <h2>Tree shaking</h2>
-    <a href="./treeshaking-rollup/index.html">With Rollup</a>
-    <a href="./treeshaking-webpack/index.html">With Webpack</a>
-    <h2>Ahead of Time (AoT) compilation</h2>
-    <a href="./aot-rollup/index.html">With Rollup</a>
-    <a href="./aot-webpack/index.html">With Webpack</a>
-    <h2>Lazy loading</h2>
-    <a href="./lazyloading-webpack/index.html">With Webpack</a>
-    <h2>Universal</h2>
-    <a href="./universal/index.html">With Webpack</a>
+    <nav class="navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">optimize-angular-app</a>
+        <ul class="nav navbar-nav navbar-right pull-xs-right">
+            <li class="nav-item active">
+                <a class="nav-link" href="https://github.com/mlaval/optimize-angular-app">Github</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="jumbotron">
+        <h1 class="display-3">Let's optimize!</h1>
+        <p class="lead">This demo shows a number of technics which can be applied on an Angular application to optimize it.<br>This includes bundling, tree shaking, ahead of time compilation, lazy loading and pre-rendering with universal.</p>
+        <hr class="m-y-2">
+        <p>The same application is built in each scenario, try them out.</p>
+        <div class="lead">
+            <a class="btn btn-outline-primary btn-lg" href="./dev" role="button">Dev mode</a>
+            <div class="btn-group-vertical">
+                <a class="btn btn-outline-primary btn-lg disabled">Bundling</a>
+                <a class="btn btn-outline-primary btn-lg" href="./bundling-app" role="button">App only</a>
+                <a class="btn btn-outline-primary btn-lg" href="./bundling-full" role="button">Full</a>
+            </div>
+            <div class="btn-group-vertical">
+                <a class="btn btn-outline-primary btn-lg disabled">Treeshaking</a>
+                <a class="btn btn-outline-primary btn-lg" href="./treeshaking-rollup" role="button">Rollup</a>
+                <a class="btn btn-outline-primary btn-lg" href="./treeshaking-webpack" role="button">Webpack</a>
+            </div>
+            <div class="btn-group-vertical">
+                <a class="btn btn-outline-primary btn-lg disabled">AoT</a>
+                <a class="btn btn-outline-primary btn-lg" href="./bundling-app" role="button">Rollup</a>
+                <a class="btn btn-outline-primary btn-lg" href="./bundling-full" role="button">Webpack</a>
+            </div>
+            <a class="btn btn-outline-primary btn-lg" href="./lazyloading-webpack" role="button">Lazyloading</a>
+            <a class="btn btn-outline-primary btn-lg" href="./universal" role="button">Pre-rendering</a>
+        </div>
+    </div>
+
+    <div class="jumbotron white">
+        <h1 class="display-3">Dashboards</h1>
+        <p class="lead">Perfomances of the scenarios over time and dependencies.</p>
+        <div id="container" style="width: 45%; height: 400px; margin: 0 auto; display: inline-block"></div>
+        <div id="container2" style="width: 45%; height: 400px; margin: 0 auto; display: inline-block"></div>
+    </div>
+
+    <script type="application/javascript">
+        var foo = [{
+            name: 'Tokyo',
+            data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+        }, {
+            name: 'New York',
+            data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+        }, {
+            name: 'Berlin',
+            data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+        }, {
+            name: 'London',
+            data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+        }];
+        var bar = ['Jan<br>foo', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        renderChart('container', 'Monthly Average Temperature', 'Source: WorldClimate.com', 'Score', foo, bar);
+        renderChart('container2', 'Monthly Average Temperature', 'Source: WorldClimate.com', 'Score', foo, bar);
+    </script>
 </body>
 </html>

@@ -21,9 +21,10 @@
     "watch": "tsc -w -p tsconfig-systemjs.json",
     "e2e": "tsc -p tsconfig-protractor.json && concurrently -k -s first \"npm start\" \"protractor\"",
     "test": "webdriver-manager update && npm run e2e",
-    "perf": "tsc -p tsconfig-protractor.json && concurrently -k -s first \"npm start\" \"protractor --restartBrowserBetweenTests\"",
-    "lighthouse": "bash ./scripts/lighthouse.sh",
-    "report": "node ./scripts/report.js"
+    "perf_loadtime": "tsc -p tsconfig-protractor.json && concurrently -k -s first \"npm start\" \"protractor --restartBrowserBetweenTests\"",
+    "perf_lighthouse": "concurrently -k -s first \"npm start\" \"bash ./scripts/lighthouse.sh\"",
+    "perf_report": "node ./scripts/report.js",
+    "perf": "npm run perf_loadtime && npm run perf_lighthouse && npm run perf_report"
   },
   "repository": {
     "type": "git",
