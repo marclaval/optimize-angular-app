@@ -6,28 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css">
     <style media="screen" type="text/css">
-        a {
-            display: block;
-            margin-left: 80px;
-        }
+        a.btn, div.white { background-color: white; }
+        div.lead > * {vertical-align: top;}
+        div.btn-group-vertical {margin-bottom: 20px; margin-left: 5px; margin-right: 5px;}
     </style>
+    <script src="https://code.highcharts.com/adapters/standalone-framework.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script type="application/javascript">
+        function renderChart(container, title, subtitle, yLegend, series, categories) {
+            new Highcharts.Chart({
+                chart: {
+                    renderTo: container
+                },
+                title: {
+                    text: title,
+                    x: -20
+                },
+                subtitle: {
+                    text: subtitle,
+                    x: -20
+                },
+                xAxis: {
+                    categories: categories,
+                    labels: {enabled: false}
+                },
+                yAxis: {
+                    title: {
+                        text: yLegend
+                    }
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle',
+                    borderWidth: 0
+                },
+                tooltip: {
+                    shared: true,
+                    crosshairs: true
+                },
+                series: series
+            });
+        }
+    </script>
 </head>
 <body>
-    <h1>Optimize Angular app</h1>
-    <h2>Dev mode</h2>
-    <a href="./dev/index.html">Dev mode</a>
-    <h2>Bundling</h2>
-    <a href="./bundling-app/index.html">Only the application</a>
-    <a href="./bundling-full/index.html">The application and all dependencies</a>
-    <h2>Tree shaking</h2>
-    <a href="./treeshaking-rollup/index.html">With Rollup</a>
-    <a href="./treeshaking-webpack/index.html">With Webpack</a>
-    <h2>Ahead of Time (AoT) compilation</h2>
-    <a href="./aot-rollup/index.html">With Rollup</a>
-    <a href="./aot-webpack/index.html">With Webpack</a>
-    <h2>Lazy loading</h2>
-    <a href="./lazyloading-webpack/index.html">With Webpack</a>
-    <h2>Universal</h2>
-    <a href="./universal/index.html">With Webpack</a>
+    <nav class="navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">optimize-angular-app</a>
+        <ul class="nav navbar-nav navbar-right float-xs-right">
+            <li class="nav-item active">
+                <a class="nav-link" href="https://github.com/mlaval/optimize-angular-app">Github</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="jumbotron">
+        <h1 class="display-3">Let's optimize!</h1>
+        <p class="lead">This demo shows a number of technics which can be applied on an Angular application to optimize it.<br>This includes bundling, tree shaking, ahead of time compilation, lazy loading and pre-rendering with universal.</p>
+        <hr class="m-y-2">
+        <p>The same application is built in each scenario, try them out.</p>
+        <div class="lead">
+            <div class="btn-group-vertical">
+                <a class="btn btn-outline-primary btn-lg disabled">Dev mode</a>
+                <a class="btn btn-outline-primary btn-lg" href="./dev" role="button">SystemJS</a>
+            </div>
+            <div class="btn-group-vertical">
+                <a class="btn btn-outline-primary btn-lg disabled">Bundling</a>
+                <a class="btn btn-outline-primary btn-lg" href="./bundling-app" role="button">App only (SystemJS)</a>
+                <a class="btn btn-outline-primary btn-lg" href="./bundling-full" role="button">Full (SystemJS)</a>
+            </div>
+            <div class="btn-group-vertical">
+                <a class="btn btn-outline-primary btn-lg disabled">Treeshaking</a>
+                <a class="btn btn-outline-primary btn-lg" href="./treeshaking-rollup" role="button">Rollup</a>
+                <a class="btn btn-outline-primary btn-lg" href="./treeshaking-webpack" role="button">Webpack</a>
+            </div>
+            <div class="btn-group-vertical">
+                <a class="btn btn-outline-primary btn-lg disabled">AoT</a>
+                <a class="btn btn-outline-primary btn-lg" href="./aot-rollup" role="button">Rollup</a>
+                <a class="btn btn-outline-primary btn-lg" href="./aot-webpack" role="button">Webpack</a>
+            </div>
+            <div class="btn-group-vertical">
+                <a class="btn btn-outline-primary btn-lg disabled">Lazyloading</a>
+                <a class="btn btn-outline-primary btn-lg" href="./lazyloading-webpack" role="button">Webpack</a>
+            </div>
+            <div class="btn-group-vertical">
+                <a class="btn btn-outline-primary btn-lg disabled">Pre-rendering</a>
+                <a class="btn btn-outline-primary btn-lg" href="./universal" role="button">Webpack</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron white">
+        <h1 class="display-3">Dashboards</h1>
+        <p class="lead">Perfomances of the scenarios over time and dependencies.</p>
+        <div id="container" style="width: 90%; height: 300px; margin: 0 auto; display: inline-block"></div>
+        <div id="container2" style="width: 90%; height: 300px; margin: 0 auto; display: inline-block"></div>
+        <div id="container3" style="width: 90%; height: 300px; margin: 0 auto; display: inline-block"></div>
+    </div>
+
+    <script type="application/javascript">
+        
+var serie_score = [{"name":"baseline","data":[100,100]},{"name":"dev","data":[8,4]},{"name":"bundling-app","data":[18,23]},{"name":"bundling-full","data":[0,0]},{"name":"treeshaking-rollup","data":[32,36]},{"name":"treeshaking-webpack","data":[21,26]},{"name":"aot-rollup","data":[76,75]},{"name":"aot-webpack","data":[73,72]},{"name":"lazyloading-webpack","data":[75,72]},{"name":"universal","data":[100,101]}];
+var serie_size = [{"name":"baseline","data":[114997,114997]},{"name":"dev","data":[2332405,2152407]},{"name":"bundling-app","data":[2221511,2041483]},{"name":"bundling-full","data":[1440275,1336156]},{"name":"treeshaking-rollup","data":[1002461,933339]},{"name":"treeshaking-webpack","data":[1179757,1098696]},{"name":"aot-rollup","data":[1053236,922088]},{"name":"aot-webpack","data":[1127300,983446]},{"name":"lazyloading-webpack","data":[1381405,1139287]},{"name":"universal","data":[1756752,1514330]}];
+var serie_gzip = [{"name":"baseline","data":[19127,19127]},{"name":"dev","data":[512349,489673]},{"name":"bundling-app","data":[425306,402636]},{"name":"bundling-full","data":[308682,288781]},{"name":"treeshaking-rollup","data":[233478,218190]},{"name":"treeshaking-webpack","data":[261529,244800]},{"name":"aot-rollup","data":[189520,167358]},{"name":"aot-webpack","data":[195998,170220]},{"name":"lazyloading-webpack","data":[235008,194599]},{"name":"universal","data":[326924,286041]}];
+var categories = ["Tue Oct 18 2016 18:38:09 GMT+0200 (CEST)","Wed Oct 19 2016 17:08:11 GMT+0200 (CEST)"];
+
+        renderChart('container', 'Load time score', '100 is the best (baseline)', 'Score', serie_score, categories);
+        renderChart('container2', 'Total size minified', '', 'Bytes', serie_size, categories);
+        renderChart('container3', 'Total size gzip', 'Files  compressed one by one', 'Bytes', serie_gzip, categories);
+    </script>
 </body>
 </html>

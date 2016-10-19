@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/platform-browser', '@angular/common', '@angular/forms', '@angular/http', '@angular/router', '@ng-bootstrap/ng-bootstrap', './app', './welcome/welcome', './list/list', './subscribe/subscribe', './search/search', "./welcome/welcome.module"], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/platform-browser', '@angular/common', '@angular/forms', '@angular/http', '@angular/router', '@ng-bootstrap/ng-bootstrap/pagination/pagination.module', './app', './welcome/welcome', './list/list', './subscribe/subscribe', './search/search', "./welcome/welcome.module"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['@angular/core', '@angular/platform-browser', '@angular/common'
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, platform_browser_1, common_1, forms_1, http_1, router_1, ng_bootstrap_1, app_1, welcome_1, list_1, subscribe_1, search_1, welcome_module_1;
+    var core_1, platform_browser_1, common_1, forms_1, http_1, router_1, pagination_module_1, app_1, welcome_1, list_1, subscribe_1, search_1, welcome_module_1;
     var appRoutes, AppModule;
     return {
         setters:[
@@ -32,8 +32,8 @@ System.register(['@angular/core', '@angular/platform-browser', '@angular/common'
             function (router_1_1) {
                 router_1 = router_1_1;
             },
-            function (ng_bootstrap_1_1) {
-                ng_bootstrap_1 = ng_bootstrap_1_1;
+            function (pagination_module_1_1) {
+                pagination_module_1 = pagination_module_1_1;
             },
             function (app_1_1) {
                 app_1 = app_1_1;
@@ -65,9 +65,9 @@ System.register(['@angular/core', '@angular/platform-browser', '@angular/common'
                 }
                 AppModule = __decorate([
                     core_1.NgModule({
-                        imports: [platform_browser_1.BrowserModule, common_1.CommonModule, router_1.RouterModule.forRoot(appRoutes, { useHash: true }), forms_1.FormsModule, http_1.HttpModule, http_1.JsonpModule, ng_bootstrap_1.NgbModule, welcome_module_1.WelcomeModule],
+                        imports: [platform_browser_1.BrowserModule, common_1.CommonModule, router_1.RouterModule.forRoot(appRoutes, { useHash: true }), forms_1.FormsModule, http_1.HttpModule, http_1.JsonpModule, pagination_module_1.NgbPaginationModule, welcome_module_1.WelcomeModule],
                         declarations: [app_1.App, list_1.List, subscribe_1.Subscribe, search_1.Search],
-                        providers: [ng_bootstrap_1.NgbPaginationConfig],
+                        providers: [pagination_module_1.NgbPaginationConfig],
                         bootstrap: [app_1.App]
                     }), 
                     __metadata('design:paramtypes', [])
