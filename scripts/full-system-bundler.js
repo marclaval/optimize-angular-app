@@ -15,6 +15,7 @@ builder.config({
   paths: {
     "n:*": "./node_modules/*",
     "rxjs/*": "node_modules/rxjs/*.js",
+    "@ng-bootstrap/ng-bootstrap/*": "node_modules/@ng-bootstrap/ng-bootstrap/*.js"
   },
   map: {
     '@angular/common': 'n:@angular/common/index.js',
@@ -26,7 +27,7 @@ builder.config({
     '@angular/platform-browser-dynamic': 'n:@angular/platform-browser-dynamic/index.js',
     '@angular/platform-server': 'n:@angular/platform-server/index.js',
     '@angular/router': 'n:@angular/router/index.js',
-    '@ng-bootstrap/ng-bootstrap': 'n:@ng-bootstrap/ng-bootstrap/index.js',
+    "@ng-bootstrap/ng-bootstrap": "n:@ng-bootstrap/ng-bootstrap",
     "rxjs": "n:rxjs"
   },
   packages: {

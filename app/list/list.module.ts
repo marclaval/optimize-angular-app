@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {NgbModule, NgbPaginationConfig} from '@ng-bootstrap/ng-bootstrap';
+import {NgbPaginationModule, NgbPaginationConfig} from '@ng-bootstrap/ng-bootstrap/pagination/pagination.module';
 
 import {List} from './list';
 
@@ -10,7 +10,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [NgbModule, RouterModule.forChild(routes)],
+  imports: [NgbPaginationModule, RouterModule.forChild(routes)],
   declarations: [List],
   providers: [NgbPaginationConfig]
 })

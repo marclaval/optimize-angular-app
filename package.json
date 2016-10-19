@@ -6,7 +6,7 @@
   "author": "Marc Laval",
   "scripts": {
     "clean": "rm -rf dist/ && rm -rf tmp/",
-    "public": "mkdir dist && cp -a public/* dist/ && bash ./scripts/vendors.sh && node ./scripts/chart.js",
+    "public": "mkdir dist && cp -a public/* dist/ && bash ./scripts/vendors.sh && npm run chart",
     "dev": "tsc -p tsconfig-systemjs.json",
     "bundling-app": "npm run dev && node ./scripts/app-system-bundler.js",
     "bundling-full": "npm run dev && node ./scripts/full-system-bundler.js",
@@ -24,7 +24,8 @@
     "perf_loadtime": "tsc -p tsconfig-protractor.json && concurrently -k -s first \"npm start\" \"protractor --restartBrowserBetweenTests\"",
     "perf_lighthouse": "concurrently -k -s first \"npm start\" \"bash ./scripts/lighthouse.sh\"",
     "perf_report": "node ./scripts/report.js",
-    "perf": "npm run perf_loadtime && npm run perf_lighthouse && npm run perf_report"
+    "perf": "webdriver-manager update && npm run perf_loadtime && npm run perf_lighthouse && npm run perf_report",
+    "chart": "node ./scripts/chart.js"
   },
   "repository": {
     "type": "git",

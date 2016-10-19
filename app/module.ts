@@ -4,7 +4,7 @@ import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {HttpModule, JsonpModule} from '@angular/http';
 import {RouterModule, Routes} from '@angular/router';
-import {NgbModule, NgbPaginationConfig} from '@ng-bootstrap/ng-bootstrap';
+import {NgbPaginationModule, NgbPaginationConfig} from '@ng-bootstrap/ng-bootstrap/pagination/pagination.module';
 
 import {App} from './app';
 import {Welcome} from './welcome/welcome';
@@ -21,7 +21,7 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  imports: [BrowserModule, CommonModule, RouterModule.forRoot(appRoutes, {useHash: true}), FormsModule, HttpModule, JsonpModule, NgbModule, WelcomeModule],
+  imports: [BrowserModule, CommonModule, RouterModule.forRoot(appRoutes, {useHash: true}), FormsModule, HttpModule, JsonpModule, NgbPaginationModule, WelcomeModule],
   declarations: [App, List, Subscribe, Search],
   providers: [NgbPaginationConfig],
   bootstrap: [App]

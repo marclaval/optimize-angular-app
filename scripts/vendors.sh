@@ -8,11 +8,9 @@ cat dist/vendors.js node_modules/systemjs/dist/system.js > dist/vendors_with_sys
 mkdir -p dist/dev/bundles/@angular
 find . -name '*.umd.min.js' -exec cp \{\} dist/dev/bundles/@angular/ \;
 
-# Copy bundles from @ng-bootstrap
-cp node_modules/@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.js dist/dev/bundles/
-
-# Create systemjs bundle of Rxjs
+# Create systemjs bundle of Rxjs and ng-bootstrap
 node scripts/rxjs-system-bundler.js
+node scripts/ng-bootstrap-system-bundler.js
 
 # Copy all bundles to bundling-app
 mkdir -p dist/bundling-app/bundles/@angular
