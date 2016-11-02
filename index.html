@@ -62,7 +62,7 @@
 
     <div class="jumbotron">
         <h1 class="display-3">Let's optimize!</h1>
-        <p class="lead">This demo shows a number of technics which can be applied on an Angular application to optimize it.<br>This includes bundling, tree shaking, ahead of time compilation, lazy loading and pre-rendering with universal.</p>
+        <p class="lead">This demo shows a number of techniques which can be applied on an Angular application to optimize it.<br>This includes bundling, tree shaking, ahead of time compilation, lazy loading and pre-rendering with universal.</p>
         <hr class="m-y-2">
         <p>The same application is built in each scenario, try them out.</p>
         <div class="lead">
@@ -106,10 +106,10 @@
 
     <script type="application/javascript">
         
-var serie_score = [{"name":"baseline","data":[100,100]},{"name":"dev","data":[8,4]},{"name":"bundling-app","data":[18,23]},{"name":"bundling-full","data":[0,0]},{"name":"treeshaking-rollup","data":[32,36]},{"name":"treeshaking-webpack","data":[21,26]},{"name":"aot-rollup","data":[76,75]},{"name":"aot-webpack","data":[73,72]},{"name":"lazyloading-webpack","data":[75,72]},{"name":"universal","data":[100,101]}];
-var serie_size = [{"name":"baseline","data":[114997,114997]},{"name":"dev","data":[2332405,2152407]},{"name":"bundling-app","data":[2221511,2041483]},{"name":"bundling-full","data":[1440275,1336156]},{"name":"treeshaking-rollup","data":[1002461,933339]},{"name":"treeshaking-webpack","data":[1179757,1098696]},{"name":"aot-rollup","data":[1053236,922088]},{"name":"aot-webpack","data":[1127300,983446]},{"name":"lazyloading-webpack","data":[1381405,1139287]},{"name":"universal","data":[1756752,1514330]}];
-var serie_gzip = [{"name":"baseline","data":[19127,19127]},{"name":"dev","data":[512349,489673]},{"name":"bundling-app","data":[425306,402636]},{"name":"bundling-full","data":[308682,288781]},{"name":"treeshaking-rollup","data":[233478,218190]},{"name":"treeshaking-webpack","data":[261529,244800]},{"name":"aot-rollup","data":[189520,167358]},{"name":"aot-webpack","data":[195998,170220]},{"name":"lazyloading-webpack","data":[235008,194599]},{"name":"universal","data":[326924,286041]}];
-var categories = ["Tue Oct 18 2016 18:38:09 GMT+0200 (CEST)","Wed Oct 19 2016 17:08:11 GMT+0200 (CEST)"];
+var serie_score = [{"name":"baseline","data":[100,100,100]},{"name":"dev","data":[8,4,1]},{"name":"bundling-app","data":[18,23,15]},{"name":"bundling-full","data":[0,0,0]},{"name":"treeshaking-rollup","data":[32,36,31]},{"name":"treeshaking-webpack","data":[21,26,16]},{"name":"aot-rollup","data":[76,75,73]},{"name":"aot-webpack","data":[73,72,69]},{"name":"lazyloading-webpack","data":[75,72,70]},{"name":"universal","data":[100,101,100]}];
+var serie_size = [{"name":"baseline","data":[114997,114997,115218]},{"name":"dev","data":[2332405,2152407,2156702]},{"name":"bundling-app","data":[2221511,2041483,2045778]},{"name":"bundling-full","data":[1440275,1336156,1325861]},{"name":"treeshaking-rollup","data":[1002461,933339,926285]},{"name":"treeshaking-webpack","data":[1179757,1098696,1091136]},{"name":"aot-rollup","data":[1053236,922088,976735]},{"name":"aot-webpack","data":[1127300,983446,1064464]},{"name":"lazyloading-webpack","data":[1381405,1139287,1218819]},{"name":"universal","data":[1756752,1514330,1597331]}];
+var serie_gzip = [{"name":"baseline","data":[19127,19127,19199]},{"name":"dev","data":[512349,489673,489713]},{"name":"bundling-app","data":[425306,402636,402676]},{"name":"bundling-full","data":[308682,288781,285435]},{"name":"treeshaking-rollup","data":[233478,218190,217311]},{"name":"treeshaking-webpack","data":[261529,244800,245005]},{"name":"aot-rollup","data":[189520,167358,168656]},{"name":"aot-webpack","data":[195998,170220,173036]},{"name":"lazyloading-webpack","data":[235008,194599,196804]},{"name":"universal","data":[326924,286041,290886]}];
+var categories = ["Tue Oct 18 2016 18:38:09 GMT+0200 (CEST)","Wed Oct 19 2016 17:08:11 GMT+0200 (CEST)","Wed Nov 02 2016 17:25:12 GMT+0100 (CET)"];
 
         renderChart('container', 'Load time score', '100 is the best (baseline)', 'Score', serie_score, categories);
         renderChart('container2', 'Total size minified', '', 'Bytes', serie_size, categories);
