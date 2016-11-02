@@ -12,6 +12,13 @@
                     clearInterval(id);
                 }
             })
+            window.getAllAngularTestabilities = function () {
+                return [{
+                    whenStable: function(fn) {
+                        fn();
+                    }
+                }];
+            }
         </script>
         <link rel="stylesheet" href="bootstrap.min.css">
     </head>

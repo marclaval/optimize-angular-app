@@ -10,7 +10,7 @@ var report = {};
 
 function getPerf(scenario) {
   const url = 'http://localhost:8080/' + scenario;
-  const launcher = new ChromeLauncher();
+  const launcher = new ChromeLauncher.ChromeLauncher();
   return launcher
     .isDebuggerReady()
     .catch(() => {
