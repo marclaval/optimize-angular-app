@@ -24,7 +24,7 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                 App = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n<nav class=\"navbar navbar-dark bg-primary\">\n  <ul class=\"nav navbar-nav\">\n    <li class=\"nav-item active\">\n      <a class=\"nav-link\" [routerLink]=\"['/']\">Home</a>\n    </li>\n    <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"['/list']\">List</a>\n    </li>\n    <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"['/subscribe']\">Subscribe</a>\n    </li>\n    <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"['/search']\">Search</a>\n    </li>\n  </ul>\n</nav>\n<router-outlet></router-outlet>\n  ",
+                        template: "\n<nav class=\"navbar navbar-dark bg-primary\">\n  <ul class=\"nav navbar-nav\">\n    <li class=\"nav-item\">\n      <a class=\"navbar-brand\"  href=\"..\">&#8678;</a>\n    </li>\n    <li class=\"nav-item active\">\n      <a class=\"nav-link\" [routerLink]=\"['/']\">Home</a>\n    </li>\n    <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"['/list']\">List</a>\n    </li>\n    <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"['/subscribe']\">Subscribe</a>\n    </li>\n    <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"['/search']\">Search</a>\n    </li>\n  </ul>\n</nav>\n<router-outlet></router-outlet>\n  ",
                     }), 
                     __metadata('design:paramtypes', [])
                 ], App);
