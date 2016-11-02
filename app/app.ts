@@ -5,6 +5,9 @@ import {Component} from '@angular/core'
   template: `
 <nav class="navbar navbar-dark bg-primary">
   <ul class="nav navbar-nav">
+    <li class="nav-item">
+      <a class="navbar-brand"  href="..">&#8678;</a>
+    </li>
     <li class="nav-item active">
       <a class="nav-link" [routerLink]="['/']">Home</a>
     </li>

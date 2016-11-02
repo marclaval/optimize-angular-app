@@ -38,7 +38,7 @@ scenarios.forEach((scenario) => {
 
     it('should navigate to list page', function() {
       if (!isBaseline) {
-        protractor.element.all(by.css('a')).get(1).click();
+        protractor.element.all(by.css('a')).get(2).click();
         protractor.browser.driver.wait(protractor.until.elementLocated(By.css('list')), 10000).then(() => {
           expect(protractor.element(by.css('h2')).getText()).toEqual('Paginated list');
 
@@ -53,7 +53,7 @@ scenarios.forEach((scenario) => {
 
     it('should navigate to subscribe page', function() {
       if (!isBaseline) {
-        protractor.element.all(by.css('a')).get(2).click();
+        protractor.element.all(by.css('a')).get(3).click();
         protractor.browser.driver.wait(protractor.until.elementLocated(By.css('subscribe')), 10000).then(() => {
           expect(protractor.element(by.css('h2')).getText()).toEqual('Subscribe');
 
@@ -68,7 +68,7 @@ scenarios.forEach((scenario) => {
 
     it('should navigate to search page', function() {
       if (!isBaseline) {
-        protractor.element.all(by.css('a')).get(3).click();
+        protractor.element.all(by.css('a')).get(4).click();
         protractor.browser.driver.wait(protractor.until.elementLocated(By.css('search')), 10000).then(() => {
           expect(protractor.element(by.css('h2')).getText()).toEqual('Search');
 
