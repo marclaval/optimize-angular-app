@@ -3,6 +3,7 @@ var webpack = require('webpack');
 
 // Webpack Plugins
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var aotplugin = require('@ngtools/webpack');
 var ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 
 module.exports = function makeWebpackConfig() {
@@ -60,16 +61,7 @@ module.exports = function makeWebpackConfig() {
       // Support for .ts files.
       {
         test: /\.ts$/,
-        loaders: [
-          'awesome-typescript-loader?' + JSON.stringify({
-            target: 'es5',
-            module: 'commonjs',
-            experimentalDecorators: true,
-            emitDecoratorMetadata: true,
-            lib: ['es2015', 'dom'],
-            typeRoots: ['./node_modules/@types']
-          }),
-          'angular2-router-loader?aot=true&genDir=./app'],
+        loader: '@ngtools/webpack',
         include: [root('app'), root('node_modules')]
       },
       // support for .html as raw text
@@ -92,6 +84,12 @@ module.exports = function makeWebpackConfig() {
         ENV: 'build',
         version: JSON.stringify(require('./package.json').version)
       }
+    }),
+
+    // Reference: https://github.com/angular/angular-cli/tree/master/packages/webpack
+    new aotplugin.AotPlugin({
+      tsConfigPath: './tsconfig-universal.json',
+      entryModule: './app/module.universal#AppModule'
     }),
 
     // Inject script and link tags into html files

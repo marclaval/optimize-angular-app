@@ -14,8 +14,8 @@
     "treeshaking-webpack": "webpack --config webpack-jit.js --progress --profile --bail",
     "aot-rollup": "ngc -p tsconfig-aot.json && rollup -c rollup-aot.js",
     "aot-webpack": "webpack --config webpack-aot.js --progress --profile --bail",
-    "lazyloading": "ngc -p tsconfig-lazy.json && webpack --config webpack-lazyloading.js --progress --profile --bail",
-    "universal": "ngc -p tsconfig-universal.json && node ./scripts/universal-prerender.js && webpack --config webpack-universal.js --progress --profile --bail",
+    "lazyloading": "webpack --config webpack-lazyloading.js --progress --profile --bail",
+    "universal": "tsc -p tsconfig-universal.json && node ./scripts/universal-prerender.js && webpack --config webpack-universal.js --progress --profile --bail",
     "build": "npm run clean && npm run public && npm run dev && npm run bundling-app && npm run bundling-full && npm run treeshaking-rollup && npm run treeshaking-webpack && npm run aot-rollup && npm run aot-webpack && npm run lazyloading && npm run universal",
     "start": "http-server ./dist -s",
     "watch": "tsc -w -p tsconfig-systemjs.json",
@@ -77,7 +77,6 @@
     "script-ext-html-webpack-plugin": "1.3.2",
     "awesome-typescript-loader": "2.2.4",
     "raw-loader": "0.5.1",
-    "@ngtools/webpack": "1.1.4",
-    "angular2-router-loader": "0.3.3"
+    "@ngtools/webpack": "1.1.4"
   }
 }

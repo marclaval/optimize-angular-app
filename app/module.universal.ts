@@ -9,9 +9,9 @@ import {Welcome} from './welcome/welcome';
 
 const appRoutes: Routes = [
   {path: '', component: Welcome},
-  {path: 'list', loadChildren: './list/list.module#ListModule'},
-  {path: 'subscribe', loadChildren: './subscribe/subscribe.module#SubscribeModule'},
-  {path: 'search', loadChildren: './search/search.module#SearchModule'}
+  {path: 'list', loadChildren: 'app/list/list.module#ListModule'},
+  {path: 'subscribe', loadChildren: 'app/subscribe/subscribe.module#SubscribeModule'},
+  {path: 'search', loadChildren: 'app/search/search.module#SearchModule'}
 ];
 
 @NgModule({
