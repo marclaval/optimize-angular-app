@@ -24,7 +24,7 @@ The build task executes a number of independent steps which can be executed sepa
 - `npm run aot-rollup`
 - `npm run aot-webpack`
 - `npm run lazyloading`
-- `npm run universal`
+- `npm run prerender`
 
 ## Development
 To develop the application itself, here is the workflow:

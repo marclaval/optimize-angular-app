@@ -1,7 +1,7 @@
 import {by, protractor, By} from 'protractor';
 var fs = require('fs');
 
-var scenarios = ['baseline', 'dev', 'bundling-app', 'bundling-full', 'treeshaking-rollup', 'treeshaking-webpack', 'aot-rollup', 'aot-webpack', 'lazyloading-webpack', 'universal'];
+var scenarios = ['baseline', 'dev', 'bundling-app', 'bundling-full', 'treeshaking-rollup', 'treeshaking-webpack', 'aot-rollup', 'aot-webpack', 'lazyloading-webpack', 'prerender'];
 
 var report = {};
 

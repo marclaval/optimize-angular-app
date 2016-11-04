@@ -16,7 +16,7 @@
     "lib": ["es2015", "dom"]
   },
   "files": [
-    "./app/module.universal.ts",
+    "./app/module.prerender.ts",
     "./app/list/list.module.ts",
     "./app/search/search.module.ts",
     "./app/subscribe/subscribe.module.ts"

@@ -26,4 +26,4 @@ cp dist/vendors.js dist/aot-webpack
 cp dist/vendors.js dist/lazyloading-webpack
 cp dist/vendors.js dist/treeshaking-rollup
 cp dist/vendors.js dist/treeshaking-webpack
-cp dist/vendors.js dist/universal
+cp dist/vendors.js dist/prerender

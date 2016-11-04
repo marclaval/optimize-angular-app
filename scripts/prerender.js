@@ -31,7 +31,7 @@ require('zone.js/dist/zone-node.js');
 require('zone.js/dist/long-stack-trace-zone');
 
 var au = require('angular2-universal');
-var module = require('../tmp/app/module.universal');
+var module = require('../tmp/app/module.prerender');
 
 var options = {
   ngModule: module.AppModule,
@@ -39,7 +39,7 @@ var options = {
   originUrl: 'http://localhost:8080',
   baseUrl: '/',
   requestUrl: '/',
-  document: fs.readFileSync('./public/universal/index.html', 'utf-8')
+  document: fs.readFileSync('./public/prerender/index.html', 'utf-8')
 };
 
 var zone = Zone.current.fork({
@@ -49,9 +49,9 @@ var zone = Zone.current.fork({
 zone.run(() => (au.platformUniversalDynamic().serializeModule(module.AppModule, options)
 .then((html) => {
   try {
-    fs.mkdirSync('./tmp/universal');
+    fs.mkdirSync('./tmp/prerender');
   }
   catch(e){}
-  fs.writeFileSync('./tmp/universal/index.html', html, 'utf-8');
+  fs.writeFileSync('./tmp/prerender/index.html', html, 'utf-8');
 }).catch((e) => console.log(e))
 ));

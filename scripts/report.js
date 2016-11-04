@@ -7,7 +7,7 @@ const perf = require('../tmp/perf.json');
 const minPerf = avgArray(perf['baseline']);
 const maxPerf = avgArray(perf['bundling-full']);
 
-var scenarios = ['baseline', 'dev', 'bundling-app', 'bundling-full', 'treeshaking-rollup', 'treeshaking-webpack', 'aot-rollup', 'aot-webpack', 'lazyloading-webpack', 'universal'];
+var scenarios = ['baseline', 'dev', 'bundling-app', 'bundling-full', 'treeshaking-rollup', 'treeshaking-webpack', 'aot-rollup', 'aot-webpack', 'lazyloading-webpack', 'prerender'];
 
 var report = {};
 

@@ -9,5 +9,5 @@ node ./scripts/lighthouse.js treeshaking-webpack
 node ./scripts/lighthouse.js aot-rollup
 node ./scripts/lighthouse.js aot-webpack
 node ./scripts/lighthouse.js lazyloading-webpack
-node ./scripts/lighthouse.js universal
+node ./scripts/lighthouse.js prerender
 

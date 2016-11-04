@@ -26,7 +26,7 @@ module.exports = function makeWebpackConfig() {
    * Reference: http://webpack.github.io/docs/configuration.html#entry
    */
   config.entry = {
-    'app': './app/main.universal.ts' // our angular app
+    'app': './app/main.prerender.ts' // our angular app
   };
 
   /**
@@ -34,7 +34,7 @@ module.exports = function makeWebpackConfig() {
    * Reference: http://webpack.github.io/docs/configuration.html#output
    */
   config.output = {
-    path: root('dist', 'universal'),
+    path: root('dist', 'prerender'),
     publicPath: '',
     filename: 'js/[name].js',
     chunkFilename: '[id].chunk.js'
@@ -45,7 +45,7 @@ module.exports = function makeWebpackConfig() {
    * Reference: http://webpack.github.io/docs/configuration.html#resolve
    */
   config.resolve = {
-    modules: [root('app'), root('public', 'universal'), 'node_modules'],
+    modules: [root('app'), root('public', 'prerender'), 'node_modules'],
     // only discover files that have those extensions
     extensions: ['.ts', '.js', '.html']
   };
@@ -88,14 +88,14 @@ module.exports = function makeWebpackConfig() {
 
     // Reference: https://github.com/angular/angular-cli/tree/master/packages/webpack
     new aotplugin.AotPlugin({
-      tsConfigPath: './tsconfig-universal.json',
-      entryModule: './app/module.universal#AppModule'
+      tsConfigPath: './tsconfig-prerender.json',
+      entryModule: './app/module.prerender#AppModule'
     }),
 
     // Inject script and link tags into html files
     // Reference: https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
-      template: './tmp/universal/index.html',
+      template: './tmp/prerender/index.html',
       chunksSortMode: 'dependency'
     }),
 
