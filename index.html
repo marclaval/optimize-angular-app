@@ -91,7 +91,7 @@
             </div>
             <div class="btn-group-vertical">
                 <a class="btn btn-outline-primary btn-lg disabled">Pre-rendering</a>
-                <a class="btn btn-outline-primary btn-lg" href="./universal" role="button">Webpack</a>
+                <a class="btn btn-outline-primary btn-lg" href="./prerender" role="button">Webpack</a>
             </div>
         </div>
     </div>
@@ -106,10 +106,10 @@
 
     <script type="application/javascript">
         
-var serie_score = [{"name":"baseline","data":[100,100,100]},{"name":"dev","data":[8,4,1]},{"name":"bundling-app","data":[18,23,15]},{"name":"bundling-full","data":[0,0,0]},{"name":"treeshaking-rollup","data":[32,36,31]},{"name":"treeshaking-webpack","data":[21,26,16]},{"name":"aot-rollup","data":[76,75,73]},{"name":"aot-webpack","data":[73,72,69]},{"name":"lazyloading-webpack","data":[75,72,70]},{"name":"universal","data":[100,101,100]}];
-var serie_size = [{"name":"baseline","data":[114997,114997,115218]},{"name":"dev","data":[2332405,2152407,2156702]},{"name":"bundling-app","data":[2221511,2041483,2045778]},{"name":"bundling-full","data":[1440275,1336156,1325861]},{"name":"treeshaking-rollup","data":[1002461,933339,926285]},{"name":"treeshaking-webpack","data":[1179757,1098696,1091136]},{"name":"aot-rollup","data":[1053236,922088,976735]},{"name":"aot-webpack","data":[1127300,983446,1064464]},{"name":"lazyloading-webpack","data":[1381405,1139287,1218819]},{"name":"universal","data":[1756752,1514330,1597331]}];
-var serie_gzip = [{"name":"baseline","data":[19127,19127,19199]},{"name":"dev","data":[512349,489673,489713]},{"name":"bundling-app","data":[425306,402636,402676]},{"name":"bundling-full","data":[308682,288781,285435]},{"name":"treeshaking-rollup","data":[233478,218190,217311]},{"name":"treeshaking-webpack","data":[261529,244800,245005]},{"name":"aot-rollup","data":[189520,167358,168656]},{"name":"aot-webpack","data":[195998,170220,173036]},{"name":"lazyloading-webpack","data":[235008,194599,196804]},{"name":"universal","data":[326924,286041,290886]}];
-var categories = ["Tue Oct 18 2016 18:38:09 GMT+0200 (CEST)","Wed Oct 19 2016 17:08:11 GMT+0200 (CEST)","Wed Nov 02 2016 17:25:12 GMT+0100 (CET)"];
+var serie_score = [{"name":"baseline","data":[100,100,100,100]},{"name":"dev","data":[8,4,1,1]},{"name":"bundling-app","data":[18,23,15,7]},{"name":"bundling-full","data":[0,0,0,0]},{"name":"treeshaking-rollup","data":[32,36,31,30]},{"name":"treeshaking-webpack","data":[21,26,16,19]},{"name":"aot-rollup","data":[76,75,73,70]},{"name":"aot-webpack","data":[73,72,69,68]},{"name":"lazyloading-webpack","data":[75,72,70,68]},{"name":"prerender","data":[100,101,100,100]}];
+var serie_size = [{"name":"baseline","data":[114997,114997,115218,115315]},{"name":"dev","data":[2332405,2152407,2156702,2156800]},{"name":"bundling-app","data":[2221511,2041483,2045778,2045869]},{"name":"bundling-full","data":[1440275,1336156,1325861,1325953]},{"name":"treeshaking-rollup","data":[1002461,933339,926285,926378]},{"name":"treeshaking-webpack","data":[1179757,1098696,1091136,1091227]},{"name":"aot-rollup","data":[1053236,922088,976735,977360]},{"name":"aot-webpack","data":[1127300,983446,1064464,1065058]},{"name":"lazyloading-webpack","data":[1381405,1139287,1218819,1071697]},{"name":"prerender","data":[1756752,1514330,1597331,1504880]}];
+var serie_gzip = [{"name":"baseline","data":[19127,19127,19199,19234]},{"name":"dev","data":[512349,489673,489713,489743]},{"name":"bundling-app","data":[425306,402636,402676,402708]},{"name":"bundling-full","data":[308682,288781,285435,285464]},{"name":"treeshaking-rollup","data":[233478,218190,217311,217332]},{"name":"treeshaking-webpack","data":[261529,244800,245005,245030]},{"name":"aot-rollup","data":[189520,167358,168656,168776]},{"name":"aot-webpack","data":[195998,170220,173036,173144]},{"name":"lazyloading-webpack","data":[235008,194599,196804,176988]},{"name":"prerender","data":[326924,286041,290886,282506]}];
+var categories = ["Tue Oct 18 2016 18:38:09 GMT+0200 (CEST)","Wed Oct 19 2016 17:08:11 GMT+0200 (CEST)","Wed Nov 02 2016 17:25:12 GMT+0100 (CET)","Fri Nov 04 2016 17:55:21 GMT+0100 (CET)"];
 
         renderChart('container', 'Load time score', '100 is the best (baseline)', 'Score', serie_score, categories);
         renderChart('container2', 'Total size minified', '', 'Bytes', serie_size, categories);

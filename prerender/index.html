@@ -1,0 +1,360 @@
+<!DOCTYPE html><html><head>
+        <title>Optimize Angular app</title>
+        <base href=".">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript">
+            var begin = Date.now();
+            var id = setInterval(function() {
+                if (document.querySelector('#perf')) {
+                    document.querySelector('#output').innerHTML = Date.now() - begin;
+                    clearInterval(id);
+                }
+            })
+        </script>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="vendors.js" type="text/javascript" async></script>
+    </head>
+    <body>
+        <div style="position: absolute;top: 0; right: 0; z-index: 5; color: white;"><i>prerender</i><div id="output" style="color: rgba(0,0,0,0);"></div></div>
+        <my-app>
+<nav class="navbar navbar-dark bg-primary">
+  <ul class="nav navbar-nav">
+    <li class="nav-item">
+      <a class="navbar-brand" href="..">⇦</a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" ng-reflect-router-link="/" ng-reflect-href="#/" href="#/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" ng-reflect-router-link="/list" ng-reflect-href="#/list" href="#/list">List</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" ng-reflect-router-link="/subscribe" ng-reflect-href="#/subscribe" href="#/subscribe">Subscribe</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" ng-reflect-router-link="/search" ng-reflect-href="#/search" href="#/search">Search</a>
+    </li>
+  </ul>
+</nav>
+<router-outlet></router-outlet><welcome>
+    <div>
+      <h2>Welcome</h2>
+      <span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat tincidunt ex, quis mattis leo laoreet et. Quisque tincidunt dignissim arcu, eget varius mi maximus laoreet. Donec in metus nec turpis aliquet tincidunt. Suspendisse sapien mauris, tristique vel urna eget, varius rutrum tellus. Sed luctus bibendum augue, aliquam blandit magna ullamcorper ut. Aliquam sed congue est, id bibendum enim. Suspendisse potenti. Pellentesque rhoncus elit vel accumsan vehicula. Nullam faucibus cursus venenatis. Sed vel porttitor ante. Fusce sit amet dolor nulla. Cras enim enim, euismod ac consectetur sed, hendrerit eu massa. Maecenas ultrices vel mauris vel blandit. Morbi non nulla sed sapien maximus sodales. Duis condimentum purus sollicitudin nulla pulvinar blandit.
+      </span>
+      <br><br>
+      <span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat tincidunt ex, quis mattis leo laoreet et. Quisque tincidunt dignissim arcu, eget varius mi maximus laoreet. Donec in metus nec turpis aliquet tincidunt. Suspendisse sapien mauris, tristique vel urna eget, varius rutrum tellus. Sed luctus bibendum augue, aliquam blandit magna ullamcorper ut. Aliquam sed congue est, id bibendum enim. Suspendisse potenti. Pellentesque rhoncus elit vel accumsan vehicula. Nullam faucibus cursus venenatis. Sed vel porttitor ante. Fusce sit amet dolor nulla. Cras enim enim, euismod ac consectetur sed, hendrerit eu massa. Maecenas ultrices vel mauris vel blandit. Morbi non nulla sed sapien maximus sodales. Duis condimentum purus sollicitudin nulla pulvinar blandit.
+      </span>
+    </div>
+    <div style="display: none;">
+        <d-afhva>
+    <span aria-label="nothing to say">This is a dummy component for Afhva</span>
+    <div></div>
+    </d-afhva><d-xvhst>
+    <span aria-label="nothing to say">This is a dummy component for Xvhst</span>
+    <div></div>
+    </d-xvhst><d-ikcme>
+    <span aria-label="nothing to say">This is a dummy component for Ikcme</span>
+    <div></div>
+    </d-ikcme><d-weplp>
+    <span aria-label="nothing to say">This is a dummy component for Weplp</span>
+    <div></div>
+    </d-weplp><d-alrzs>
+    <span aria-label="nothing to say">This is a dummy component for Alrzs</span>
+    <div></div>
+    </d-alrzs><d-uqrlh>
+    <span aria-label="nothing to say">This is a dummy component for Uqrlh</span>
+    <div></div>
+    </d-uqrlh><d-hwgcn>
+    <span aria-label="nothing to say">This is a dummy component for Hwgcn</span>
+    <div></div>
+    </d-hwgcn><d-glhaa>
+    <span aria-label="nothing to say">This is a dummy component for Glhaa</span>
+    <div></div>
+    </d-glhaa><d-jrzsd>
+    <span aria-label="nothing to say">This is a dummy component for Jrzsd</span>
+    <div></div>
+    </d-jrzsd><d-xvctw>
+    <span aria-label="nothing to say">This is a dummy component for Xvctw</span>
+    <div></div>
+    </d-xvctw><d-lyhgt>
+    <span aria-label="nothing to say">This is a dummy component for Lyhgt</span>
+    <div></div>
+    </d-lyhgt><d-wuqzt>
+    <span aria-label="nothing to say">This is a dummy component for Wuqzt</span>
+    <div></div>
+    </d-wuqzt><d-ftufw>
+    <span aria-label="nothing to say">This is a dummy component for Ftufw</span>
+    <div></div>
+    </d-ftufw><d-ntzaw>
+    <span aria-label="nothing to say">This is a dummy component for Ntzaw</span>
+    <div></div>
+    </d-ntzaw><d-xsjjv>
+    <span aria-label="nothing to say">This is a dummy component for Xsjjv</span>
+    <div></div>
+    </d-xsjjv><d-ligmr>
+    <span aria-label="nothing to say">This is a dummy component for Ligmr</span>
+    <div></div>
+    </d-ligmr><d-ogfvj>
+    <span aria-label="nothing to say">This is a dummy component for Ogfvj</span>
+    <div></div>
+    </d-ogfvj><d-uvbqi>
+    <span aria-label="nothing to say">This is a dummy component for Uvbqi</span>
+    <div></div>
+    </d-uvbqi><d-iqudy>
+    <span aria-label="nothing to say">This is a dummy component for Iqudy</span>
+    <div></div>
+    </d-iqudy><d-wttlz>
+    <span aria-label="nothing to say">This is a dummy component for Wttlz</span>
+    <div></div>
+    </d-wttlz><d-jlfkz>
+    <span aria-label="nothing to say">This is a dummy component for Jlfkz</span>
+    <div></div>
+    </d-jlfkz><d-qdklu>
+    <span aria-label="nothing to say">This is a dummy component for Qdklu</span>
+    <div></div>
+    </d-qdklu><d-pcvfd>
+    <span aria-label="nothing to say">This is a dummy component for Pcvfd</span>
+    <div></div>
+    </d-pcvfd><d-fuhxo>
+    <span aria-label="nothing to say">This is a dummy component for Fuhxo</span>
+    <div></div>
+    </d-fuhxo><d-enjpm>
+    <span aria-label="nothing to say">This is a dummy component for Enjpm</span>
+    <div></div>
+    </d-enjpm><d-qucvl>
+    <span aria-label="nothing to say">This is a dummy component for Qucvl</span>
+    <div></div>
+    </d-qucvl><d-qtzhp>
+    <span aria-label="nothing to say">This is a dummy component for Qtzhp</span>
+    <div></div>
+    </d-qtzhp><d-qsdhe>
+    <span aria-label="nothing to say">This is a dummy component for Qsdhe</span>
+    <div></div>
+    </d-qsdhe><d-uuhfk>
+    <span aria-label="nothing to say">This is a dummy component for Uuhfk</span>
+    <div></div>
+    </d-uuhfk><d-twqay>
+    <span aria-label="nothing to say">This is a dummy component for Twqay</span>
+    <div></div>
+    </d-twqay><d-dirbw>
+    <span aria-label="nothing to say">This is a dummy component for Dirbw</span>
+    <div></div>
+    </d-dirbw><d-oputn>
+    <span aria-label="nothing to say">This is a dummy component for Oputn</span>
+    <div></div>
+    </d-oputn><d-bynxu>
+    <span aria-label="nothing to say">This is a dummy component for Bynxu</span>
+    <div></div>
+    </d-bynxu><d-ausrq>
+    <span aria-label="nothing to say">This is a dummy component for Ausrq</span>
+    <div></div>
+    </d-ausrq><d-dcmaa>
+    <span aria-label="nothing to say">This is a dummy component for Dcmaa</span>
+    <div></div>
+    </d-dcmaa><d-ewamj>
+    <span aria-label="nothing to say">This is a dummy component for Ewamj</span>
+    <div></div>
+    </d-ewamj><d-gbccz>
+    <span aria-label="nothing to say">This is a dummy component for Gbccz</span>
+    <div></div>
+    </d-gbccz><d-hpcml>
+    <span aria-label="nothing to say">This is a dummy component for Hpcml</span>
+    <div></div>
+    </d-hpcml><d-uxrej>
+    <span aria-label="nothing to say">This is a dummy component for Uxrej</span>
+    <div></div>
+    </d-uxrej><d-rrtoi>
+    <span aria-label="nothing to say">This is a dummy component for Rrtoi</span>
+    <div></div>
+    </d-rrtoi><d-kdfio>
+    <span aria-label="nothing to say">This is a dummy component for Kdfio</span>
+    <div></div>
+    </d-kdfio><d-kssun>
+    <span aria-label="nothing to say">This is a dummy component for Kssun</span>
+    <div></div>
+    </d-kssun><d-hbege>
+    <span aria-label="nothing to say">This is a dummy component for Hbege</span>
+    <div></div>
+    </d-hbege><d-lnysi>
+    <span aria-label="nothing to say">This is a dummy component for Lnysi</span>
+    <div></div>
+    </d-lnysi><d-jclni>
+    <span aria-label="nothing to say">This is a dummy component for Jclni</span>
+    <div></div>
+    </d-jclni><d-vycmx>
+    <span aria-label="nothing to say">This is a dummy component for Vycmx</span>
+    <div></div>
+    </d-vycmx><d-wmeem>
+    <span aria-label="nothing to say">This is a dummy component for Wmeem</span>
+    <div></div>
+    </d-wmeem><d-qxmlm>
+    <span aria-label="nothing to say">This is a dummy component for Qxmlm</span>
+    <div></div>
+    </d-qxmlm><d-ldvvg>
+    <span aria-label="nothing to say">This is a dummy component for Ldvvg</span>
+    <div></div>
+    </d-ldvvg><d-ehgtb>
+    <span aria-label="nothing to say">This is a dummy component for Ehgtb</span>
+    <div></div>
+    </d-ehgtb><d-efzva>
+    <span aria-label="nothing to say">This is a dummy component for Efzva</span>
+    <div></div>
+    </d-efzva><d-vosou>
+    <span aria-label="nothing to say">This is a dummy component for Vosou</span>
+    <div></div>
+    </d-vosou><d-hcasf>
+    <span aria-label="nothing to say">This is a dummy component for Hcasf</span>
+    <div></div>
+    </d-hcasf><d-gfumm>
+    <span aria-label="nothing to say">This is a dummy component for Gfumm</span>
+    <div></div>
+    </d-gfumm><d-frlli>
+    <span aria-label="nothing to say">This is a dummy component for Frlli</span>
+    <div></div>
+    </d-frlli><d-cgieg>
+    <span aria-label="nothing to say">This is a dummy component for Cgieg</span>
+    <div></div>
+    </d-cgieg><d-lkgwe>
+    <span aria-label="nothing to say">This is a dummy component for Lkgwe</span>
+    <div></div>
+    </d-lkgwe><d-ykvrk>
+    <span aria-label="nothing to say">This is a dummy component for Ykvrk</span>
+    <div></div>
+    </d-ykvrk><d-mcbnj>
+    <span aria-label="nothing to say">This is a dummy component for Mcbnj</span>
+    <div></div>
+    </d-mcbnj><d-bzvtz>
+    <span aria-label="nothing to say">This is a dummy component for Bzvtz</span>
+    <div></div>
+    </d-bzvtz><d-pypei>
+    <span aria-label="nothing to say">This is a dummy component for Pypei</span>
+    <div></div>
+    </d-pypei><d-xvwpq>
+    <span aria-label="nothing to say">This is a dummy component for Xvwpq</span>
+    <div></div>
+    </d-xvwpq><d-iwqqs>
+    <span aria-label="nothing to say">This is a dummy component for Iwqqs</span>
+    <div></div>
+    </d-iwqqs><d-kthcm>
+    <span aria-label="nothing to say">This is a dummy component for Kthcm</span>
+    <div></div>
+    </d-kthcm><d-bawsf>
+    <span aria-label="nothing to say">This is a dummy component for Bawsf</span>
+    <div></div>
+    </d-bawsf><d-lymtc>
+    <span aria-label="nothing to say">This is a dummy component for Lymtc</span>
+    <div></div>
+    </d-lymtc><d-wkjns>
+    <span aria-label="nothing to say">This is a dummy component for Wkjns</span>
+    <div></div>
+    </d-wkjns><d-xvsuw>
+    <span aria-label="nothing to say">This is a dummy component for Xvsuw</span>
+    <div></div>
+    </d-xvsuw><d-fwuzz>
+    <span aria-label="nothing to say">This is a dummy component for Fwuzz</span>
+    <div></div>
+    </d-fwuzz><d-dnpge>
+    <span aria-label="nothing to say">This is a dummy component for Dnpge</span>
+    <div></div>
+    </d-dnpge><d-flujd>
+    <span aria-label="nothing to say">This is a dummy component for Flujd</span>
+    <div></div>
+    </d-flujd><d-tppor>
+    <span aria-label="nothing to say">This is a dummy component for Tppor</span>
+    <div></div>
+    </d-tppor><d-ujyyy>
+    <span aria-label="nothing to say">This is a dummy component for Ujyyy</span>
+    <div></div>
+    </d-ujyyy><d-kityr>
+    <span aria-label="nothing to say">This is a dummy component for Kityr</span>
+    <div></div>
+    </d-kityr><d-ztpoo>
+    <span aria-label="nothing to say">This is a dummy component for Ztpoo</span>
+    <div></div>
+    </d-ztpoo><d-jvmlh>
+    <span aria-label="nothing to say">This is a dummy component for Jvmlh</span>
+    <div></div>
+    </d-jvmlh><d-fbnte>
+    <span aria-label="nothing to say">This is a dummy component for Fbnte</span>
+    <div></div>
+    </d-fbnte><d-gubhv>
+    <span aria-label="nothing to say">This is a dummy component for Gubhv</span>
+    <div></div>
+    </d-gubhv><d-qahef>
+    <span aria-label="nothing to say">This is a dummy component for Qahef</span>
+    <div></div>
+    </d-qahef><d-hzjqj>
+    <span aria-label="nothing to say">This is a dummy component for Hzjqj</span>
+    <div></div>
+    </d-hzjqj><d-jzimi>
+    <span aria-label="nothing to say">This is a dummy component for Jzimi</span>
+    <div></div>
+    </d-jzimi><d-kwijt>
+    <span aria-label="nothing to say">This is a dummy component for Kwijt</span>
+    <div></div>
+    </d-kwijt><d-vvmfn>
+    <span aria-label="nothing to say">This is a dummy component for Vvmfn</span>
+    <div></div>
+    </d-vvmfn><d-mlohh>
+    <span aria-label="nothing to say">This is a dummy component for Mlohh</span>
+    <div></div>
+    </d-mlohh><d-niiqz>
+    <span aria-label="nothing to say">This is a dummy component for Niiqz</span>
+    <div></div>
+    </d-niiqz><d-hkpra>
+    <span aria-label="nothing to say">This is a dummy component for Hkpra</span>
+    <div></div>
+    </d-hkpra><d-ilmme>
+    <span aria-label="nothing to say">This is a dummy component for Ilmme</span>
+    <div></div>
+    </d-ilmme><d-npwjs>
+    <span aria-label="nothing to say">This is a dummy component for Npwjs</span>
+    <div></div>
+    </d-npwjs><d-hmhyg>
+    <span aria-label="nothing to say">This is a dummy component for Hmhyg</span>
+    <div></div>
+    </d-hmhyg><d-bgwjk>
+    <span aria-label="nothing to say">This is a dummy component for Bgwjk</span>
+    <div></div>
+    </d-bgwjk><d-lyzrr>
+    <span aria-label="nothing to say">This is a dummy component for Lyzrr</span>
+    <div></div>
+    </d-lyzrr><d-zmduv>
+    <span aria-label="nothing to say">This is a dummy component for Zmduv</span>
+    <div></div>
+    </d-zmduv><d-ybmrx>
+    <span aria-label="nothing to say">This is a dummy component for Ybmrx</span>
+    <div></div>
+    </d-ybmrx><d-knwyp>
+    <span aria-label="nothing to say">This is a dummy component for Knwyp</span>
+    <div></div>
+    </d-knwyp><d-aglja>
+    <span aria-label="nothing to say">This is a dummy component for Aglja</span>
+    <div></div>
+    </d-aglja><d-eroor>
+    <span aria-label="nothing to say">This is a dummy component for Eroor</span>
+    <div></div>
+    </d-eroor><d-gdgte>
+    <span aria-label="nothing to say">This is a dummy component for Gdgte</span>
+    <div></div>
+    </d-gdgte><d-hrbqr>
+    <span aria-label="nothing to say">This is a dummy component for Hrbqr</span>
+    <div></div>
+    </d-hrbqr><d-kfsqs>
+    <span aria-label="nothing to say">This is a dummy component for Kfsqs</span>
+    <div></div>
+    </d-kfsqs><d-lbjem>
+    <span aria-label="nothing to say">This is a dummy component for Lbjem</span>
+    <div></div>
+    </d-lbjem>
+    </div>
+    <div id="perf"></div>
+  </welcome>
+  </my-app>
+    
+<universal-script><script>
+ try {window.UNIVERSAL_CACHE = ({"APP_ID":"f13c"}) || {};} catch(e) {  console.warn("Angular Universal: There was a problem parsing data from the server")}
+</script></universal-script><script src="js/app.js" type="text/javascript" async></script></body></html>
