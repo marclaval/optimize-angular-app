@@ -1,8 +1,10 @@
+"use strict";
+
 const zlib = require('zlib');
 const fs = require('fs');
 const filesize = require('filesize');
 
-const package = require('../package.json');
+const packageJson = require('../package.json');
 const perf = require('../tmp/perf.json');
 const minPerf = avgArray(perf['baseline']);
 const maxPerf = avgArray(perf['bundling-full']);
@@ -61,9 +63,9 @@ scenarios.forEach((scenario) => {
   report[scenario] = metrics;
 });
 
-let dep = package.dependencies;
-for (let key in package.devDependencies) {
-  dep[key] = package.devDependencies[key];
+let dep = packageJson.dependencies;
+for (let key in packageJson.devDependencies) {
+  dep[key] = packageJson.devDependencies[key];
 }
 
 const now = new Date();

@@ -1,3 +1,6 @@
+"use strict";
+require('core-js/shim');
+
 // Ugly workaround for 2.1.1 --------------------------------------------------------
 let __compiler__ = require('@angular/compiler');
 let __core__ =  require('@angular/core');
