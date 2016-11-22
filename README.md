@@ -22,6 +22,7 @@ The build task executes a number of independent steps which can be executed sepa
 - `npm run treeshaking-rollup`
 - `npm run treeshaking-webpack`
 - `npm run aot-rollup`
+- `npm run aot-systemjs`
 - `npm run aot-webpack`
 - `npm run lazyloading`
 - `npm run prerender`

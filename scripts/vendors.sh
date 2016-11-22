@@ -17,6 +17,7 @@ mkdir -p dist/bundling-app/bundles/@angular
 cp -a dist/dev/bundles dist/bundling-app
 
 # Copy vendor file to each sample
+cp dist/vendors_with_system.js dist/aot-systemjs
 cp dist/vendors_with_system.js dist/bundling-app
 cp dist/vendors_with_system.js dist/bundling-full
 cp dist/vendors_with_system.js dist/dev
