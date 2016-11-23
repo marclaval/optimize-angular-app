@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "system",
+    "moduleResolution": "node",
+    "declaration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": ".",
+    "stripInternal": true,
+    "outDir": "./dist/dev",
+    "rootDir": ".",
+    "sourceMap": true,
+    "inlineSources": true,
+    "skipLibCheck": true,
+    "lib": ["es2015", "dom"]
+  },
+  "files": [
+    "./app/main.lazy.ts",
+    "./app/list/list.module.ngfactory.ts",
+    "./app/search/search.module.ngfactory.ts",
+    "./app/subscribe/subscribe.module.ngfactory.ts"
+  ]
+}

@@ -2,9 +2,14 @@ const Builder = require("systemjs-builder");
 
 let destinationFolder = 'bundling-full';
 let isAoT = false;
+let isLazy = false;
 if (process.argv[2] && process.argv[2] == '--aot') {
   isAoT = true;
   destinationFolder = 'aot-systemjs';
+}
+if (process.argv[2] && process.argv[2] == '--lazy') {
+  isLazy = true;
+  destinationFolder = 'lazyloading-systemjs';
 }
 
 // SystemJS build options.
@@ -17,7 +22,7 @@ var options = {
   mangle: true
 };
 var builder = new Builder('./dist/dev');
-builder.config({
+var config = {
   defaultJSExtensions: true,
   transpiler: false,
   paths: {
@@ -45,8 +50,25 @@ builder.config({
     "rxjs": "n:rxjs"
   },
   packages: {
-    "app": {main: isAoT ? "main.aot.js" : "main.jit.js", defaultExtension: "js"},
+    "app": {main: isAoT ? "main.aot.js" : (isLazy ? "main.lazy.js" : "main.jit.js"), defaultExtension: "js"},
   }
-});
+}
 
+if (isLazy) {
+  config.packages['app/list'] = {main: "list.module.ngfactory.js"}
+  config.packages['app/search'] = {main: "search.module.ngfactory.js"}
+  config.packages['app/subscribe'] = {main: "subscribe.module.ngfactory.js"}
+}
+
+builder.config(config);
 builder.bundle('app', 'dist/' + destinationFolder + '/app.min.js', options);
+
+if (isLazy) {
+  builder.bundle('app', 'dist/dev/app.min.js', options);
+  setTimeout(() => {
+    builder.bundle('app/list - app.min.js', 'dist/' + destinationFolder + '/list.min.js', options);
+    builder.bundle('app/search - app.min.js', 'dist/' + destinationFolder + '/search.min.js', options);
+    builder.bundle('app/subscribe - app.min.js', 'dist/' + destinationFolder + '/subscribe.min.js', options);
+  }, 5000);
+
+}

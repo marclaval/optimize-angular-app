@@ -21,6 +21,7 @@ cp dist/vendors_with_system.js dist/aot-systemjs
 cp dist/vendors_with_system.js dist/bundling-app
 cp dist/vendors_with_system.js dist/bundling-full
 cp dist/vendors_with_system.js dist/dev
+cp dist/vendors_with_system.js dist/lazyloading-systemjs
 
 cp dist/vendors.js dist/aot-rollup
 cp dist/vendors.js dist/aot-webpack
