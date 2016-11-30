@@ -70,7 +70,7 @@ module.exports = function makeWebpackConfig() {
         }
       },
       // support for .html as raw text
-      {test: /\.html$/, loader: 'raw'}
+      {test: /\.html$/, loader: 'raw-loader'}
     ],
     noParse: [/.+zone\.js\/dist\/.+/]
   };

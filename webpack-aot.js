@@ -64,7 +64,7 @@ module.exports = function makeWebpackConfig() {
         include: [root('app'), root('node_modules')]
       },
       // support for .html as raw text
-      {test: /\.html$/, loader: 'raw'}
+      {test: /\.html$/, loader: 'raw-loader'}
     ],
     noParse: [/.+zone\.js\/dist\/.+/]
   };
