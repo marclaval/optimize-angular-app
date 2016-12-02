@@ -31,7 +31,7 @@ function readFiles(path) {
     const stats = fs.statSync(filePath);
     if (stats.isDirectory()) {
       result = result.concat(readFiles(filePath));
-    } else if (item.lastIndexOf('.js.map') === -1) {
+    } else if (item.lastIndexOf('.js.map') === -1 && item.lastIndexOf('.d.ts') === -1 && item.lastIndexOf('.ngfactory.') === -1) {
       const gzip = getGzipSize(filePath);
       result.push({
         name: item,
