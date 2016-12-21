@@ -4,7 +4,7 @@
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
-System.register(['./efzva', '@angular/core/src/linker/view', '@angular/core/src/linker/view_utils', '@angular/core/src/metadata/view', '@angular/core/src/linker/view_type', '@angular/core/src/change_detection/change_detection', '@angular/core/src/linker/component_factory'], function(exports_1, context_1) {
+System.register(['./efzva', '@angular/core/src/linker/view', '@angular/core/src/linker/view_utils', '@angular/core/src/metadata/view', '@angular/core/src/linker/view_type', '@angular/core/src/change_detection/constants', '@angular/core/src/linker/component_factory', '@angular/core/src/change_detection/change_detection_util'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __extends = (this && this.__extends) || function (d, b) {
@@ -12,7 +12,7 @@ System.register(['./efzva', '@angular/core/src/linker/view', '@angular/core/src/
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
-    var import0, import1, import3, import4, import5, import6, import7;
+    var import0, import1, import3, import4, import5, import6, import7, import8;
     var Wrapper_Efzva, renderType_Efzva_Host, View_Efzva_Host0, EfzvaNgFactory, styles_Efzva, renderType_Efzva, View_Efzva0;
     return {
         setters:[
@@ -36,6 +36,9 @@ System.register(['./efzva', '@angular/core/src/linker/view', '@angular/core/src/
             },
             function (import7_1) {
                 import7 = import7_1;
+            },
+            function (import8_1) {
+                import8 = import8_1;
             }],
         execute: function() {
             Wrapper_Efzva = (function () {
@@ -86,7 +89,7 @@ System.register(['./efzva', '@angular/core/src/linker/view', '@angular/core/src/
                 };
                 View_Efzva_Host0.prototype.detectChangesInternal = function (throwOnChange) {
                     this._Efzva_0_3.ngDoCheck(this, this._el_0, throwOnChange);
-                    this.compView_0.detectChanges(throwOnChange);
+                    this.compView_0.internalDetectChanges(throwOnChange);
                 };
                 View_Efzva_Host0.prototype.destroyInternal = function () {
                     this.compView_0.destroy();
@@ -103,8 +106,8 @@ System.register(['./efzva', '@angular/core/src/linker/view', '@angular/core/src/
                 __extends(View_Efzva0, _super);
                 function View_Efzva0(viewUtils, parentView, parentIndex, parentElement) {
                     _super.call(this, View_Efzva0, renderType_Efzva, import5.ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways);
-                    this._expr_6 = import6.UNINITIALIZED;
-                    this._expr_7 = import6.UNINITIALIZED;
+                    this._expr_6 = import8.UNINITIALIZED;
+                    this._expr_7 = import8.UNINITIALIZED;
                 }
                 View_Efzva0.prototype.createInternal = function (rootSelector) {
                     var parentRenderNode = this.renderer.createViewRoot(this.parentElement);

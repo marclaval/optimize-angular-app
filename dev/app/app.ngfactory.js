@@ -4,7 +4,7 @@
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
-System.register(['./app', '@angular/core/src/linker/view', '@angular/core/src/linker/view_utils', '@angular/core/src/metadata/view', '@angular/core/src/linker/view_type', '@angular/core/src/change_detection/change_detection', '@angular/core/src/linker/component_factory', '../node_modules/@angular/router/src/directives/router_link.ngfactory', '@angular/core/src/linker/view_container', '../node_modules/@angular/router/src/directives/router_outlet.ngfactory', '@angular/router/src/router', '@angular/router/src/router_state', '@angular/common/src/location/location_strategy', '@angular/router/src/router_outlet_map', '@angular/core/src/linker/component_factory_resolver', '@angular/router/src/directives/router_link', '@angular/router/src/directives/router_outlet'], function(exports_1, context_1) {
+System.register(['./app', '@angular/core/src/linker/view', '@angular/core/src/linker/view_utils', '@angular/core/src/metadata/view', '@angular/core/src/linker/view_type', '@angular/core/src/change_detection/constants', '@angular/core/src/linker/component_factory', '../node_modules/@angular/router/src/directives/router_link.ngfactory', '@angular/core/src/linker/view_container', '../node_modules/@angular/router/src/directives/router_outlet.ngfactory', '@angular/router/src/router', '@angular/router/src/router_state', '@angular/common/src/location/location_strategy', '@angular/router/src/router_outlet_map', '@angular/core/src/linker/component_factory_resolver', '@angular/router/src/directives/router_link', '@angular/router/src/directives/router_outlet'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __extends = (this && this.__extends) || function (d, b) {
@@ -116,7 +116,7 @@ System.register(['./app', '@angular/core/src/linker/view', '@angular/core/src/li
                 };
                 View_App_Host0.prototype.detectChangesInternal = function (throwOnChange) {
                     this._App_0_3.ngDoCheck(this, this._el_0, throwOnChange);
-                    this.compView_0.detectChanges(throwOnChange);
+                    this.compView_0.internalDetectChanges(throwOnChange);
                 };
                 View_App_Host0.prototype.destroyInternal = function () {
                     this.compView_0.destroy();

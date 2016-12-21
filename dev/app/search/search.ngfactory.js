@@ -4,7 +4,7 @@
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
-System.register(['./search', '@angular/core/src/linker/view', '@angular/core/src/linker/view_utils', '@angular/core/src/metadata/view', '@angular/core/src/linker/view_type', '@angular/core/src/change_detection/change_detection', '@angular/core/src/linker/component_factory', '@angular/http/src/http', '@angular/core/src/linker/view_container', '../../node_modules/@angular/common/src/directives/ng_for.ngfactory', '@angular/core/src/linker/template_ref', '@angular/core/src/change_detection/differs/iterable_differs', '@angular/common/src/directives/ng_for'], function(exports_1, context_1) {
+System.register(['./search', '@angular/core/src/linker/view', '@angular/core/src/linker/view_utils', '@angular/core/src/metadata/view', '@angular/core/src/linker/view_type', '@angular/core/src/change_detection/constants', '@angular/core/src/linker/component_factory', '@angular/http/src/http', '@angular/core/src/linker/view_container', '../../node_modules/@angular/common/src/directives/ng_for.ngfactory', '@angular/core/src/linker/template_ref', '@angular/core/src/change_detection/differs/iterable_differs', '@angular/common/src/directives/ng_for', '@angular/core/src/change_detection/change_detection_util'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __extends = (this && this.__extends) || function (d, b) {
@@ -12,7 +12,7 @@ System.register(['./search', '@angular/core/src/linker/view', '@angular/core/src
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
-    var import0, import1, import3, import4, import5, import6, import7, import8, import9, import10, import11, import12, import13;
+    var import0, import1, import3, import4, import5, import6, import7, import8, import9, import10, import11, import12, import13, import14;
     var Wrapper_Search, renderType_Search_Host, View_Search_Host0, SearchNgFactory, styles_Search, renderType_Search, View_Search0, View_Search1;
     return {
         setters:[
@@ -54,6 +54,9 @@ System.register(['./search', '@angular/core/src/linker/view', '@angular/core/src
             },
             function (import13_1) {
                 import13 = import13_1;
+            },
+            function (import14_1) {
+                import14 = import14_1;
             }],
         execute: function() {
             Wrapper_Search = (function () {
@@ -104,7 +107,7 @@ System.register(['./search', '@angular/core/src/linker/view', '@angular/core/src
                 };
                 View_Search_Host0.prototype.detectChangesInternal = function (throwOnChange) {
                     this._Search_0_3.ngDoCheck(this, this._el_0, throwOnChange);
-                    this.compView_0.detectChanges(throwOnChange);
+                    this.compView_0.internalDetectChanges(throwOnChange);
                 };
                 View_Search_Host0.prototype.destroyInternal = function () {
                     this.compView_0.destroy();
@@ -200,7 +203,7 @@ System.register(['./search', '@angular/core/src/linker/view', '@angular/core/src
                 __extends(View_Search1, _super);
                 function View_Search1(viewUtils, parentView, parentIndex, parentElement, declaredViewContainer) {
                     _super.call(this, View_Search1, renderType_Search, import5.ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways, declaredViewContainer);
-                    this._expr_2 = import6.UNINITIALIZED;
+                    this._expr_2 = import14.UNINITIALIZED;
                 }
                 View_Search1.prototype.createInternal = function (rootSelector) {
                     this._el_0 = import3.createRenderElement(this.renderer, null, 'div', import3.EMPTY_INLINE_ARRAY, null);

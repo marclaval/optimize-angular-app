@@ -4,7 +4,7 @@
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
-System.register(['./list', '@angular/core/src/linker/view', '@angular/core/src/linker/view_utils', '@angular/core/src/metadata/view', '@angular/core/src/linker/view_type', '@angular/core/src/change_detection/change_detection', '@angular/core/src/linker/component_factory', '@ng-bootstrap/ng-bootstrap/pagination/pagination', '../../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.ngfactory', '@ng-bootstrap/ng-bootstrap/pagination/pagination-config'], function(exports_1, context_1) {
+System.register(['./list', '@angular/core/src/linker/view', '@angular/core/src/linker/view_utils', '@angular/core/src/metadata/view', '@angular/core/src/linker/view_type', '@angular/core/src/change_detection/constants', '@angular/core/src/linker/component_factory', '@ng-bootstrap/ng-bootstrap/pagination/pagination', '../../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.ngfactory', '@angular/core/src/change_detection/change_detection_util', '@ng-bootstrap/ng-bootstrap/pagination/pagination-config'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __extends = (this && this.__extends) || function (d, b) {
@@ -12,7 +12,7 @@ System.register(['./list', '@angular/core/src/linker/view', '@angular/core/src/l
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
-    var import0, import1, import3, import4, import5, import6, import7, import8, import9, import10;
+    var import0, import1, import3, import4, import5, import6, import7, import8, import9, import10, import11;
     var Wrapper_List, renderType_List_Host, View_List_Host0, ListNgFactory, styles_List, renderType_List, View_List0;
     return {
         setters:[
@@ -45,6 +45,9 @@ System.register(['./list', '@angular/core/src/linker/view', '@angular/core/src/l
             },
             function (import10_1) {
                 import10 = import10_1;
+            },
+            function (import11_1) {
+                import11 = import11_1;
             }],
         execute: function() {
             Wrapper_List = (function () {
@@ -95,7 +98,7 @@ System.register(['./list', '@angular/core/src/linker/view', '@angular/core/src/l
                 };
                 View_List_Host0.prototype.detectChangesInternal = function (throwOnChange) {
                     this._List_0_3.ngDoCheck(this, this._el_0, throwOnChange);
-                    this.compView_0.detectChanges(throwOnChange);
+                    this.compView_0.internalDetectChanges(throwOnChange);
                 };
                 View_List_Host0.prototype.destroyInternal = function () {
                     this.compView_0.destroy();
@@ -112,7 +115,7 @@ System.register(['./list', '@angular/core/src/linker/view', '@angular/core/src/l
                 __extends(View_List0, _super);
                 function View_List0(viewUtils, parentView, parentIndex, parentElement) {
                     _super.call(this, View_List0, renderType_List, import5.ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways);
-                    this._expr_14 = import6.UNINITIALIZED;
+                    this._expr_14 = import10.UNINITIALIZED;
                 }
                 View_List0.prototype.createInternal = function (rootSelector) {
                     var parentRenderNode = this.renderer.createViewRoot(this.parentElement);
@@ -124,7 +127,7 @@ System.register(['./list', '@angular/core/src/linker/view', '@angular/core/src/l
                     this._text_5 = this.renderer.createText(this._el_1, '\n      ', null);
                     this._el_6 = import3.createRenderElement(this.renderer, this._el_1, 'ngb-pagination', import3.EMPTY_INLINE_ARRAY, null);
                     this.compView_6 = new import9.View_NgbPagination0(this.viewUtils, this, 6, this._el_6);
-                    this._NgbPagination_6_3 = new import9.Wrapper_NgbPagination(this.parentView.injectorGet(import10.NgbPaginationConfig, this.parentIndex));
+                    this._NgbPagination_6_3 = new import9.Wrapper_NgbPagination(this.parentView.injectorGet(import11.NgbPaginationConfig, this.parentIndex));
                     this.compView_6.create(this._NgbPagination_6_3.context);
                     this._text_7 = this.renderer.createText(this._el_1, '\n      ', null);
                     this._el_8 = import3.createRenderElement(this.renderer, this._el_1, 'pre', import3.EMPTY_INLINE_ARRAY, null);
@@ -168,7 +171,7 @@ System.register(['./list', '@angular/core/src/linker/view', '@angular/core/src/l
                         this.renderer.setText(this._text_9, currVal_14);
                         this._expr_14 = currVal_14;
                     }
-                    this.compView_6.detectChanges(throwOnChange);
+                    this.compView_6.internalDetectChanges(throwOnChange);
                 };
                 View_List0.prototype.destroyInternal = function () {
                     this.compView_6.destroy();
