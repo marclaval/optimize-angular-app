@@ -60,8 +60,7 @@ module.exports = function makeWebpackConfig() {
       // Support for .ts files.
       {
         test: /\.ts$/,
-        loader: '@ngtools/webpack',
-        include: [root('app'), root('node_modules')]
+        loader: '@ngtools/webpack'
       },
       // support for .html as raw text
       {test: /\.html$/, loader: 'raw-loader'}
@@ -88,7 +87,7 @@ module.exports = function makeWebpackConfig() {
     // Reference: https://github.com/angular/angular-cli/tree/master/packages/webpack
     new aotplugin.AotPlugin({
       tsConfigPath: './tsconfig-lazy.json',
-      entryModule: './app/module.lazy#AppLazyModule'
+      entryModule: 'app/module.lazy#AppLazyModule'
     }),
 
     // Inject script and link tags into html files
