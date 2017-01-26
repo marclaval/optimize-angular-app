@@ -4,7 +4,7 @@
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
-System.register(['@angular/core/src/linker/ng_module_factory', './module', '@angular/common/src/common_module', '@angular/core/src/application_module', '@angular/platform-browser/src/browser', '@angular/router/src/router_module', '@angular/forms/src/directives', '@angular/forms/src/form_providers', '@angular/http/src/http_module', '@ng-bootstrap/ng-bootstrap/pagination/pagination.module', './welcome/welcome.module', '@angular/common/src/localization', '@angular/core/src/application_init', '@angular/core/src/testability/testability', '@angular/core/src/application_ref', '@angular/core/src/linker/compiler', '@angular/platform-browser/src/dom/events/hammer_gestures', '@angular/platform-browser/src/dom/events/event_manager', '@angular/platform-browser/src/dom/shared_styles_host', '@angular/platform-browser/src/dom/dom_renderer', '@angular/platform-browser/src/security/dom_sanitization_service', '@angular/core/src/animation/animation_queue', '@angular/core/src/linker/view_utils', '@angular/platform-browser/src/browser/title', '@angular/forms/src/directives/radio_control_value_accessor', '@angular/http/src/backends/browser_xhr', '@angular/http/src/base_response_options', '@angular/http/src/backends/xhr_backend', '@angular/http/src/base_request_options', '@angular/http/src/backends/browser_jsonp', '@angular/http/src/backends/jsonp_backend', '@angular/common/src/location/location', '@angular/router/src/url_tree', '@angular/router/src/router_outlet_map', '@angular/core/src/linker/system_js_ng_module_factory_loader', '@angular/router/src/router_preloader', '@ng-bootstrap/ng-bootstrap/pagination/pagination-config', './welcome/welcome.ngfactory', './list/list.ngfactory', './subscribe/subscribe.ngfactory', './search/search.ngfactory', './app.ngfactory', '@angular/core/src/application_tokens', '@angular/platform-browser/src/dom/events/dom_events', '@angular/platform-browser/src/dom/events/key_events', '@angular/core/src/zone/ng_zone', '@angular/platform-browser/src/dom/debug/ng_probe', '@angular/common/src/location/platform_location', '@angular/common/src/location/location_strategy', './welcome/welcome', './list/list', './subscribe/subscribe', './search/search', '@angular/router/src/url_handling_strategy', '@angular/router/src/route_reuse_strategy', '@angular/router/src/router', '@angular/core/src/console', '@angular/core/src/i18n/tokens', '@angular/core/src/error_handler', '@angular/platform-browser/src/dom/dom_tokens', '@angular/platform-browser/src/dom/animation_driver', '@angular/core/src/render/api', '@angular/core/src/security', '@angular/core/src/change_detection/differs/iterable_differs', '@angular/core/src/change_detection/differs/keyvalue_differs', '@angular/http/src/interfaces', '@angular/http/src/http', '@angular/core/src/linker/ng_module_factory_loader', '@angular/router/src/router_config_loader', '@angular/router/src/router_state'], function(exports_1, context_1) {
+System.register(['@angular/core/src/linker/ng_module_factory', './module', '@angular/common/src/common_module', '@angular/core/src/application_module', '@angular/platform-browser/src/browser', '@angular/router/src/router_module', '@angular/forms/src/directives', '@angular/forms/src/form_providers', '@angular/http/src/http_module', '@ng-bootstrap/ng-bootstrap/pagination/pagination.module', './welcome/welcome.module', '@angular/common/src/localization', '@angular/core/src/application_init', '@angular/core/src/testability/testability', '@angular/core/src/application_ref', '@angular/core/src/linker/compiler', '@angular/platform-browser/src/dom/events/hammer_gestures', '@angular/platform-browser/src/dom/events/event_manager', '@angular/platform-browser/src/dom/shared_styles_host', '@angular/platform-browser/src/dom/dom_renderer', '@angular/platform-browser/src/security/dom_sanitization_service', '@angular/core/src/animation/animation_queue', '@angular/core/src/linker/view_utils', '@angular/platform-browser/src/browser/title', '@angular/forms/src/directives/radio_control_value_accessor', '@angular/http/src/backends/browser_xhr', '@angular/http/src/base_response_options', '@angular/http/src/backends/xhr_backend', '@angular/http/src/base_request_options', '@angular/http/src/backends/browser_jsonp', '@angular/http/src/backends/jsonp_backend', '@angular/common/src/location/location', '@angular/router/src/url_tree', '@angular/router/src/router_outlet_map', '@angular/core/src/linker/system_js_ng_module_factory_loader', '@angular/router/src/router_preloader', '@ng-bootstrap/ng-bootstrap/pagination/pagination-config', './welcome/welcome.ngfactory', './list/list.ngfactory', './subscribe/subscribe.ngfactory', './search/search.ngfactory', './app.ngfactory', '@angular/core/src/i18n/tokens', '@angular/core/src/application_tokens', '@angular/platform-browser/src/dom/events/dom_events', '@angular/platform-browser/src/dom/events/key_events', '@angular/core/src/zone/ng_zone', '@angular/platform-browser/src/dom/debug/ng_probe', '@angular/common/src/location/platform_location', '@angular/common/src/location/location_strategy', './welcome/welcome', './list/list', './subscribe/subscribe', './search/search', '@angular/router/src/url_handling_strategy', '@angular/router/src/route_reuse_strategy', '@angular/router/src/router', '@angular/core/src/console', '@angular/core/src/error_handler', '@angular/platform-browser/src/dom/dom_tokens', '@angular/platform-browser/src/dom/animation_driver', '@angular/core/src/render/api', '@angular/core/src/security', '@angular/core/src/change_detection/differs/iterable_differs', '@angular/core/src/change_detection/differs/keyvalue_differs', '@angular/http/src/interfaces', '@angular/http/src/http', '@angular/core/src/linker/ng_module_factory_loader', '@angular/router/src/router_config_loader', '@angular/router/src/router_state'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __extends = (this && this.__extends) || function (d, b) {
@@ -241,7 +241,7 @@ System.register(['@angular/core/src/linker/ng_module_factory', './module', '@ang
                 Object.defineProperty(AppModuleInjector.prototype, "_LOCALE_ID_12", {
                     get: function () {
                         if ((this.__LOCALE_ID_12 == null)) {
-                            (this.__LOCALE_ID_12 = 'en-US');
+                            (this.__LOCALE_ID_12 = import3._localeFactory(this.parent.get(import43.LOCALE_ID, null)));
                         }
                         return this.__LOCALE_ID_12;
                     },
@@ -281,7 +281,7 @@ System.register(['@angular/core/src/linker/ng_module_factory', './module', '@ang
                 Object.defineProperty(AppModuleInjector.prototype, "_APP_ID_20", {
                     get: function () {
                         if ((this.__APP_ID_20 == null)) {
-                            (this.__APP_ID_20 = import43._appIdRandomProviderFactory());
+                            (this.__APP_ID_20 = import44._appIdRandomProviderFactory());
                         }
                         return this.__APP_ID_20;
                     },
@@ -312,8 +312,8 @@ System.register(['@angular/core/src/linker/ng_module_factory', './module', '@ang
                     get: function () {
                         if ((this.__EVENT_MANAGER_PLUGINS_23 == null)) {
                             (this.__EVENT_MANAGER_PLUGINS_23 = [
-                                new import44.DomEventsPlugin(),
-                                new import45.KeyEventsPlugin(),
+                                new import45.DomEventsPlugin(),
+                                new import46.KeyEventsPlugin(),
                                 new import16.HammerGesturesPlugin(this._HAMMER_GESTURE_CONFIG_22)
                             ]);
                         }
@@ -325,7 +325,7 @@ System.register(['@angular/core/src/linker/ng_module_factory', './module', '@ang
                 Object.defineProperty(AppModuleInjector.prototype, "_EventManager_24", {
                     get: function () {
                         if ((this.__EventManager_24 == null)) {
-                            (this.__EventManager_24 = new import17.EventManager(this._EVENT_MANAGER_PLUGINS_23, this.parent.get(import46.NgZone)));
+                            (this.__EventManager_24 = new import17.EventManager(this._EVENT_MANAGER_PLUGINS_23, this.parent.get(import47.NgZone)));
                         }
                         return this.__EventManager_24;
                     },
@@ -375,7 +375,7 @@ System.register(['@angular/core/src/linker/ng_module_factory', './module', '@ang
                 Object.defineProperty(AppModuleInjector.prototype, "_RootRenderer_29", {
                     get: function () {
                         if ((this.__RootRenderer_29 == null)) {
-                            (this.__RootRenderer_29 = import47._createConditionalRootRenderer(this._DomRootRenderer_27, this.parent.get(import47.NgProbeToken, null), this._NgProbeToken_28));
+                            (this.__RootRenderer_29 = import48._createConditionalRootRenderer(this._DomRootRenderer_27, this.parent.get(import48.NgProbeToken, null), this._NgProbeToken_28));
                         }
                         return this.__RootRenderer_29;
                     },
@@ -405,7 +405,7 @@ System.register(['@angular/core/src/linker/ng_module_factory', './module', '@ang
                 Object.defineProperty(AppModuleInjector.prototype, "_AnimationQueue_32", {
                     get: function () {
                         if ((this.__AnimationQueue_32 == null)) {
-                            (this.__AnimationQueue_32 = new import21.AnimationQueue(this.parent.get(import46.NgZone)));
+                            (this.__AnimationQueue_32 = new import21.AnimationQueue(this.parent.get(import47.NgZone)));
                         }
                         return this.__AnimationQueue_32;
                     },
@@ -575,7 +575,7 @@ System.register(['@angular/core/src/linker/ng_module_factory', './module', '@ang
                 Object.defineProperty(AppModuleInjector.prototype, "_LocationStrategy_49", {
                     get: function () {
                         if ((this.__LocationStrategy_49 == null)) {
-                            (this.__LocationStrategy_49 = import5.provideLocationStrategy(this.parent.get(import48.PlatformLocation), this.parent.get(import49.APP_BASE_HREF, null), this._ROUTER_CONFIGURATION_48));
+                            (this.__LocationStrategy_49 = import5.provideLocationStrategy(this.parent.get(import49.PlatformLocation), this.parent.get(import50.APP_BASE_HREF, null), this._ROUTER_CONFIGURATION_48));
                         }
                         return this.__LocationStrategy_49;
                     },
@@ -628,19 +628,19 @@ System.register(['@angular/core/src/linker/ng_module_factory', './module', '@ang
                             (this.__ROUTES_54 = [[
                                     {
                                         path: '',
-                                        component: import50.Welcome
+                                        component: import51.Welcome
                                     },
                                     {
                                         path: 'list',
-                                        component: import51.List
+                                        component: import52.List
                                     },
                                     {
                                         path: 'subscribe',
-                                        component: import52.Subscribe
+                                        component: import53.Subscribe
                                     },
                                     {
                                         path: 'search',
-                                        component: import53.Search
+                                        component: import54.Search
                                     }
                                 ]
                             ]);
@@ -653,7 +653,7 @@ System.register(['@angular/core/src/linker/ng_module_factory', './module', '@ang
                 Object.defineProperty(AppModuleInjector.prototype, "_Router_55", {
                     get: function () {
                         if ((this.__Router_55 == null)) {
-                            (this.__Router_55 = import5.setupRouter(this._ApplicationRef_18, this._UrlSerializer_51, this._RouterOutletMap_52, this._Location_50, this, this._NgModuleFactoryLoader_53, this._Compiler_19, this._ROUTES_54, this._ROUTER_CONFIGURATION_48, this.parent.get(import54.UrlHandlingStrategy, null), this.parent.get(import55.RouteReuseStrategy, null)));
+                            (this.__Router_55 = import5.setupRouter(this._ApplicationRef_18, this._UrlSerializer_51, this._RouterOutletMap_52, this._Location_50, this, this._NgModuleFactoryLoader_53, this._Compiler_19, this._ROUTES_54, this._ROUTER_CONFIGURATION_48, this.parent.get(import55.UrlHandlingStrategy, null), this.parent.get(import56.RouteReuseStrategy, null)));
                         }
                         return this.__Router_55;
                     },
@@ -714,7 +714,7 @@ System.register(['@angular/core/src/linker/ng_module_factory', './module', '@ang
                     this._CommonModule_0 = new import2.CommonModule();
                     this._ApplicationModule_1 = new import3.ApplicationModule();
                     this._BrowserModule_2 = new import4.BrowserModule(this.parent.get(import4.BrowserModule, null));
-                    this._ROUTER_FORROOT_GUARD_3 = import5.provideForRootGuard(this.parent.get(import56.Router, null));
+                    this._ROUTER_FORROOT_GUARD_3 = import5.provideForRootGuard(this.parent.get(import57.Router, null));
                     this._RouterModule_4 = new import5.RouterModule(this._ROUTER_FORROOT_GUARD_3);
                     this._InternalFormsSharedModule_5 = new import6.InternalFormsSharedModule();
                     this._FormsModule_6 = new import7.FormsModule();
@@ -725,8 +725,8 @@ System.register(['@angular/core/src/linker/ng_module_factory', './module', '@ang
                     this._AppModule_11 = new import1.AppModule();
                     this._ErrorHandler_14 = import4.errorHandler();
                     this._ApplicationInitStatus_15 = new import12.ApplicationInitStatus(this.parent.get(import12.APP_INITIALIZER, null));
-                    this._Testability_16 = new import13.Testability(this.parent.get(import46.NgZone));
-                    this._ApplicationRef__17 = new import14.ApplicationRef_(this.parent.get(import46.NgZone), this.parent.get(import57.Console), this, this._ErrorHandler_14, this, this._ApplicationInitStatus_15, this.parent.get(import13.TestabilityRegistry, null), this._Testability_16);
+                    this._Testability_16 = new import13.Testability(this.parent.get(import47.NgZone));
+                    this._ApplicationRef__17 = new import14.ApplicationRef_(this.parent.get(import47.NgZone), this.parent.get(import58.Console), this, this._ErrorHandler_14, this, this._ApplicationInitStatus_15, this.parent.get(import13.TestabilityRegistry, null), this._Testability_16);
                     this._NoPreloading_57 = new import35.NoPreloading();
                     this._PreloadingStrategy_58 = this._NoPreloading_57;
                     this._RouterPreloader_59 = new import35.RouterPreloader(this._Router_55, this._NgModuleFactoryLoader_53, this._Compiler_19, this, this._PreloadingStrategy_58);
@@ -769,7 +769,7 @@ System.register(['@angular/core/src/linker/ng_module_factory', './module', '@ang
                     if ((token === import1.AppModule)) {
                         return this._AppModule_11;
                     }
-                    if ((token === import58.LOCALE_ID)) {
+                    if ((token === import43.LOCALE_ID)) {
                         return this._LOCALE_ID_12;
                     }
                     if ((token === import11.NgLocalization)) {
@@ -793,7 +793,7 @@ System.register(['@angular/core/src/linker/ng_module_factory', './module', '@ang
                     if ((token === import15.Compiler)) {
                         return this._Compiler_19;
                     }
-                    if ((token === import43.APP_ID)) {
+                    if ((token === import44.APP_ID)) {
                         return this._APP_ID_20;
                     }
                     if ((token === import60.DOCUMENT)) {
@@ -880,7 +880,7 @@ System.register(['@angular/core/src/linker/ng_module_factory', './module', '@ang
                     if ((token === import5.ROUTER_CONFIGURATION)) {
                         return this._ROUTER_CONFIGURATION_48;
                     }
-                    if ((token === import49.LocationStrategy)) {
+                    if ((token === import50.LocationStrategy)) {
                         return this._LocationStrategy_49;
                     }
                     if ((token === import31.Location)) {
@@ -898,7 +898,7 @@ System.register(['@angular/core/src/linker/ng_module_factory', './module', '@ang
                     if ((token === import69.ROUTES)) {
                         return this._ROUTES_54;
                     }
-                    if ((token === import56.Router)) {
+                    if ((token === import57.Router)) {
                         return this._Router_55;
                     }
                     if ((token === import70.ActivatedRoute)) {
@@ -919,7 +919,7 @@ System.register(['@angular/core/src/linker/ng_module_factory', './module', '@ang
                     if ((token === import5.ROUTER_INITIALIZER)) {
                         return this._ROUTER_INITIALIZER_61;
                     }
-                    if ((token === import43.APP_BOOTSTRAP_LISTENER)) {
+                    if ((token === import44.APP_BOOTSTRAP_LISTENER)) {
                         return this._APP_BOOTSTRAP_LISTENER_62;
                     }
                     if ((token === import36.NgbPaginationConfig)) {

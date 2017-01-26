@@ -8,7 +8,7 @@ import * as import1 from '@angular/core/src/linker/view';
 import * as import3 from '@angular/core/src/linker/view_utils';
 import * as import7 from '@angular/core/src/linker/component_factory';
 import * as import9 from '@angular/core/src/linker/view_container';
-import * as import10 from '../../node_modules/@angular/common/src/directives/ng_for.ngfactory';
+import * as import11 from '../../node_modules/@angular/common/src/directives/ng_for.ngfactory';
 export declare class Wrapper_Search {
     _eventHandler: Function;
     context: import0.Search;
@@ -37,7 +37,7 @@ export declare class View_Search0 extends import1.AppView<import0.Search> {
     _anchor_11: any;
     _vc_11: import9.ViewContainer;
     _TemplateRef_11_5: any;
-    _NgFor_11_6: import10.Wrapper_NgFor;
+    _NgFor_11_6: import11.Wrapper_NgFor;
     _text_12: any;
     _text_13: any;
     constructor(viewUtils: import3.ViewUtils, parentView: import1.AppView<any>, parentIndex: number, parentElement: any);

@@ -4,7 +4,7 @@
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
-System.register(['./search', '@angular/core/src/linker/view', '@angular/core/src/linker/view_utils', '@angular/core/src/metadata/view', '@angular/core/src/linker/view_type', '@angular/core/src/change_detection/constants', '@angular/core/src/linker/component_factory', '@angular/http/src/http', '@angular/core/src/linker/view_container', '../../node_modules/@angular/common/src/directives/ng_for.ngfactory', '@angular/core/src/linker/template_ref', '@angular/core/src/change_detection/differs/iterable_differs', '@angular/common/src/directives/ng_for', '@angular/core/src/change_detection/change_detection_util'], function(exports_1, context_1) {
+System.register(['./search', '@angular/core/src/linker/view', '@angular/core/src/linker/view_utils', '@angular/core/src/metadata/view', '@angular/core/src/linker/view_type', '@angular/core/src/change_detection/constants', '@angular/core/src/linker/component_factory', '@angular/http/src/http', '@angular/core/src/linker/view_container', '@angular/core/src/change_detection/change_detection_util', '../../node_modules/@angular/common/src/directives/ng_for.ngfactory', '@angular/core/src/linker/template_ref', '@angular/core/src/change_detection/differs/iterable_differs', '@angular/common/src/directives/ng_for'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __extends = (this && this.__extends) || function (d, b) {
@@ -13,7 +13,7 @@ System.register(['./search', '@angular/core/src/linker/view', '@angular/core/src
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
     var import0, import1, import3, import4, import5, import6, import7, import8, import9, import10, import11, import12, import13, import14;
-    var Wrapper_Search, renderType_Search_Host, View_Search_Host0, SearchNgFactory, styles_Search, renderType_Search, View_Search0, View_Search1;
+    var Wrapper_Search, renderType_Search_Host, View_Search_Host0, SearchNgFactory, styles_Search, View_Search1, renderType_Search, View_Search0;
     return {
         setters:[
             function (import0_1) {
@@ -119,6 +119,33 @@ System.register(['./search', '@angular/core/src/linker/view', '@angular/core/src
             }(import1.AppView));
             exports_1("SearchNgFactory", SearchNgFactory = new import7.ComponentFactory('search', View_Search_Host0, import0.Search));
             styles_Search = [];
+            View_Search1 = (function (_super) {
+                __extends(View_Search1, _super);
+                function View_Search1(viewUtils, parentView, parentIndex, parentElement, declaredViewContainer) {
+                    _super.call(this, View_Search1, renderType_Search, import5.ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways, declaredViewContainer);
+                    this._expr_2 = import10.UNINITIALIZED;
+                }
+                View_Search1.prototype.createInternal = function (rootSelector) {
+                    this._el_0 = import3.createRenderElement(this.renderer, null, 'div', import3.EMPTY_INLINE_ARRAY, null);
+                    this._text_1 = this.renderer.createText(this._el_0, '', null);
+                    this.init(this._el_0, (this.renderer.directRenderer ? null : [
+                        this._el_0,
+                        this._text_1
+                    ]), null);
+                    return null;
+                };
+                View_Search1.prototype.detectChangesInternal = function (throwOnChange) {
+                    var currVal_2 = import3.inlineInterpolate(1, '', this.context.$implicit, '');
+                    if (import3.checkBinding(throwOnChange, this._expr_2, currVal_2)) {
+                        this.renderer.setText(this._text_1, currVal_2);
+                        this._expr_2 = currVal_2;
+                    }
+                };
+                View_Search1.prototype.visitRootNodesInternal = function (cb, ctx) {
+                    cb(this._el_0, ctx);
+                };
+                return View_Search1;
+            }(import1.AppView));
             renderType_Search = import3.createRenderComponentType('', 0, import4.ViewEncapsulation.None, styles_Search, {});
             View_Search0 = (function (_super) {
                 __extends(View_Search0, _super);
@@ -140,8 +167,8 @@ System.register(['./search', '@angular/core/src/linker/view', '@angular/core/src
                     this._text_10 = this.renderer.createText(this._el_1, '\n      ', null);
                     this._anchor_11 = this.renderer.createTemplateAnchor(this._el_1, null);
                     this._vc_11 = new import9.ViewContainer(11, 1, this, this._anchor_11);
-                    this._TemplateRef_11_5 = new import11.TemplateRef_(this, 11, this._anchor_11);
-                    this._NgFor_11_6 = new import10.Wrapper_NgFor(this._vc_11.vcRef, this._TemplateRef_11_5, this.parentView.injectorGet(import12.IterableDiffers, this.parentIndex), this.ref);
+                    this._TemplateRef_11_5 = new import12.TemplateRef_(this, 11, this._anchor_11);
+                    this._NgFor_11_6 = new import11.Wrapper_NgFor(this._vc_11.vcRef, this._TemplateRef_11_5, this.parentView.injectorGet(import13.IterableDiffers, this.parentIndex), this.ref);
                     this._text_12 = this.renderer.createText(this._el_1, '\n    ', null);
                     this._text_13 = this.renderer.createText(parentRenderNode, '\n  ', null);
                     var disposable_0 = import3.subscribeToRenderElement(this, this._el_8, new import3.InlineArray2(2, 'click', null), this.eventHandler(this.handleEvent_8));
@@ -164,10 +191,10 @@ System.register(['./search', '@angular/core/src/linker/view', '@angular/core/src
                     return null;
                 };
                 View_Search0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-                    if (((token === import11.TemplateRef) && (11 === requestNodeIndex))) {
+                    if (((token === import12.TemplateRef) && (11 === requestNodeIndex))) {
                         return this._TemplateRef_11_5;
                     }
-                    if (((token === import13.NgFor) && (11 === requestNodeIndex))) {
+                    if (((token === import14.NgFor) && (11 === requestNodeIndex))) {
                         return this._NgFor_11_6.context;
                     }
                     return notFoundResult;
@@ -199,33 +226,6 @@ System.register(['./search', '@angular/core/src/linker/view', '@angular/core/src
                 return View_Search0;
             }(import1.AppView));
             exports_1("View_Search0", View_Search0);
-            View_Search1 = (function (_super) {
-                __extends(View_Search1, _super);
-                function View_Search1(viewUtils, parentView, parentIndex, parentElement, declaredViewContainer) {
-                    _super.call(this, View_Search1, renderType_Search, import5.ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways, declaredViewContainer);
-                    this._expr_2 = import14.UNINITIALIZED;
-                }
-                View_Search1.prototype.createInternal = function (rootSelector) {
-                    this._el_0 = import3.createRenderElement(this.renderer, null, 'div', import3.EMPTY_INLINE_ARRAY, null);
-                    this._text_1 = this.renderer.createText(this._el_0, '', null);
-                    this.init(this._el_0, (this.renderer.directRenderer ? null : [
-                        this._el_0,
-                        this._text_1
-                    ]), null);
-                    return null;
-                };
-                View_Search1.prototype.detectChangesInternal = function (throwOnChange) {
-                    var currVal_2 = import3.inlineInterpolate(1, '', this.context.$implicit, '');
-                    if (import3.checkBinding(throwOnChange, this._expr_2, currVal_2)) {
-                        this.renderer.setText(this._text_1, currVal_2);
-                        this._expr_2 = currVal_2;
-                    }
-                };
-                View_Search1.prototype.visitRootNodesInternal = function (cb, ctx) {
-                    cb(this._el_0, ctx);
-                };
-                return View_Search1;
-            }(import1.AppView));
         }
     }
 });
