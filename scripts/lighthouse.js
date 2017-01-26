@@ -31,6 +31,7 @@ function getPerf(scenario) {
 
 getPerf(scenario)
   .then(() => {
+    delete report.artifacts;
     fs.writeFileSync('./tmp/lighthouse-' + scenario + '.json', JSON.stringify(report), 'utf-8');
   })
 
