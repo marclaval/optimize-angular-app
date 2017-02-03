@@ -7,6 +7,8 @@ This repository shows how to apply a number of techniques on a technical demo ap
 
 You can build the demo yourself, or check it at: [http://mlaval.github.io/optimize-angular-app/](http://mlaval.github.io/optimize-angular-app/)
 
+This projects was used for a presentation at [angular-up](http://angular-up.com/) in 2016: [slides](https://goo.gl/7EE8MK) and [video](https://www.youtube.com/watch?v=rbqsCcAikHo)
+
 ## Running scripts
 - `npm install` to prepare your environment
 - `npm run build` to build all versions of the application (it takes several minutes)
