@@ -1,5 +1,5 @@
 import {Component} from '@angular/core'
-import {Jsonp, URLSearchParams} from '@angular/http';
+import {Http, URLSearchParams, Headers, RequestOptions} from '@angular/http';
 import 'rxjs/add/operator/map';
 
 @Component({
@@ -16,21 +16,31 @@ import 'rxjs/add/operator/map';
 export class Search {
   pages: Array<any> = [];
 
-  constructor(private jsonp: Jsonp) {}
+  constructor(private http: Http) {}
 
   search(text: string) {
     if (text && text.length > 0) {
       let wikiUrl = 'https://en.wikipedia.org/w/api.php';
+
+      let headers = new Headers({
+        'Content-Type': 'application/json'
+      });
+
       let params = new URLSearchParams();
       params.set('gapfrom', text);
       params.set('gaplimit', '10');
       params.set('generator', 'allpages');
       params.set('action', 'query');
       params.set('format', 'json');
-      params.set('callback', 'JSONP_CALLBACK');
+      params.set('origin', '*');
 
-      this.jsonp
-        .get(wikiUrl, {search: params})
+      let options = new RequestOptions({
+        headers: headers,
+        search: params
+      });
+
+      this.http
+        .get(wikiUrl, options)
         .map(response => <string[]> response.json())
         .subscribe(data => {
           this.pages = [];
