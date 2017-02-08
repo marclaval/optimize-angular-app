@@ -30,6 +30,13 @@ The build task executes a number of independent steps which can be executed sepa
 - `npm run lazyloading-webpack`
 - `npm run prerender`
 
+Closure-compiler cases require additional steps because of other dependencies, which work only on Mac/Linux:
+- `git checkout closure-compiler`
+- `npm i`
+- `npm run aot-closure`
+- `git checkout master`
+- `npm i`
+
 ## Development
 To develop the application itself, here is the workflow:
 - `npm run clean`
@@ -39,8 +46,10 @@ To develop the application itself, here is the workflow:
 
 To run integration tests:
 - `npm run build`
+- Build the closure-compiler cases (see above)
 - `npm test`
 
 To generate a performance report:
 - `npm run build`
+- Build the closure-compiler cases (see above)
 - `npm run perf`

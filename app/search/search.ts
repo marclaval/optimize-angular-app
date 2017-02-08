@@ -1,6 +1,6 @@
 import {Component} from '@angular/core'
 import {Http, URLSearchParams, Headers, RequestOptions} from '@angular/http';
-import 'rxjs/add/operator/map';
+import {map} from 'rxjs/operator/map';
 
 @Component({
   selector: 'search',
@@ -39,12 +39,10 @@ export class Search {
         search: params
       });
 
-      this.http
-        .get(wikiUrl, options)
-        .map(response => <string[]> response.json())
+      map.call(this.http.get(wikiUrl, options), response => <string[]> response.json())
         .subscribe(data => {
           this.pages = [];
-          var raw = data['query'].pages;
+          var raw = data['query']['pages'];
           for (var key in raw) {
             this.pages.push(raw[key].title);
           }

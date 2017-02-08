@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "declaration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": ".",
+    "stripInternal": true,
+    "outDir": "./tmp/es6",
+    "rootDir": ".",
+    "sourceMap": true,
+    "inlineSources": true,
+    "skipLibCheck": true,
+    "lib": ["es2015", "dom"]
+  },
+  "files": [
+    "./app/main.aot.ts"
+  ],
+  "angularCompilerOptions": {
+    "annotationsAs": "static fields",
+    "annotateForClosureCompiler": true
+  }
+}

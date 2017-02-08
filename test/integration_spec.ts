@@ -2,7 +2,9 @@ import {by, protractor, By} from 'protractor';
 var fs = require('fs');
 
 var scenarios = ['baseline', 'dev', 'bundling-app', 'bundling-full', 'treeshaking-rollup', 'treeshaking-webpack', 'aot-rollup', 'aot-systemjs', 'aot-webpack', 'lazyloading-systemjs', 'lazyloading-webpack', 'prerender'];
-
+if (process.argv.length == 2) {
+  scenarios.push('aot-closure');
+}
 var report = {};
 
 scenarios.forEach((scenario) => {

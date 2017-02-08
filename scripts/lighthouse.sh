@@ -6,6 +6,7 @@ node ./scripts/lighthouse.js bundling-app
 node ./scripts/lighthouse.js bundling-full
 node ./scripts/lighthouse.js treeshaking-rollup
 node ./scripts/lighthouse.js treeshaking-webpack
+node ./scripts/lighthouse.js aot-closure
 node ./scripts/lighthouse.js aot-rollup
 node ./scripts/lighthouse.js aot-systemjs
 node ./scripts/lighthouse.js aot-webpack

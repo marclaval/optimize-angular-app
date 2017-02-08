@@ -17,4 +17,4 @@ before_script:
   - npm run build
 
 script:
-  - npm test
+  - npm run ci
