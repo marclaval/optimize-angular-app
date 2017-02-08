@@ -1,8 +1,7 @@
-import { Jsonp } from '@angular/http';
-import 'rxjs/add/operator/map';
+import { Http } from '@angular/http';
 export declare class Search {
-    private jsonp;
+    private http;
     pages: Array<any>;
-    constructor(jsonp: Jsonp);
+    constructor(http: Http);
     search(text: string): void;
 }
