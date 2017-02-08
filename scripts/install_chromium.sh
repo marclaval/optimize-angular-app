@@ -9,7 +9,7 @@ set -e -x
 
 #Build version read from the OmahaProxy CSV Viewer at https://www.chromium.org/developers/calendar
 #Let's use the following version of Chromium, and inform about availability of newer build from https://omahaproxy.appspot.com/all
-CHROMIUM_VERSION=414607
+CHROMIUM_VERSION=433059
 
 PLATFORM="$(uname -s)"
 case "$PLATFORM" in

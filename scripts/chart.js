@@ -2,6 +2,8 @@
 
 const fs = require('fs');
 
+const scenarios = ['baseline', 'dev', 'bundling-app', 'bundling-full', 'treeshaking-rollup', 'treeshaking-webpack', 'aot-closure', 'aot-rollup', 'aot-systemjs', 'aot-webpack', 'lazyloading-systemjs', 'lazyloading-webpack', 'prerender'];
+
 var score = {};
 var size = {};
 var gzip = {};
@@ -33,11 +35,17 @@ reportFiles.forEach((reportFile) => {
   const report = JSON.parse(reportSource);
 
   // Process the content
-  for (const key in report.report) {
+  for (const key of scenarios) {
     const metrics = report.report[key];
-    pushMetric(score, key, metrics.score);
-    pushMetric(size, key, metrics.size);
-    pushMetric(gzip, key, metrics.gzip);
+    if (metrics) {
+      pushMetric(score, key, metrics.score);
+      pushMetric(size, key, metrics.size);
+      pushMetric(gzip, key, metrics.gzip);
+    } else {
+      pushMetric(score, key, null);
+      pushMetric(size, key, null);
+      pushMetric(gzip, key, null);
+    }
   }
   categories.push(report.date);
 });
