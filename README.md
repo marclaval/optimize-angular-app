@@ -23,19 +23,13 @@ The build task executes a number of independent steps which can be executed sepa
 - `npm run bundling-full`
 - `npm run treeshaking-rollup`
 - `npm run treeshaking-webpack`
+- `npm run aot-closure`
 - `npm run aot-rollup`
 - `npm run aot-systemjs`
 - `npm run aot-webpack`
 - `npm run lazyloading-systemjs`
 - `npm run lazyloading-webpack`
 - `npm run prerender`
-
-Closure-compiler cases require additional steps because of other dependencies, which work only on Mac/Linux:
-- `git checkout closure-compiler`
-- `npm i`
-- `npm run aot-closure`
-- `git checkout master`
-- `npm i`
 
 ## Development
 To develop the application itself, here is the workflow:

@@ -1,7 +1,6 @@
 import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
+import {ServerModule} from '@angular/platform-server';
 import {RouterModule, Routes} from '@angular/router';
-import {UniversalModule} from 'angular2-universal';
 
 import {App} from './app';
 import {WelcomeModule} from './welcome/welcome.module';
@@ -15,7 +14,7 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  imports: [BrowserModule, RouterModule.forRoot(appRoutes, {useHash: true}), UniversalModule, WelcomeModule],
+  imports: [ServerModule, RouterModule.forRoot(appRoutes, {useHash: true}), WelcomeModule],
   declarations: [App],
   bootstrap: [App]
 })

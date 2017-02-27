@@ -1,6 +1,6 @@
-import {platformUniversalDynamic} from 'angular2-universal/browser';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {enableProdMode} from '@angular/core';
-import {AppModuleNgFactory} from './module.prerender.ngfactory';
+import {AppModule} from './module.prerender.browser';
 
 enableProdMode();
-platformUniversalDynamic().bootstrapModuleFactory(AppModuleNgFactory);
+platformBrowserDynamic().bootstrapModule(AppModule);
