@@ -12,6 +12,12 @@ OPTS=(
   "--rewrite_polyfills=false"
 
   # List of path prefixes to be removed from ES6 & CommonJS modules.
+  "--js_module_root=node_modules/@angular/common"
+  "--js_module_root=node_modules/@angular/core"
+  "--js_module_root=node_modules/@angular/forms"
+  "--js_module_root=node_modules/@angular/http"
+  "--js_module_root=node_modules/@angular/platform-browser"
+  "--js_module_root=node_modules/@angular/router"
   "--js_module_root=node_modules"
   "--js_module_root=lib/vendor"
 
@@ -24,12 +30,18 @@ OPTS=(
   # Otherwise the zone.js file is not imported anywhere and gets dropped.
   # See index.html
   #node_modules/zone.js/dist/zone.js
+  "lib/vendor/testability.externs.js"
   "lib/vendor/zone_externs.js"
 
   $(find lib/vendor/rxjs -name '*.js')
-  node_modules/@angular/{core,common,compiler,forms,http,platform-browser,router}/index.js
-  $(find node_modules/@angular/{core,common,compiler,forms,http,platform-browser,router}/src -name '*.js')
-  $(find node_modules/@ng-bootstrap/ng-bootstrap -name '*.js')
+  node_modules/@angular/core/@angular/core.js
+  node_modules/@angular/common/@angular/common.js
+  node_modules/@angular/compiler/@angular/compiler.js
+  node_modules/@angular/forms/@angular/forms.js
+  node_modules/@angular/http/@angular/http.js
+  node_modules/@angular/platform-browser/@angular/platform-browser.js
+  node_modules/@angular/router/@angular/router.js
+  $(find lib/vendor/@ng-bootstrap/ng-bootstrap -name '*.js')
   $(find tmp/es6 -name '*.js')
 
   # Trim files not imported (transitively) from bootstrap.js

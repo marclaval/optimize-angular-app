@@ -26,7 +26,7 @@ module.exports = function makeWebpackConfig() {
    * Reference: http://webpack.github.io/docs/configuration.html#entry
    */
   config.entry = {
-    'app': './app/main.lazy.ts' // our angular app
+    'app': './app/main.prerender.ts' // our angular app
   };
 
   /**
@@ -87,8 +87,8 @@ module.exports = function makeWebpackConfig() {
 
     // Reference: https://github.com/angular/angular-cli/tree/master/packages/webpack
     new aotplugin.AotPlugin({
-      tsConfigPath: './tsconfig-lazy.json',
-      entryModule: 'app/module.lazy#AppLazyModule'
+      tsConfigPath: './tsconfig-prerender.json',
+      entryModule: 'app/module.prerender.browser#AppModule'
     }),
 
     // Inject script and link tags into html files
