@@ -4,236 +4,120 @@
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
-System.register(['./search', '@angular/core/src/linker/view', '@angular/core/src/linker/view_utils', '@angular/core/src/metadata/view', '@angular/core/src/linker/view_type', '@angular/core/src/change_detection/constants', '@angular/core/src/linker/component_factory', '@angular/http/src/http', '@angular/core/src/linker/view_container', '../../node_modules/@angular/common/src/directives/ng_for_of.ngfactory', '@angular/core/src/linker/template_ref', '@angular/core/src/change_detection/differs/iterable_differs', '@angular/common/src/directives/ng_for_of'], function(exports_1, context_1) {
+System.register(["@angular/core", "./search", "@angular/common", "@angular/http"], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
-    var __extends = (this && this.__extends) || function (d, b) {
-        for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-    var import0, import1, import3, import4, import5, import6, import7, import8, import9, import10, import11, import12, import13;
-    var Wrapper_Search, renderType_Search_Host, View_Search_Host_0, SearchNgFactory, styles_Search, View_Search_1, renderType_Search, View_Search_0;
+    function View_Search_1() {
+        return import0.ɵviewDef(0, [
+            import0.ɵelementDef(0, null, null, 1, 'div', [], null, null, null, null, null),
+            import0.ɵtextDef(null, [
+                '',
+                ''
+            ])
+        ], null, function (check, view) {
+            var comp = view.component;
+            var currVal_0 = view.context.$implicit;
+            check(view, 1, 0, currVal_0);
+        });
+    }
+    function View_Search_0() {
+        return import0.ɵviewDef(0, [
+            import0.ɵtextDef(null, ['\n    ']),
+            import0.ɵelementDef(0, null, null, 12, 'div', [], null, null, null, null, null),
+            import0.ɵtextDef(null, ['\n      ']),
+            import0.ɵelementDef(0, null, null, 1, 'h2', [], null, null, null, null, null),
+            import0.ɵtextDef(null, ['Search']),
+            import0.ɵtextDef(null, ['\n      ']),
+            import0.ɵelementDef(0, [[
+                    'foo',
+                    1
+                ]
+            ], null, 0, 'input', [
+                [
+                    'placeholder',
+                    'Search on Wikipedia'
+                ],
+                [
+                    'type',
+                    'text'
+                ]
+            ], null, null, null, null, null),
+            import0.ɵtextDef(null, ['\n      ']),
+            import0.ɵelementDef(0, null, null, 1, 'button', [], null, [[
+                    null,
+                    'click'
+                ]
+            ], function (view, eventName, $event) {
+                var allowDefault = true;
+                var comp = view.component;
+                if (('click' === eventName)) {
+                    var pd_0 = (comp.search(import0.ɵnodeValue(view, 6).value) !== false);
+                    allowDefault = (pd_0 && allowDefault);
+                }
+                return allowDefault;
+            }, null, null),
+            import0.ɵtextDef(null, ['Search']),
+            import0.ɵtextDef(null, ['\n      ']),
+            import0.ɵanchorDef(256, null, null, 1, null, View_Search_1),
+            import0.ɵdirectiveDef(12, null, 0, import2.NgForOf, [
+                import0.ViewContainerRef,
+                import0.TemplateRef,
+                import0.IterableDiffers
+            ], { ngForOf: [
+                    0,
+                    'ngForOf'
+                ]
+            }, null),
+            import0.ɵtextDef(null, ['\n    ']),
+            import0.ɵtextDef(null, ['\n  '])
+        ], function (check, view) {
+            var comp = view.component;
+            var currVal_0 = comp.pages;
+            check(view, 12, 0, currVal_0);
+        }, null);
+    }
+    exports_1("View_Search_0", View_Search_0);
+    function View_Search_Host_0() {
+        return import0.ɵviewDef(0, [
+            import0.ɵelementDef(0, null, null, 1, 'search', [], null, null, null, View_Search_0, RenderType_Search),
+            import0.ɵdirectiveDef(1024, null, 0, import1.Search, [import3.Http], null, null)
+        ], null, null);
+    }
+    var import0, import1, import2, import3, styles_Search, RenderType_Search, RenderType_Search_Host, SearchNgFactory;
     return {
-        setters:[
+        setters: [
             function (import0_1) {
                 import0 = import0_1;
             },
             function (import1_1) {
                 import1 = import1_1;
             },
+            function (import2_1) {
+                import2 = import2_1;
+            },
             function (import3_1) {
                 import3 = import3_1;
-            },
-            function (import4_1) {
-                import4 = import4_1;
-            },
-            function (import5_1) {
-                import5 = import5_1;
-            },
-            function (import6_1) {
-                import6 = import6_1;
-            },
-            function (import7_1) {
-                import7 = import7_1;
-            },
-            function (import8_1) {
-                import8 = import8_1;
-            },
-            function (import9_1) {
-                import9 = import9_1;
-            },
-            function (import10_1) {
-                import10 = import10_1;
-            },
-            function (import11_1) {
-                import11 = import11_1;
-            },
-            function (import12_1) {
-                import12 = import12_1;
-            },
-            function (import13_1) {
-                import13 = import13_1;
-            }],
-        execute: function() {
-            Wrapper_Search = (function () {
-                function Wrapper_Search(p0) {
-                    this._changed = false;
-                    this.context = new import0.Search(p0);
-                }
-                Wrapper_Search.prototype.ngOnDetach = function (view, componentView, el) {
-                };
-                Wrapper_Search.prototype.ngOnDestroy = function () {
-                };
-                Wrapper_Search.prototype.ngDoCheck = function (view, el) {
-                    var changed = this._changed;
-                    this._changed = false;
-                    return changed;
-                };
-                Wrapper_Search.prototype.checkHost = function (view, componentView, el) {
-                };
-                Wrapper_Search.prototype.handleEvent = function (eventName, $event) {
-                    var result = true;
-                    return result;
-                };
-                Wrapper_Search.prototype.subscribe = function (view, _eventHandler) {
-                    this._eventHandler = _eventHandler;
-                };
-                return Wrapper_Search;
-            }());
-            exports_1("Wrapper_Search", Wrapper_Search);
-            renderType_Search_Host = import3.createRenderComponentType('', 0, import4.ViewEncapsulation.None, [], {});
-            View_Search_Host_0 = (function (_super) {
-                __extends(View_Search_Host_0, _super);
-                function View_Search_Host_0(viewUtils, parentView, parentIndex, parentElement) {
-                    _super.call(this, View_Search_Host_0, renderType_Search_Host, import5.ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways);
-                }
-                View_Search_Host_0.prototype.createInternal = function (rootSelector) {
-                    this._el_0 = import3.selectOrCreateRenderHostElement(this.renderer, 'search', import3.EMPTY_INLINE_ARRAY, rootSelector, null);
-                    this.compView_0 = new View_Search_0(this.viewUtils, this, 0, this._el_0);
-                    this._Search_0_3 = new Wrapper_Search(this.injectorGet(import8.Http, this.parentIndex));
-                    this.compView_0.create(this._Search_0_3.context);
-                    this.init(this._el_0, (this.renderer.directRenderer ? null : [this._el_0]), null);
-                    return new import7.ComponentRef_(0, this, this._el_0, this._Search_0_3.context);
-                };
-                View_Search_Host_0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-                    if (((token === import0.Search) && (0 === requestNodeIndex))) {
-                        return this._Search_0_3.context;
-                    }
-                    return notFoundResult;
-                };
-                View_Search_Host_0.prototype.detectChangesInternal = function () {
-                    this._Search_0_3.ngDoCheck(this, this._el_0);
-                    this.compView_0.internalDetectChanges(this.throwOnChange);
-                };
-                View_Search_Host_0.prototype.destroyInternal = function () {
-                    this.compView_0.destroy();
-                };
-                View_Search_Host_0.prototype.visitRootNodesInternal = function (cb, ctx) {
-                    cb(this._el_0, ctx);
-                };
-                return View_Search_Host_0;
-            }(import1.AppView));
-            exports_1("SearchNgFactory", SearchNgFactory = new import7.ComponentFactory('search', View_Search_Host_0, import0.Search));
+            }
+        ],
+        execute: function () {/**
+             * @fileoverview This file is generated by the Angular template compiler.
+             * Do not edit.
+             * @suppress {suspiciousCode,uselessCode,missingProperties}
+             */
+            /* tslint:disable */
             styles_Search = [];
-            View_Search_1 = (function (_super) {
-                __extends(View_Search_1, _super);
-                function View_Search_1(viewUtils, parentView, parentIndex, parentElement, declaredViewContainer) {
-                    _super.call(this, View_Search_1, renderType_Search, import5.ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways, declaredViewContainer);
-                    this._expr_2 = undefined;
-                }
-                View_Search_1.prototype.createInternal = function (rootSelector) {
-                    this._el_0 = import3.createRenderElement(this.renderer, null, 'div', import3.EMPTY_INLINE_ARRAY, null);
-                    this._text_1 = this.renderer.createText(this._el_0, '', null);
-                    this.init(this._el_0, (this.renderer.directRenderer ? null : [
-                        this._el_0,
-                        this._text_1
-                    ]), null);
-                    return null;
-                };
-                View_Search_1.prototype.detectChangesInternal = function () {
-                    var currVal_2 = import3.inlineInterpolate(1, '', this.context.$implicit, '');
-                    import3.checkRenderText(this, this._text_1, this._expr_2, (this._expr_2 = currVal_2), false);
-                };
-                View_Search_1.prototype.visitRootNodesInternal = function (cb, ctx) {
-                    cb(this._el_0, ctx);
-                };
-                return View_Search_1;
-            }(import1.AppView));
-            renderType_Search = import3.createRenderComponentType('', 0, import4.ViewEncapsulation.None, styles_Search, {});
-            View_Search_0 = (function (_super) {
-                __extends(View_Search_0, _super);
-                function View_Search_0(viewUtils, parentView, parentIndex, parentElement) {
-                    _super.call(this, View_Search_0, renderType_Search, import5.ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways);
-                }
-                Object.defineProperty(View_Search_0.prototype, "_NgFor_11_7", {
-                    get: function () {
-                        if ((this.__NgFor_11_7 == null)) {
-                            (this.__NgFor_11_7 = this._NgForOf_11_6.context);
-                        }
-                        return this.__NgFor_11_7;
-                    },
-                    enumerable: true,
-                    configurable: true
-                });
-                View_Search_0.prototype.createInternal = function (rootSelector) {
-                    var parentRenderNode = this.renderer.createViewRoot(this.parentElement);
-                    this._text_0 = this.renderer.createText(parentRenderNode, '\n    ', null);
-                    this._el_1 = import3.createRenderElement(this.renderer, parentRenderNode, 'div', import3.EMPTY_INLINE_ARRAY, null);
-                    this._text_2 = this.renderer.createText(this._el_1, '\n      ', null);
-                    this._el_3 = import3.createRenderElement(this.renderer, this._el_1, 'h2', import3.EMPTY_INLINE_ARRAY, null);
-                    this._text_4 = this.renderer.createText(this._el_3, 'Search', null);
-                    this._text_5 = this.renderer.createText(this._el_1, '\n      ', null);
-                    this._el_6 = import3.createRenderElement(this.renderer, this._el_1, 'input', new import3.InlineArray4(4, 'placeholder', 'Search on Wikipedia', 'type', 'text'), null);
-                    this._text_7 = this.renderer.createText(this._el_1, '\n      ', null);
-                    this._el_8 = import3.createRenderElement(this.renderer, this._el_1, 'button', import3.EMPTY_INLINE_ARRAY, null);
-                    this._text_9 = this.renderer.createText(this._el_8, 'Search', null);
-                    this._text_10 = this.renderer.createText(this._el_1, '\n      ', null);
-                    this._anchor_11 = this.renderer.createTemplateAnchor(this._el_1, null);
-                    this._vc_11 = new import9.ViewContainer(11, 1, this, this._anchor_11);
-                    this._TemplateRef_11_5 = new import11.TemplateRef_(this, 11, this._anchor_11);
-                    this._NgForOf_11_6 = new import10.Wrapper_NgForOf(this._vc_11.vcRef, this._TemplateRef_11_5, this.parentView.injectorGet(import12.IterableDiffers, this.parentIndex), this.ref);
-                    this._text_12 = this.renderer.createText(this._el_1, '\n    ', null);
-                    this._text_13 = this.renderer.createText(parentRenderNode, '\n  ', null);
-                    var disposable_0 = import3.subscribeToRenderElement(this, this._el_8, new import3.InlineArray2(2, 'click', null), this.eventHandler(this.handleEvent_8));
-                    this.init(null, (this.renderer.directRenderer ? null : [
-                        this._text_0,
-                        this._el_1,
-                        this._text_2,
-                        this._el_3,
-                        this._text_4,
-                        this._text_5,
-                        this._el_6,
-                        this._text_7,
-                        this._el_8,
-                        this._text_9,
-                        this._text_10,
-                        this._anchor_11,
-                        this._text_12,
-                        this._text_13
-                    ]), [disposable_0]);
-                    return null;
-                };
-                View_Search_0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-                    if (((token === import11.TemplateRef) && (11 === requestNodeIndex))) {
-                        return this._TemplateRef_11_5;
-                    }
-                    if (((token === import13.NgForOf) && (11 === requestNodeIndex))) {
-                        return this._NgForOf_11_6.context;
-                    }
-                    if (((token === import13.NgFor) && (11 === requestNodeIndex))) {
-                        return this._NgFor_11_7;
-                    }
-                    return notFoundResult;
-                };
-                View_Search_0.prototype.detectChangesInternal = function () {
-                    var currVal_11_0_0 = this.context.pages;
-                    this._NgForOf_11_6.check_ngForOf(this, currVal_11_0_0, false);
-                    this._NgForOf_11_6.ngDoCheck(this, this._anchor_11);
-                    this._vc_11.detectChangesInNestedViews(this.throwOnChange);
-                };
-                View_Search_0.prototype.destroyInternal = function () {
-                    this._vc_11.destroyNestedViews();
-                };
-                View_Search_0.prototype.createEmbeddedViewInternal = function (nodeIndex) {
-                    if ((nodeIndex == 11)) {
-                        return new View_Search_1(this.viewUtils, this, 11, this._anchor_11, this._vc_11);
-                    }
-                    return null;
-                };
-                View_Search_0.prototype.handleEvent_8 = function (eventName, $event) {
-                    this.markPathToRootAsCheckOnce();
-                    var result = true;
-                    if ((eventName == 'click')) {
-                        var pd_sub_0 = (this.context.search(this._el_6.value) !== false);
-                        result = (pd_sub_0 && result);
-                    }
-                    return result;
-                };
-                return View_Search_0;
-            }(import1.AppView));
-            exports_1("View_Search_0", View_Search_0);
+            exports_1("RenderType_Search", RenderType_Search = import0.ɵcreateRendererTypeV2({
+                encapsulation: 2,
+                styles: styles_Search,
+                data: { animation: [] }
+            }));
+            RenderType_Search_Host = import0.ɵcreateRendererTypeV2({
+                encapsulation: 2,
+                styles: [],
+                data: { animation: [] }
+            });
+            exports_1("SearchNgFactory", SearchNgFactory = import0.ɵcreateComponentFactory('search', import1.Search, View_Search_Host_0));
         }
-    }
+    };
 });
 //# sourceMappingURL=search.ngfactory.js.map

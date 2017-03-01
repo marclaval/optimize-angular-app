@@ -3,50 +3,8 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
-import * as import0 from './search';
-import * as import1 from '@angular/core/src/linker/view';
-import * as import3 from '@angular/core/src/linker/view_utils';
-import * as import7 from '@angular/core/src/linker/component_factory';
-import * as import9 from '@angular/core/src/linker/view_container';
-import * as import10 from '../../node_modules/@angular/common/src/directives/ng_for_of.ngfactory';
-export declare class Wrapper_Search {
-    _eventHandler: Function;
-    context: import0.Search;
-    _changed: boolean;
-    constructor(p0: any);
-    ngOnDetach(view: import1.AppView<any>, componentView: import1.AppView<any>, el: any): void;
-    ngOnDestroy(): void;
-    ngDoCheck(view: import1.AppView<any>, el: any): boolean;
-    checkHost(view: import1.AppView<any>, componentView: import1.AppView<any>, el: any): void;
-    handleEvent(eventName: string, $event: any): boolean;
-    subscribe(view: import1.AppView<any>, _eventHandler: any): void;
-}
-export declare const SearchNgFactory: import7.ComponentFactory<import0.Search>;
-export declare class View_Search_0 extends import1.AppView<import0.Search> {
-    _text_0: any;
-    _el_1: any;
-    _text_2: any;
-    _el_3: any;
-    _text_4: any;
-    _text_5: any;
-    _el_6: any;
-    _text_7: any;
-    _el_8: any;
-    _text_9: any;
-    _text_10: any;
-    _anchor_11: any;
-    _vc_11: import9.ViewContainer;
-    _TemplateRef_11_5: any;
-    _NgForOf_11_6: import10.Wrapper_NgForOf;
-    __NgFor_11_7: any;
-    _text_12: any;
-    _text_13: any;
-    constructor(viewUtils: import3.ViewUtils, parentView: import1.AppView<any>, parentIndex: number, parentElement: any);
-    readonly _NgFor_11_7: any;
-    createInternal(rootSelector: string): import7.ComponentRef<any>;
-    injectorGetInternal(token: any, requestNodeIndex: number, notFoundResult: any): any;
-    detectChangesInternal(): void;
-    destroyInternal(): void;
-    createEmbeddedViewInternal(nodeIndex: number): import1.AppView<any>;
-    handleEvent_8(eventName: string, $event: any): boolean;
-}
+import * as import0 from '@angular/core';
+import * as import1 from './search';
+export declare const RenderType_Search: import0.RendererTypeV2;
+export declare function View_Search_0(): import0.ɵViewDefinition;
+export declare const SearchNgFactory: import0.ComponentFactory<import1.Search>;

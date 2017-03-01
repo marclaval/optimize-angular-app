@@ -17,27 +17,27 @@
     </head>
     <body>
         <div style="position: absolute;top: 0; right: 0; z-index: 5; color: white;"><i>prerender</i><div id="output" style="color: rgba(0,0,0,0);"></div></div>
-        <my-app ng-version="4.0.0-beta.6">
+        <my-app ng-version="4.0.0-rc.1">
 <nav class="navbar navbar-dark bg-primary">
   <ul class="nav navbar-nav">
     <li class="nav-item">
       <a class="navbar-brand" href="..">⇦</a>
     </li>
     <li class="nav-item active">
-      <a class="nav-link" ng-reflect-router-link="/" href="#/">Home</a>
+      <a class="nav-link" href="#/">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" ng-reflect-router-link="/list" href="#/list">List</a>
+      <a class="nav-link" href="#/list">List</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" ng-reflect-router-link="/subscribe" href="#/subscribe">Subscribe</a>
+      <a class="nav-link" href="#/subscribe">Subscribe</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" ng-reflect-router-link="/search" href="#/search">Search</a>
+      <a class="nav-link" href="#/search">Search</a>
     </li>
   </ul>
 </nav>
-<router-outlet></router-outlet><welcome>
+<router-outlet></router-outlet><welcome ng-version="4.0.0-rc.1">
     <div>
       <h2>Welcome</h2>
       <span>
@@ -454,6 +454,4 @@
   </welcome>
   </my-app>
     
-<universal-script><script>
- try {window.UNIVERSAL_CACHE = ({"APP_ID":"0709"}) || {};} catch(e) {  console.warn("Angular Universal: There was a problem parsing data from the server")}
-</script></universal-script><script type="text/javascript" src="js/app.js" async></script></body></html>
+<script type="text/javascript" src="js/app.js" async></script></body></html>

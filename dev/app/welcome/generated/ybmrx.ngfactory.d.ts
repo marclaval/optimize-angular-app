@@ -3,34 +3,8 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
-import * as import0 from './ybmrx';
-import * as import1 from '@angular/core/src/linker/view';
-import * as import3 from '@angular/core/src/linker/view_utils';
-import * as import7 from '@angular/core/src/linker/component_factory';
-export declare class Wrapper_Ybmrx {
-    _eventHandler: Function;
-    context: import0.Ybmrx;
-    _changed: boolean;
-    constructor();
-    ngOnDetach(view: import1.AppView<any>, componentView: import1.AppView<any>, el: any): void;
-    ngOnDestroy(): void;
-    ngDoCheck(view: import1.AppView<any>, el: any): boolean;
-    checkHost(view: import1.AppView<any>, componentView: import1.AppView<any>, el: any): void;
-    handleEvent(eventName: string, $event: any): boolean;
-    subscribe(view: import1.AppView<any>, _eventHandler: any): void;
-}
-export declare const YbmrxNgFactory: import7.ComponentFactory<import0.Ybmrx>;
-export declare class View_Ybmrx_0 extends import1.AppView<import0.Ybmrx> {
-    _text_0: any;
-    _el_1: any;
-    _text_2: any;
-    _text_3: any;
-    _el_4: any;
-    _text_5: any;
-    _expr_6: any;
-    _expr_7: any;
-    constructor(viewUtils: import3.ViewUtils, parentView: import1.AppView<any>, parentIndex: number, parentElement: any);
-    createInternal(rootSelector: string): import7.ComponentRef<any>;
-    detectChangesInternal(): void;
-    handleEvent_4(eventName: string, $event: any): boolean;
-}
+import * as import0 from '@angular/core';
+import * as import1 from './ybmrx';
+export declare const RenderType_Ybmrx: import0.RendererTypeV2;
+export declare function View_Ybmrx_0(): import0.ɵViewDefinition;
+export declare const YbmrxNgFactory: import0.ComponentFactory<import1.Ybmrx>;

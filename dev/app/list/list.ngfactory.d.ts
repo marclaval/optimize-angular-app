@@ -3,45 +3,8 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
-import * as import0 from './list';
-import * as import1 from '@angular/core/src/linker/view';
-import * as import3 from '@angular/core/src/linker/view_utils';
-import * as import7 from '@angular/core/src/linker/component_factory';
-import * as import8 from '@ng-bootstrap/ng-bootstrap/pagination/pagination';
-import * as import9 from '../../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.ngfactory';
-export declare class Wrapper_List {
-    _eventHandler: Function;
-    context: import0.List;
-    _changed: boolean;
-    constructor();
-    ngOnDetach(view: import1.AppView<any>, componentView: import1.AppView<any>, el: any): void;
-    ngOnDestroy(): void;
-    ngDoCheck(view: import1.AppView<any>, el: any): boolean;
-    checkHost(view: import1.AppView<any>, componentView: import1.AppView<any>, el: any): void;
-    handleEvent(eventName: string, $event: any): boolean;
-    subscribe(view: import1.AppView<any>, _eventHandler: any): void;
-}
-export declare const ListNgFactory: import7.ComponentFactory<import0.List>;
-export declare class View_List_0 extends import1.AppView<import0.List> {
-    _text_0: any;
-    _el_1: any;
-    _text_2: any;
-    _el_3: any;
-    _text_4: any;
-    _text_5: any;
-    _el_6: any;
-    compView_6: import1.AppView<import8.NgbPagination>;
-    _NgbPagination_6_3: import9.Wrapper_NgbPagination;
-    _text_7: any;
-    _el_8: any;
-    _text_9: any;
-    _text_10: any;
-    _text_11: any;
-    _expr_14: any;
-    constructor(viewUtils: import3.ViewUtils, parentView: import1.AppView<any>, parentIndex: number, parentElement: any);
-    createInternal(rootSelector: string): import7.ComponentRef<any>;
-    injectorGetInternal(token: any, requestNodeIndex: number, notFoundResult: any): any;
-    detectChangesInternal(): void;
-    destroyInternal(): void;
-    handleEvent_6(eventName: string, $event: any): boolean;
-}
+import * as import0 from '@angular/core';
+import * as import1 from './list';
+export declare const RenderType_List: import0.RendererTypeV2;
+export declare function View_List_0(): import0.ɵViewDefinition;
+export declare const ListNgFactory: import0.ComponentFactory<import1.List>;

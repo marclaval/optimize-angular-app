@@ -1,6 +1,5 @@
-System.register(['@angular/core', '@angular/http', 'rxjs/operator/map'], function(exports_1, context_1) {
+System.register(["@angular/core", "@angular/http", "rxjs/operator/map"], function (exports_1, context_1) {
     "use strict";
-    var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -10,10 +9,10 @@ System.register(['@angular/core', '@angular/http', 'rxjs/operator/map'], functio
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, http_1, map_1;
-    var Search;
+    var __moduleName = context_1 && context_1.id;
+    var core_1, http_1, map_1, Search;
     return {
-        setters:[
+        setters: [
             function (core_1_1) {
                 core_1 = core_1_1;
             },
@@ -22,8 +21,9 @@ System.register(['@angular/core', '@angular/http', 'rxjs/operator/map'], functio
             },
             function (map_1_1) {
                 map_1 = map_1_1;
-            }],
-        execute: function() {
+            }
+        ],
+        execute: function () {
             Search = (function () {
                 function Search(http) {
                     this.http = http;
@@ -57,17 +57,17 @@ System.register(['@angular/core', '@angular/http', 'rxjs/operator/map'], functio
                         });
                     }
                 };
-                Search = __decorate([
-                    core_1.Component({
-                        selector: 'search',
-                        template: "\n    <div>\n      <h2>Search</h2>\n      <input type=\"text\" placeholder=\"Search on Wikipedia\" #foo>\n      <button (click)=\"search(foo.value)\">Search</button>\n      <div *ngFor=\"let page of pages\">{{page}}</div>\n    </div>\n  "
-                    }), 
-                    __metadata('design:paramtypes', [http_1.Http])
-                ], Search);
                 return Search;
             }());
+            Search = __decorate([
+                core_1.Component({
+                    selector: 'search',
+                    template: "\n    <div>\n      <h2>Search</h2>\n      <input type=\"text\" placeholder=\"Search on Wikipedia\" #foo>\n      <button (click)=\"search(foo.value)\">Search</button>\n      <div *ngFor=\"let page of pages\">{{page}}</div>\n    </div>\n  "
+                }),
+                __metadata("design:paramtypes", [http_1.Http])
+            ], Search);
             exports_1("Search", Search);
         }
-    }
+    };
 });
 //# sourceMappingURL=search.js.map
