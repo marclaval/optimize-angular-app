@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Optimize Angular app</title>
+    <base href=".">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+      var begin = Date.now();
+      var idPerf = setInterval(function() {
+        if (document.querySelector('#perf')) {
+          document.querySelector('#output').innerHTML = Date.now() - begin;
+          clearInterval(idPerf);
+        }
+      })
+    </script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="vendors.js"></script>
+</head>
+<body>
+<div style="position: absolute;top: 0; right: 0; z-index: 5; color: white;"><i>lazyloading-closure</i><div id="output" style="color: rgba(0,0,0,0);"></div></div>
+<my-app>Loading...</my-app>
+</body>
+<script>
+  // Polyfill and/or monkey patch System.import.
+  // Credits go to https://github.com/cramforce/splittable
+  (self.System = self.System || {}).import = function(n){
+    if (n.length == 0) return;
+    // Always end names in .js
+    n = n.replace(/\.js$/g,"") + ".js";
+    // Short circuit if the bundle is already loaded.
+    return (self._S["//" + n] && Promise.resolve(self._S["//" + n]))
+      // Short circuit if we are already loadind, otherwise create
+      // a promise (that will short circuit subsequent requests)
+      // and start loading.
+      || self._S[n] || (self._S[n] = new Promise(function(r,t){
+          // Load via a script
+          var s = document.createElement("script");
+          // Calculate the source URL using the same algorithms as used
+          // during bundle generation.
+          s.src = (self.System.baseURL||".") + "/" + (self._S._map[n] ? self._S._map[n] : n);
+          // Fail promise on any error.
+          s.onerror = t;
+          // On success the trailing module in every bundle will have created
+          // the _S global representing the module object that is the root
+          // of the bundle. Resolve the promise with it.
+          s.onload = function(){
+            r(self._S["//"+n])
+          };
+          // Append the script tag.
+          (document.head||document.documentElement).appendChild(s);
+        })
+      )}
+  // Runs scheduled non-base bundles in the _S array and overrides
+  // .push to immediately execute incoming bundles.
+  self._S = self._S || [];
+  self._S._map = {
+    'app/list/list.module.ngfactory.js': 'bundle1.js',
+    'app/search/search.module.ngfactory.js': 'bundle2.js',
+    'app/subscribe/subscribe.module.ngfactory.js': 'bundle3.js'
+  };
+  self._S.push = function(f){
+    f.call(self)
+  };
+</script>
+<script src="main.js"></script>
+<script>
+
+</script>
+</body>
+
+</html>

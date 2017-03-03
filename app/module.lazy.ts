@@ -1,7 +1,7 @@
 import {NgModule, Injectable} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {RouterModule, Routes, PreloadingStrategy, Route} from '@angular/router';
-import 'rxjs/add/observable/of';
+import {of} from 'rxjs/observable/of';
 import { Observable } from 'rxjs/Observable';
 
 import {App} from './app';
@@ -24,7 +24,7 @@ export class PreloadSelectedModules implements PreloadingStrategy {
       this.preloadedModules.push(route.path);
       return load();
     } else {
-      return Observable.of(null);
+      return of.call(null);
     }
   }
 }

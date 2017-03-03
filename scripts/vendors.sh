@@ -26,6 +26,7 @@ cp dist/vendors_with_system.js dist/lazyloading-systemjs
 cp dist/vendors.js dist/aot-closure
 cp dist/vendors.js dist/aot-rollup
 cp dist/vendors.js dist/aot-webpack
+cp dist/vendors.js dist/lazyloading-closure
 cp dist/vendors.js dist/lazyloading-webpack
 cp dist/vendors.js dist/treeshaking-rollup
 cp dist/vendors.js dist/treeshaking-webpack
