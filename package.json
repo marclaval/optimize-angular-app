@@ -16,10 +16,11 @@
     "aot-rollup": "ngc -p tsconfig-aot.json && rollup -c rollup-aot.js",
     "aot-systemjs": "ngc -p tsconfig-aot.json && tsc -p tsconfig-systemjs-aot.json && node ./scripts/full-system-bundler.js --aot",
     "aot-webpack": "webpack --config webpack-aot.js --progress --profile --bail",
+    "lazyloading-closure": "ngc -p tsconfig-lazy.json && ngc -p tsconfig-closure-lazy.json && bash ./scripts/build_closure_lazy.sh",
     "lazyloading-systemjs": "ngc -p tsconfig-lazy.json && tsc -p tsconfig-systemjs-lazy.json && node ./scripts/full-system-bundler.js --lazy",
     "lazyloading-webpack": "webpack --config webpack-lazyloading.js --progress --profile --bail",
     "prerender": "tsc -p tsconfig-commonjs.json && node ./scripts/prerender.js && webpack --config webpack-prerender.js --progress --profile --bail",
-    "build": "npm run clean && npm run public && npm run dev && npm run bundling-app && npm run bundling-full && npm run treeshaking-rollup && npm run treeshaking-webpack && npm run aot-closure && npm run aot-systemjs && npm run aot-rollup && npm run aot-webpack && npm run lazyloading-systemjs && npm run lazyloading-webpack && npm run prerender",
+    "build": "npm run clean && npm run public && npm run dev && npm run bundling-app && npm run bundling-full && npm run treeshaking-rollup && npm run treeshaking-webpack && npm run aot-closure && npm run aot-systemjs && npm run aot-rollup && npm run aot-webpack && npm run lazyloading-closure && npm run lazyloading-systemjs && npm run lazyloading-webpack && npm run prerender",
     "start": "http-server ./dist -s",
     "watch": "tsc -w -p tsconfig-systemjs.json",
     "e2e": "tsc -p tsconfig-protractor.json && concurrently -k -s first \"npm start\" \"protractor\"",
@@ -81,6 +82,6 @@
     "script-ext-html-webpack-plugin": "1.7.1",
     "raw-loader": "0.5.1",
     "@ngtools/webpack": "1.2.11",
-    "google-closure-compiler": "^20170124.0.0"
+    "google-closure-compiler": "20170218.0.0"
   }
 }

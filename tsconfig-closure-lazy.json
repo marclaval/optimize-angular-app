@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "declaration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": ".",
+    "stripInternal": true,
+    "outDir": "./tmp/es6",
+    "rootDir": ".",
+    "sourceMap": true,
+    "inlineSources": true,
+    "skipLibCheck": true,
+    "lib": ["es2015", "dom"]
+  },
+  "files": [
+    "./app/main.lazy.ts",
+    "./app/list/list.module.ngfactory.ts",
+    "./app/search/search.module.ngfactory.ts",
+    "./app/subscribe/subscribe.module.ngfactory.ts"
+  ],
+  "angularCompilerOptions": {
+    "annotationsAs": "static fields",
+    "annotateForClosureCompiler": true
+  }
+}

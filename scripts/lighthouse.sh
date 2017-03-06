@@ -10,6 +10,7 @@ node ./scripts/lighthouse.js aot-closure
 node ./scripts/lighthouse.js aot-rollup
 node ./scripts/lighthouse.js aot-systemjs
 node ./scripts/lighthouse.js aot-webpack
+node ./scripts/lighthouse.js lazyloading-closure
 node ./scripts/lighthouse.js lazyloading-systemjs
 node ./scripts/lighthouse.js lazyloading-webpack
 node ./scripts/lighthouse.js prerender
