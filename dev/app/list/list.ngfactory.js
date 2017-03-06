@@ -8,14 +8,14 @@ System.register(["@angular/core", "./list", "../../node_modules/@ng-bootstrap/ng
     "use strict";
     var __moduleName = context_1 && context_1.id;
     function View_List_0() {
-        return import0.ɵviewDef(0, [
-            import0.ɵtextDef(null, ['\n    ']),
-            import0.ɵelementDef(0, null, null, 10, 'div', [], null, null, null, null, null),
-            import0.ɵtextDef(null, ['\n      ']),
-            import0.ɵelementDef(0, null, null, 1, 'h2', [], null, null, null, null, null),
-            import0.ɵtextDef(null, ['Paginated list']),
-            import0.ɵtextDef(null, ['\n      ']),
-            import0.ɵelementDef(0, null, null, 1, 'ngb-pagination', [], null, [[
+        return import0.ɵvid(0, [
+            import0.ɵted(null, ['\n    ']),
+            import0.ɵeld(0, null, null, 10, 'div', [], null, null, null, null, null),
+            import0.ɵted(null, ['\n      ']),
+            import0.ɵeld(0, null, null, 1, 'h2', [], null, null, null, null, null),
+            import0.ɵted(null, ['Paginated list']),
+            import0.ɵted(null, ['\n      ']),
+            import0.ɵeld(0, null, null, 1, 'ngb-pagination', [], null, [[
                     null,
                     'pageChange'
                 ]
@@ -28,7 +28,7 @@ System.register(["@angular/core", "./list", "../../node_modules/@ng-bootstrap/ng
                 }
                 return allowDefault;
             }, import2.View_NgbPagination_0, import2.RenderType_NgbPagination),
-            import0.ɵdirectiveDef(1032, null, 0, import3.NgbPagination, [import4.NgbPaginationConfig], {
+            import0.ɵdid(286720, null, 0, import3.NgbPagination, [import4.NgbPaginationConfig], {
                 collectionSize: [
                     0,
                     'collectionSize'
@@ -38,14 +38,14 @@ System.register(["@angular/core", "./list", "../../node_modules/@ng-bootstrap/ng
                     'page'
                 ]
             }, { pageChange: 'pageChange' }),
-            import0.ɵtextDef(null, ['\n      ']),
-            import0.ɵelementDef(0, null, null, 1, 'pre', [], null, null, null, null, null),
-            import0.ɵtextDef(null, [
+            import0.ɵted(null, ['\n      ']),
+            import0.ɵeld(0, null, null, 1, 'pre', [], null, null, null, null, null),
+            import0.ɵted(null, [
                 'Current page: ',
                 ''
             ]),
-            import0.ɵtextDef(null, ['\n    ']),
-            import0.ɵtextDef(null, ['\n  '])
+            import0.ɵted(null, ['\n    ']),
+            import0.ɵted(null, ['\n  '])
         ], function (check, view) {
             var comp = view.component;
             var currVal_0 = 70;
@@ -59,9 +59,9 @@ System.register(["@angular/core", "./list", "../../node_modules/@ng-bootstrap/ng
     }
     exports_1("View_List_0", View_List_0);
     function View_List_Host_0() {
-        return import0.ɵviewDef(0, [
-            import0.ɵelementDef(0, null, null, 1, 'list', [], null, null, null, View_List_0, RenderType_List),
-            import0.ɵdirectiveDef(1024, null, 0, import1.List, [], null, null)
+        return import0.ɵvid(0, [
+            import0.ɵeld(0, null, null, 1, 'list', [], null, null, null, View_List_0, RenderType_List),
+            import0.ɵdid(24576, null, 0, import1.List, [], null, null)
         ], null, null);
     }
     var import0, import1, import2, import3, import4, styles_List, RenderType_List, RenderType_List_Host, ListNgFactory;
@@ -90,17 +90,17 @@ System.register(["@angular/core", "./list", "../../node_modules/@ng-bootstrap/ng
              */
             /* tslint:disable */
             styles_List = [];
-            exports_1("RenderType_List", RenderType_List = import0.ɵcreateRendererTypeV2({
+            exports_1("RenderType_List", RenderType_List = import0.ɵcrt({
                 encapsulation: 2,
                 styles: styles_List,
-                data: { animation: [] }
+                data: {}
             }));
-            RenderType_List_Host = import0.ɵcreateRendererTypeV2({
+            RenderType_List_Host = import0.ɵcrt({
                 encapsulation: 2,
                 styles: [],
-                data: { animation: [] }
+                data: {}
             });
-            exports_1("ListNgFactory", ListNgFactory = import0.ɵcreateComponentFactory('list', import1.List, View_List_Host_0));
+            exports_1("ListNgFactory", ListNgFactory = import0.ɵccf('list', import1.List, View_List_Host_0));
         }
     };
 });

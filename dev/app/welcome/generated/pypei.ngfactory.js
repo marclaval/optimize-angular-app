@@ -8,9 +8,9 @@ System.register(["@angular/core", "./pypei"], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     function View_Pypei_0() {
-        return import0.ɵviewDef(0, [
-            import0.ɵtextDef(null, ['\n    ']),
-            import0.ɵelementDef(0, null, null, 1, 'span', [], [
+        return import0.ɵvid(0, [
+            import0.ɵted(null, ['\n    ']),
+            import0.ɵeld(0, null, null, 1, 'span', [], [
                 [
                     0,
                     'aria-label',
@@ -22,9 +22,9 @@ System.register(["@angular/core", "./pypei"], function (exports_1, context_1) {
                     0
                 ]
             ], null, null, null, null),
-            import0.ɵtextDef(null, ['This is a dummy component for Pypei']),
-            import0.ɵtextDef(null, ['\n    ']),
-            import0.ɵelementDef(0, null, null, 0, 'div', [], null, [[
+            import0.ɵted(null, ['This is a dummy component for Pypei']),
+            import0.ɵted(null, ['\n    ']),
+            import0.ɵeld(0, null, null, 0, 'div', [], null, [[
                     null,
                     'click'
                 ]
@@ -37,7 +37,7 @@ System.register(["@angular/core", "./pypei"], function (exports_1, context_1) {
                 }
                 return allowDefault;
             }, null, null),
-            import0.ɵtextDef(null, ['\n    '])
+            import0.ɵted(null, ['\n    '])
         ], null, function (check, view) {
             var comp = view.component;
             var currVal_0 = comp.msg;
@@ -47,9 +47,9 @@ System.register(["@angular/core", "./pypei"], function (exports_1, context_1) {
     }
     exports_1("View_Pypei_0", View_Pypei_0);
     function View_Pypei_Host_0() {
-        return import0.ɵviewDef(0, [
-            import0.ɵelementDef(0, null, null, 1, 'd-pypei', [], null, null, null, View_Pypei_0, RenderType_Pypei),
-            import0.ɵdirectiveDef(1024, null, 0, import1.Pypei, [], null, null)
+        return import0.ɵvid(0, [
+            import0.ɵeld(0, null, null, 1, 'd-pypei', [], null, null, null, View_Pypei_0, RenderType_Pypei),
+            import0.ɵdid(24576, null, 0, import1.Pypei, [], null, null)
         ], null, null);
     }
     var import0, import1, styles_Pypei, RenderType_Pypei, RenderType_Pypei_Host, PypeiNgFactory;
@@ -69,17 +69,17 @@ System.register(["@angular/core", "./pypei"], function (exports_1, context_1) {
              */
             /* tslint:disable */
             styles_Pypei = [];
-            exports_1("RenderType_Pypei", RenderType_Pypei = import0.ɵcreateRendererTypeV2({
+            exports_1("RenderType_Pypei", RenderType_Pypei = import0.ɵcrt({
                 encapsulation: 2,
                 styles: styles_Pypei,
-                data: { animation: [] }
+                data: {}
             }));
-            RenderType_Pypei_Host = import0.ɵcreateRendererTypeV2({
+            RenderType_Pypei_Host = import0.ɵcrt({
                 encapsulation: 2,
                 styles: [],
-                data: { animation: [] }
+                data: {}
             });
-            exports_1("PypeiNgFactory", PypeiNgFactory = import0.ɵcreateComponentFactory('d-pypei', import1.Pypei, View_Pypei_Host_0));
+            exports_1("PypeiNgFactory", PypeiNgFactory = import0.ɵccf('d-pypei', import1.Pypei, View_Pypei_Host_0));
         }
     };
 });

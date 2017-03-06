@@ -8,9 +8,9 @@ System.register(["@angular/core", "./hmhyg"], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     function View_Hmhyg_0() {
-        return import0.ɵviewDef(0, [
-            import0.ɵtextDef(null, ['\n    ']),
-            import0.ɵelementDef(0, null, null, 1, 'span', [], [
+        return import0.ɵvid(0, [
+            import0.ɵted(null, ['\n    ']),
+            import0.ɵeld(0, null, null, 1, 'span', [], [
                 [
                     0,
                     'aria-label',
@@ -22,9 +22,9 @@ System.register(["@angular/core", "./hmhyg"], function (exports_1, context_1) {
                     0
                 ]
             ], null, null, null, null),
-            import0.ɵtextDef(null, ['This is a dummy component for Hmhyg']),
-            import0.ɵtextDef(null, ['\n    ']),
-            import0.ɵelementDef(0, null, null, 0, 'div', [], null, [[
+            import0.ɵted(null, ['This is a dummy component for Hmhyg']),
+            import0.ɵted(null, ['\n    ']),
+            import0.ɵeld(0, null, null, 0, 'div', [], null, [[
                     null,
                     'click'
                 ]
@@ -37,7 +37,7 @@ System.register(["@angular/core", "./hmhyg"], function (exports_1, context_1) {
                 }
                 return allowDefault;
             }, null, null),
-            import0.ɵtextDef(null, ['\n    '])
+            import0.ɵted(null, ['\n    '])
         ], null, function (check, view) {
             var comp = view.component;
             var currVal_0 = comp.msg;
@@ -47,9 +47,9 @@ System.register(["@angular/core", "./hmhyg"], function (exports_1, context_1) {
     }
     exports_1("View_Hmhyg_0", View_Hmhyg_0);
     function View_Hmhyg_Host_0() {
-        return import0.ɵviewDef(0, [
-            import0.ɵelementDef(0, null, null, 1, 'd-hmhyg', [], null, null, null, View_Hmhyg_0, RenderType_Hmhyg),
-            import0.ɵdirectiveDef(1024, null, 0, import1.Hmhyg, [], null, null)
+        return import0.ɵvid(0, [
+            import0.ɵeld(0, null, null, 1, 'd-hmhyg', [], null, null, null, View_Hmhyg_0, RenderType_Hmhyg),
+            import0.ɵdid(24576, null, 0, import1.Hmhyg, [], null, null)
         ], null, null);
     }
     var import0, import1, styles_Hmhyg, RenderType_Hmhyg, RenderType_Hmhyg_Host, HmhygNgFactory;
@@ -69,17 +69,17 @@ System.register(["@angular/core", "./hmhyg"], function (exports_1, context_1) {
              */
             /* tslint:disable */
             styles_Hmhyg = [];
-            exports_1("RenderType_Hmhyg", RenderType_Hmhyg = import0.ɵcreateRendererTypeV2({
+            exports_1("RenderType_Hmhyg", RenderType_Hmhyg = import0.ɵcrt({
                 encapsulation: 2,
                 styles: styles_Hmhyg,
-                data: { animation: [] }
+                data: {}
             }));
-            RenderType_Hmhyg_Host = import0.ɵcreateRendererTypeV2({
+            RenderType_Hmhyg_Host = import0.ɵcrt({
                 encapsulation: 2,
                 styles: [],
-                data: { animation: [] }
+                data: {}
             });
-            exports_1("HmhygNgFactory", HmhygNgFactory = import0.ɵcreateComponentFactory('d-hmhyg', import1.Hmhyg, View_Hmhyg_Host_0));
+            exports_1("HmhygNgFactory", HmhygNgFactory = import0.ɵccf('d-hmhyg', import1.Hmhyg, View_Hmhyg_Host_0));
         }
     };
 });

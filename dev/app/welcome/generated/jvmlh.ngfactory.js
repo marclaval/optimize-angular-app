@@ -8,9 +8,9 @@ System.register(["@angular/core", "./jvmlh"], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     function View_Jvmlh_0() {
-        return import0.ɵviewDef(0, [
-            import0.ɵtextDef(null, ['\n    ']),
-            import0.ɵelementDef(0, null, null, 1, 'span', [], [
+        return import0.ɵvid(0, [
+            import0.ɵted(null, ['\n    ']),
+            import0.ɵeld(0, null, null, 1, 'span', [], [
                 [
                     0,
                     'aria-label',
@@ -22,9 +22,9 @@ System.register(["@angular/core", "./jvmlh"], function (exports_1, context_1) {
                     0
                 ]
             ], null, null, null, null),
-            import0.ɵtextDef(null, ['This is a dummy component for Jvmlh']),
-            import0.ɵtextDef(null, ['\n    ']),
-            import0.ɵelementDef(0, null, null, 0, 'div', [], null, [[
+            import0.ɵted(null, ['This is a dummy component for Jvmlh']),
+            import0.ɵted(null, ['\n    ']),
+            import0.ɵeld(0, null, null, 0, 'div', [], null, [[
                     null,
                     'click'
                 ]
@@ -37,7 +37,7 @@ System.register(["@angular/core", "./jvmlh"], function (exports_1, context_1) {
                 }
                 return allowDefault;
             }, null, null),
-            import0.ɵtextDef(null, ['\n    '])
+            import0.ɵted(null, ['\n    '])
         ], null, function (check, view) {
             var comp = view.component;
             var currVal_0 = comp.msg;
@@ -47,9 +47,9 @@ System.register(["@angular/core", "./jvmlh"], function (exports_1, context_1) {
     }
     exports_1("View_Jvmlh_0", View_Jvmlh_0);
     function View_Jvmlh_Host_0() {
-        return import0.ɵviewDef(0, [
-            import0.ɵelementDef(0, null, null, 1, 'd-jvmlh', [], null, null, null, View_Jvmlh_0, RenderType_Jvmlh),
-            import0.ɵdirectiveDef(1024, null, 0, import1.Jvmlh, [], null, null)
+        return import0.ɵvid(0, [
+            import0.ɵeld(0, null, null, 1, 'd-jvmlh', [], null, null, null, View_Jvmlh_0, RenderType_Jvmlh),
+            import0.ɵdid(24576, null, 0, import1.Jvmlh, [], null, null)
         ], null, null);
     }
     var import0, import1, styles_Jvmlh, RenderType_Jvmlh, RenderType_Jvmlh_Host, JvmlhNgFactory;
@@ -69,17 +69,17 @@ System.register(["@angular/core", "./jvmlh"], function (exports_1, context_1) {
              */
             /* tslint:disable */
             styles_Jvmlh = [];
-            exports_1("RenderType_Jvmlh", RenderType_Jvmlh = import0.ɵcreateRendererTypeV2({
+            exports_1("RenderType_Jvmlh", RenderType_Jvmlh = import0.ɵcrt({
                 encapsulation: 2,
                 styles: styles_Jvmlh,
-                data: { animation: [] }
+                data: {}
             }));
-            RenderType_Jvmlh_Host = import0.ɵcreateRendererTypeV2({
+            RenderType_Jvmlh_Host = import0.ɵcrt({
                 encapsulation: 2,
                 styles: [],
-                data: { animation: [] }
+                data: {}
             });
-            exports_1("JvmlhNgFactory", JvmlhNgFactory = import0.ɵcreateComponentFactory('d-jvmlh', import1.Jvmlh, View_Jvmlh_Host_0));
+            exports_1("JvmlhNgFactory", JvmlhNgFactory = import0.ɵccf('d-jvmlh', import1.Jvmlh, View_Jvmlh_Host_0));
         }
     };
 });

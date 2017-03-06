@@ -1,4 +1,4 @@
-System.register(["@angular/core", "@angular/platform-browser", "@angular/router", "rxjs/add/observable/of", "rxjs/Observable", "./app", "./welcome/welcome.module", "./welcome/welcome"], function (exports_1, context_1) {
+System.register(["@angular/core", "@angular/platform-browser", "@angular/router", "rxjs/observable/of", "./app", "./welcome/welcome.module", "./welcome/welcome"], function (exports_1, context_1) {
     "use strict";
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -7,7 +7,7 @@ System.register(["@angular/core", "@angular/platform-browser", "@angular/router"
         return c > 3 && r && Object.defineProperty(target, key, r), r;
     };
     var __moduleName = context_1 && context_1.id;
-    var core_1, platform_browser_1, router_1, Observable_1, app_1, welcome_module_1, welcome_1, appRoutes, PreloadSelectedModules, AppLazyModule;
+    var core_1, platform_browser_1, router_1, of_1, app_1, welcome_module_1, welcome_1, appRoutes, PreloadSelectedModules, AppLazyModule;
     return {
         setters: [
             function (core_1_1) {
@@ -19,10 +19,8 @@ System.register(["@angular/core", "@angular/platform-browser", "@angular/router"
             function (router_1_1) {
                 router_1 = router_1_1;
             },
-            function (_1) {
-            },
-            function (Observable_1_1) {
-                Observable_1 = Observable_1_1;
+            function (of_1_1) {
+                of_1 = of_1_1;
             },
             function (app_1_1) {
                 app_1 = app_1_1;
@@ -51,7 +49,7 @@ System.register(["@angular/core", "@angular/platform-browser", "@angular/router"
                         return load();
                     }
                     else {
-                        return Observable_1.Observable.of(null);
+                        return of_1.of.call(null);
                     }
                 };
                 return PreloadSelectedModules;

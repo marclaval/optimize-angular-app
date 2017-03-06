@@ -8,9 +8,9 @@ System.register(["@angular/core", "./qxmlm"], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     function View_Qxmlm_0() {
-        return import0.ɵviewDef(0, [
-            import0.ɵtextDef(null, ['\n    ']),
-            import0.ɵelementDef(0, null, null, 1, 'span', [], [
+        return import0.ɵvid(0, [
+            import0.ɵted(null, ['\n    ']),
+            import0.ɵeld(0, null, null, 1, 'span', [], [
                 [
                     0,
                     'aria-label',
@@ -22,9 +22,9 @@ System.register(["@angular/core", "./qxmlm"], function (exports_1, context_1) {
                     0
                 ]
             ], null, null, null, null),
-            import0.ɵtextDef(null, ['This is a dummy component for Qxmlm']),
-            import0.ɵtextDef(null, ['\n    ']),
-            import0.ɵelementDef(0, null, null, 0, 'div', [], null, [[
+            import0.ɵted(null, ['This is a dummy component for Qxmlm']),
+            import0.ɵted(null, ['\n    ']),
+            import0.ɵeld(0, null, null, 0, 'div', [], null, [[
                     null,
                     'click'
                 ]
@@ -37,7 +37,7 @@ System.register(["@angular/core", "./qxmlm"], function (exports_1, context_1) {
                 }
                 return allowDefault;
             }, null, null),
-            import0.ɵtextDef(null, ['\n    '])
+            import0.ɵted(null, ['\n    '])
         ], null, function (check, view) {
             var comp = view.component;
             var currVal_0 = comp.msg;
@@ -47,9 +47,9 @@ System.register(["@angular/core", "./qxmlm"], function (exports_1, context_1) {
     }
     exports_1("View_Qxmlm_0", View_Qxmlm_0);
     function View_Qxmlm_Host_0() {
-        return import0.ɵviewDef(0, [
-            import0.ɵelementDef(0, null, null, 1, 'd-qxmlm', [], null, null, null, View_Qxmlm_0, RenderType_Qxmlm),
-            import0.ɵdirectiveDef(1024, null, 0, import1.Qxmlm, [], null, null)
+        return import0.ɵvid(0, [
+            import0.ɵeld(0, null, null, 1, 'd-qxmlm', [], null, null, null, View_Qxmlm_0, RenderType_Qxmlm),
+            import0.ɵdid(24576, null, 0, import1.Qxmlm, [], null, null)
         ], null, null);
     }
     var import0, import1, styles_Qxmlm, RenderType_Qxmlm, RenderType_Qxmlm_Host, QxmlmNgFactory;
@@ -69,17 +69,17 @@ System.register(["@angular/core", "./qxmlm"], function (exports_1, context_1) {
              */
             /* tslint:disable */
             styles_Qxmlm = [];
-            exports_1("RenderType_Qxmlm", RenderType_Qxmlm = import0.ɵcreateRendererTypeV2({
+            exports_1("RenderType_Qxmlm", RenderType_Qxmlm = import0.ɵcrt({
                 encapsulation: 2,
                 styles: styles_Qxmlm,
-                data: { animation: [] }
+                data: {}
             }));
-            RenderType_Qxmlm_Host = import0.ɵcreateRendererTypeV2({
+            RenderType_Qxmlm_Host = import0.ɵcrt({
                 encapsulation: 2,
                 styles: [],
-                data: { animation: [] }
+                data: {}
             });
-            exports_1("QxmlmNgFactory", QxmlmNgFactory = import0.ɵcreateComponentFactory('d-qxmlm', import1.Qxmlm, View_Qxmlm_Host_0));
+            exports_1("QxmlmNgFactory", QxmlmNgFactory = import0.ɵccf('d-qxmlm', import1.Qxmlm, View_Qxmlm_Host_0));
         }
     };
 });

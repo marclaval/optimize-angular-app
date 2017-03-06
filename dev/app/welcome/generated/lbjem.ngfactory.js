@@ -8,9 +8,9 @@ System.register(["@angular/core", "./lbjem"], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     function View_Lbjem_0() {
-        return import0.ɵviewDef(0, [
-            import0.ɵtextDef(null, ['\n    ']),
-            import0.ɵelementDef(0, null, null, 1, 'span', [], [
+        return import0.ɵvid(0, [
+            import0.ɵted(null, ['\n    ']),
+            import0.ɵeld(0, null, null, 1, 'span', [], [
                 [
                     0,
                     'aria-label',
@@ -22,9 +22,9 @@ System.register(["@angular/core", "./lbjem"], function (exports_1, context_1) {
                     0
                 ]
             ], null, null, null, null),
-            import0.ɵtextDef(null, ['This is a dummy component for Lbjem']),
-            import0.ɵtextDef(null, ['\n    ']),
-            import0.ɵelementDef(0, null, null, 0, 'div', [], null, [[
+            import0.ɵted(null, ['This is a dummy component for Lbjem']),
+            import0.ɵted(null, ['\n    ']),
+            import0.ɵeld(0, null, null, 0, 'div', [], null, [[
                     null,
                     'click'
                 ]
@@ -37,7 +37,7 @@ System.register(["@angular/core", "./lbjem"], function (exports_1, context_1) {
                 }
                 return allowDefault;
             }, null, null),
-            import0.ɵtextDef(null, ['\n    '])
+            import0.ɵted(null, ['\n    '])
         ], null, function (check, view) {
             var comp = view.component;
             var currVal_0 = comp.msg;
@@ -47,9 +47,9 @@ System.register(["@angular/core", "./lbjem"], function (exports_1, context_1) {
     }
     exports_1("View_Lbjem_0", View_Lbjem_0);
     function View_Lbjem_Host_0() {
-        return import0.ɵviewDef(0, [
-            import0.ɵelementDef(0, null, null, 1, 'd-lbjem', [], null, null, null, View_Lbjem_0, RenderType_Lbjem),
-            import0.ɵdirectiveDef(1024, null, 0, import1.Lbjem, [], null, null)
+        return import0.ɵvid(0, [
+            import0.ɵeld(0, null, null, 1, 'd-lbjem', [], null, null, null, View_Lbjem_0, RenderType_Lbjem),
+            import0.ɵdid(24576, null, 0, import1.Lbjem, [], null, null)
         ], null, null);
     }
     var import0, import1, styles_Lbjem, RenderType_Lbjem, RenderType_Lbjem_Host, LbjemNgFactory;
@@ -69,17 +69,17 @@ System.register(["@angular/core", "./lbjem"], function (exports_1, context_1) {
              */
             /* tslint:disable */
             styles_Lbjem = [];
-            exports_1("RenderType_Lbjem", RenderType_Lbjem = import0.ɵcreateRendererTypeV2({
+            exports_1("RenderType_Lbjem", RenderType_Lbjem = import0.ɵcrt({
                 encapsulation: 2,
                 styles: styles_Lbjem,
-                data: { animation: [] }
+                data: {}
             }));
-            RenderType_Lbjem_Host = import0.ɵcreateRendererTypeV2({
+            RenderType_Lbjem_Host = import0.ɵcrt({
                 encapsulation: 2,
                 styles: [],
-                data: { animation: [] }
+                data: {}
             });
-            exports_1("LbjemNgFactory", LbjemNgFactory = import0.ɵcreateComponentFactory('d-lbjem', import1.Lbjem, View_Lbjem_Host_0));
+            exports_1("LbjemNgFactory", LbjemNgFactory = import0.ɵccf('d-lbjem', import1.Lbjem, View_Lbjem_Host_0));
         }
     };
 });

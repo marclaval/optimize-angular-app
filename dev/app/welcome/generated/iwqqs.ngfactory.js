@@ -8,9 +8,9 @@ System.register(["@angular/core", "./iwqqs"], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     function View_Iwqqs_0() {
-        return import0.ɵviewDef(0, [
-            import0.ɵtextDef(null, ['\n    ']),
-            import0.ɵelementDef(0, null, null, 1, 'span', [], [
+        return import0.ɵvid(0, [
+            import0.ɵted(null, ['\n    ']),
+            import0.ɵeld(0, null, null, 1, 'span', [], [
                 [
                     0,
                     'aria-label',
@@ -22,9 +22,9 @@ System.register(["@angular/core", "./iwqqs"], function (exports_1, context_1) {
                     0
                 ]
             ], null, null, null, null),
-            import0.ɵtextDef(null, ['This is a dummy component for Iwqqs']),
-            import0.ɵtextDef(null, ['\n    ']),
-            import0.ɵelementDef(0, null, null, 0, 'div', [], null, [[
+            import0.ɵted(null, ['This is a dummy component for Iwqqs']),
+            import0.ɵted(null, ['\n    ']),
+            import0.ɵeld(0, null, null, 0, 'div', [], null, [[
                     null,
                     'click'
                 ]
@@ -37,7 +37,7 @@ System.register(["@angular/core", "./iwqqs"], function (exports_1, context_1) {
                 }
                 return allowDefault;
             }, null, null),
-            import0.ɵtextDef(null, ['\n    '])
+            import0.ɵted(null, ['\n    '])
         ], null, function (check, view) {
             var comp = view.component;
             var currVal_0 = comp.msg;
@@ -47,9 +47,9 @@ System.register(["@angular/core", "./iwqqs"], function (exports_1, context_1) {
     }
     exports_1("View_Iwqqs_0", View_Iwqqs_0);
     function View_Iwqqs_Host_0() {
-        return import0.ɵviewDef(0, [
-            import0.ɵelementDef(0, null, null, 1, 'd-iwqqs', [], null, null, null, View_Iwqqs_0, RenderType_Iwqqs),
-            import0.ɵdirectiveDef(1024, null, 0, import1.Iwqqs, [], null, null)
+        return import0.ɵvid(0, [
+            import0.ɵeld(0, null, null, 1, 'd-iwqqs', [], null, null, null, View_Iwqqs_0, RenderType_Iwqqs),
+            import0.ɵdid(24576, null, 0, import1.Iwqqs, [], null, null)
         ], null, null);
     }
     var import0, import1, styles_Iwqqs, RenderType_Iwqqs, RenderType_Iwqqs_Host, IwqqsNgFactory;
@@ -69,17 +69,17 @@ System.register(["@angular/core", "./iwqqs"], function (exports_1, context_1) {
              */
             /* tslint:disable */
             styles_Iwqqs = [];
-            exports_1("RenderType_Iwqqs", RenderType_Iwqqs = import0.ɵcreateRendererTypeV2({
+            exports_1("RenderType_Iwqqs", RenderType_Iwqqs = import0.ɵcrt({
                 encapsulation: 2,
                 styles: styles_Iwqqs,
-                data: { animation: [] }
+                data: {}
             }));
-            RenderType_Iwqqs_Host = import0.ɵcreateRendererTypeV2({
+            RenderType_Iwqqs_Host = import0.ɵcrt({
                 encapsulation: 2,
                 styles: [],
-                data: { animation: [] }
+                data: {}
             });
-            exports_1("IwqqsNgFactory", IwqqsNgFactory = import0.ɵcreateComponentFactory('d-iwqqs', import1.Iwqqs, View_Iwqqs_Host_0));
+            exports_1("IwqqsNgFactory", IwqqsNgFactory = import0.ɵccf('d-iwqqs', import1.Iwqqs, View_Iwqqs_Host_0));
         }
     };
 });

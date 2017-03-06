@@ -8,9 +8,9 @@ System.register(["@angular/core", "./ykvrk"], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     function View_Ykvrk_0() {
-        return import0.ɵviewDef(0, [
-            import0.ɵtextDef(null, ['\n    ']),
-            import0.ɵelementDef(0, null, null, 1, 'span', [], [
+        return import0.ɵvid(0, [
+            import0.ɵted(null, ['\n    ']),
+            import0.ɵeld(0, null, null, 1, 'span', [], [
                 [
                     0,
                     'aria-label',
@@ -22,9 +22,9 @@ System.register(["@angular/core", "./ykvrk"], function (exports_1, context_1) {
                     0
                 ]
             ], null, null, null, null),
-            import0.ɵtextDef(null, ['This is a dummy component for Ykvrk']),
-            import0.ɵtextDef(null, ['\n    ']),
-            import0.ɵelementDef(0, null, null, 0, 'div', [], null, [[
+            import0.ɵted(null, ['This is a dummy component for Ykvrk']),
+            import0.ɵted(null, ['\n    ']),
+            import0.ɵeld(0, null, null, 0, 'div', [], null, [[
                     null,
                     'click'
                 ]
@@ -37,7 +37,7 @@ System.register(["@angular/core", "./ykvrk"], function (exports_1, context_1) {
                 }
                 return allowDefault;
             }, null, null),
-            import0.ɵtextDef(null, ['\n    '])
+            import0.ɵted(null, ['\n    '])
         ], null, function (check, view) {
             var comp = view.component;
             var currVal_0 = comp.msg;
@@ -47,9 +47,9 @@ System.register(["@angular/core", "./ykvrk"], function (exports_1, context_1) {
     }
     exports_1("View_Ykvrk_0", View_Ykvrk_0);
     function View_Ykvrk_Host_0() {
-        return import0.ɵviewDef(0, [
-            import0.ɵelementDef(0, null, null, 1, 'd-ykvrk', [], null, null, null, View_Ykvrk_0, RenderType_Ykvrk),
-            import0.ɵdirectiveDef(1024, null, 0, import1.Ykvrk, [], null, null)
+        return import0.ɵvid(0, [
+            import0.ɵeld(0, null, null, 1, 'd-ykvrk', [], null, null, null, View_Ykvrk_0, RenderType_Ykvrk),
+            import0.ɵdid(24576, null, 0, import1.Ykvrk, [], null, null)
         ], null, null);
     }
     var import0, import1, styles_Ykvrk, RenderType_Ykvrk, RenderType_Ykvrk_Host, YkvrkNgFactory;
@@ -69,17 +69,17 @@ System.register(["@angular/core", "./ykvrk"], function (exports_1, context_1) {
              */
             /* tslint:disable */
             styles_Ykvrk = [];
-            exports_1("RenderType_Ykvrk", RenderType_Ykvrk = import0.ɵcreateRendererTypeV2({
+            exports_1("RenderType_Ykvrk", RenderType_Ykvrk = import0.ɵcrt({
                 encapsulation: 2,
                 styles: styles_Ykvrk,
-                data: { animation: [] }
+                data: {}
             }));
-            RenderType_Ykvrk_Host = import0.ɵcreateRendererTypeV2({
+            RenderType_Ykvrk_Host = import0.ɵcrt({
                 encapsulation: 2,
                 styles: [],
-                data: { animation: [] }
+                data: {}
             });
-            exports_1("YkvrkNgFactory", YkvrkNgFactory = import0.ɵcreateComponentFactory('d-ykvrk', import1.Ykvrk, View_Ykvrk_Host_0));
+            exports_1("YkvrkNgFactory", YkvrkNgFactory = import0.ɵccf('d-ykvrk', import1.Ykvrk, View_Ykvrk_Host_0));
         }
     };
 });
