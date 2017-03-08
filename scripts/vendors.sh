@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
+node ./scripts/custom-core.js
+
 # Create vendors files
-cat node_modules/core-js/client/core.min.js <(echo) node_modules/zone.js/dist/zone.min.js node_modules/classlist-polyfill/src/index.js > dist/vendors.js
+cat tmp/core.min.js <(echo) node_modules/zone.js/dist/zone.min.js node_modules/classlist-polyfill/src/index.js > dist/vendors.js
 cat dist/vendors.js node_modules/systemjs/dist/system.js > dist/vendors_with_system.js
 
 # Copy bundles from @angular
