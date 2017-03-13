@@ -5,6 +5,6 @@
  */
 import * as import0 from '@angular/core';
 import * as import1 from './xvhst';
-export declare const RenderType_Xvhst: import0.RendererTypeV2;
+export declare const RenderType_Xvhst: import0.RendererType2;
 export declare function View_Xvhst_0(): import0.ɵViewDefinition;
 export declare const XvhstNgFactory: import0.ComponentFactory<import1.Xvhst>;

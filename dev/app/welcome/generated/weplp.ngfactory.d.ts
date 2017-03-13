@@ -5,6 +5,6 @@
  */
 import * as import0 from '@angular/core';
 import * as import1 from './weplp';
-export declare const RenderType_Weplp: import0.RendererTypeV2;
+export declare const RenderType_Weplp: import0.RendererType2;
 export declare function View_Weplp_0(): import0.ɵViewDefinition;
 export declare const WeplpNgFactory: import0.ComponentFactory<import1.Weplp>;

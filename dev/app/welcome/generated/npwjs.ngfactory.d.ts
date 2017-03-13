@@ -5,6 +5,6 @@
  */
 import * as import0 from '@angular/core';
 import * as import1 from './npwjs';
-export declare const RenderType_Npwjs: import0.RendererTypeV2;
+export declare const RenderType_Npwjs: import0.RendererType2;
 export declare function View_Npwjs_0(): import0.ɵViewDefinition;
 export declare const NpwjsNgFactory: import0.ComponentFactory<import1.Npwjs>;

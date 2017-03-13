@@ -5,6 +5,6 @@
  */
 import * as import0 from '@angular/core';
 import * as import1 from './iqudy';
-export declare const RenderType_Iqudy: import0.RendererTypeV2;
+export declare const RenderType_Iqudy: import0.RendererType2;
 export declare function View_Iqudy_0(): import0.ɵViewDefinition;
 export declare const IqudyNgFactory: import0.ComponentFactory<import1.Iqudy>;

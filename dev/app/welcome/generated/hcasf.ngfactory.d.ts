@@ -5,6 +5,6 @@
  */
 import * as import0 from '@angular/core';
 import * as import1 from './hcasf';
-export declare const RenderType_Hcasf: import0.RendererTypeV2;
+export declare const RenderType_Hcasf: import0.RendererType2;
 export declare function View_Hcasf_0(): import0.ɵViewDefinition;
 export declare const HcasfNgFactory: import0.ComponentFactory<import1.Hcasf>;

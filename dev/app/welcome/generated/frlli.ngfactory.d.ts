@@ -5,6 +5,6 @@
  */
 import * as import0 from '@angular/core';
 import * as import1 from './frlli';
-export declare const RenderType_Frlli: import0.RendererTypeV2;
+export declare const RenderType_Frlli: import0.RendererType2;
 export declare function View_Frlli_0(): import0.ɵViewDefinition;
 export declare const FrlliNgFactory: import0.ComponentFactory<import1.Frlli>;

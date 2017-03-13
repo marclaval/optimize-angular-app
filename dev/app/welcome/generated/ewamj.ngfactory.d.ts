@@ -5,6 +5,6 @@
  */
 import * as import0 from '@angular/core';
 import * as import1 from './ewamj';
-export declare const RenderType_Ewamj: import0.RendererTypeV2;
+export declare const RenderType_Ewamj: import0.RendererType2;
 export declare function View_Ewamj_0(): import0.ɵViewDefinition;
 export declare const EwamjNgFactory: import0.ComponentFactory<import1.Ewamj>;

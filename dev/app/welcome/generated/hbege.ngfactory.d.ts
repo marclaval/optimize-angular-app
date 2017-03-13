@@ -5,6 +5,6 @@
  */
 import * as import0 from '@angular/core';
 import * as import1 from './hbege';
-export declare const RenderType_Hbege: import0.RendererTypeV2;
+export declare const RenderType_Hbege: import0.RendererType2;
 export declare function View_Hbege_0(): import0.ɵViewDefinition;
 export declare const HbegeNgFactory: import0.ComponentFactory<import1.Hbege>;

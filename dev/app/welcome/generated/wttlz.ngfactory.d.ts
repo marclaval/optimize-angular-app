@@ -5,6 +5,6 @@
  */
 import * as import0 from '@angular/core';
 import * as import1 from './wttlz';
-export declare const RenderType_Wttlz: import0.RendererTypeV2;
+export declare const RenderType_Wttlz: import0.RendererType2;
 export declare function View_Wttlz_0(): import0.ɵViewDefinition;
 export declare const WttlzNgFactory: import0.ComponentFactory<import1.Wttlz>;

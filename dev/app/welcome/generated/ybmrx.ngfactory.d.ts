@@ -5,6 +5,6 @@
  */
 import * as import0 from '@angular/core';
 import * as import1 from './ybmrx';
-export declare const RenderType_Ybmrx: import0.RendererTypeV2;
+export declare const RenderType_Ybmrx: import0.RendererType2;
 export declare function View_Ybmrx_0(): import0.ɵViewDefinition;
 export declare const YbmrxNgFactory: import0.ComponentFactory<import1.Ybmrx>;

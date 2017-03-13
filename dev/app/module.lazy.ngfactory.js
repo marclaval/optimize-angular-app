@@ -65,7 +65,7 @@ System.register(["@angular/core", "./module.lazy", "@angular/common", "@angular/
                 Object.defineProperty(AppLazyModuleInjector.prototype, "_LOCALE_ID_7", {
                     get: function () {
                         if ((this.__LOCALE_ID_7 == null)) {
-                            (this.__LOCALE_ID_7 = import0.ɵo(this.parent.get(import0.LOCALE_ID, null)));
+                            (this.__LOCALE_ID_7 = import0.ɵn(this.parent.get(import0.LOCALE_ID, null)));
                         }
                         return this.__LOCALE_ID_7;
                     },
@@ -82,237 +82,237 @@ System.register(["@angular/core", "./module.lazy", "@angular/common", "@angular/
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_ApplicationRef_14", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_ApplicationRef_15", {
                     get: function () {
-                        if ((this.__ApplicationRef_14 == null)) {
-                            (this.__ApplicationRef_14 = this._ɵf_13);
+                        if ((this.__ApplicationRef_15 == null)) {
+                            (this.__ApplicationRef_15 = this._ɵf_14);
                         }
-                        return this.__ApplicationRef_14;
+                        return this.__ApplicationRef_15;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_Compiler_15", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_Compiler_16", {
                     get: function () {
-                        if ((this.__Compiler_15 == null)) {
-                            (this.__Compiler_15 = new import0.Compiler());
+                        if ((this.__Compiler_16 == null)) {
+                            (this.__Compiler_16 = new import0.Compiler());
                         }
-                        return this.__Compiler_15;
+                        return this.__Compiler_16;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_APP_ID_16", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_APP_ID_17", {
                     get: function () {
-                        if ((this.__APP_ID_16 == null)) {
-                            (this.__APP_ID_16 = import0.ɵg());
+                        if ((this.__APP_ID_17 == null)) {
+                            (this.__APP_ID_17 = import0.ɵg());
                         }
-                        return this.__APP_ID_16;
+                        return this.__APP_ID_17;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_IterableDiffers_17", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_IterableDiffers_18", {
                     get: function () {
-                        if ((this.__IterableDiffers_17 == null)) {
-                            (this.__IterableDiffers_17 = import0.ɵm());
+                        if ((this.__IterableDiffers_18 == null)) {
+                            (this.__IterableDiffers_18 = import0.ɵl());
                         }
-                        return this.__IterableDiffers_17;
+                        return this.__IterableDiffers_18;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_KeyValueDiffers_18", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_KeyValueDiffers_19", {
                     get: function () {
-                        if ((this.__KeyValueDiffers_18 == null)) {
-                            (this.__KeyValueDiffers_18 = import0.ɵn());
+                        if ((this.__KeyValueDiffers_19 == null)) {
+                            (this.__KeyValueDiffers_19 = import0.ɵm());
                         }
-                        return this.__KeyValueDiffers_18;
+                        return this.__KeyValueDiffers_19;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_DomSanitizer_19", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_DomSanitizer_20", {
                     get: function () {
-                        if ((this.__DomSanitizer_19 == null)) {
-                            (this.__DomSanitizer_19 = new import3.ɵe(this.parent.get(import3.DOCUMENT)));
+                        if ((this.__DomSanitizer_20 == null)) {
+                            (this.__DomSanitizer_20 = new import3.ɵe(this.parent.get(import3.DOCUMENT)));
                         }
-                        return this.__DomSanitizer_19;
+                        return this.__DomSanitizer_20;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_Sanitizer_20", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_Sanitizer_21", {
                     get: function () {
-                        if ((this.__Sanitizer_20 == null)) {
-                            (this.__Sanitizer_20 = this._DomSanitizer_19);
+                        if ((this.__Sanitizer_21 == null)) {
+                            (this.__Sanitizer_21 = this._DomSanitizer_20);
                         }
-                        return this.__Sanitizer_20;
+                        return this.__Sanitizer_21;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_HAMMER_GESTURE_CONFIG_21", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_HAMMER_GESTURE_CONFIG_22", {
                     get: function () {
-                        if ((this.__HAMMER_GESTURE_CONFIG_21 == null)) {
-                            (this.__HAMMER_GESTURE_CONFIG_21 = new import3.HammerGestureConfig());
+                        if ((this.__HAMMER_GESTURE_CONFIG_22 == null)) {
+                            (this.__HAMMER_GESTURE_CONFIG_22 = new import3.HammerGestureConfig());
                         }
-                        return this.__HAMMER_GESTURE_CONFIG_21;
+                        return this.__HAMMER_GESTURE_CONFIG_22;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_EVENT_MANAGER_PLUGINS_22", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_EVENT_MANAGER_PLUGINS_23", {
                     get: function () {
-                        if ((this.__EVENT_MANAGER_PLUGINS_22 == null)) {
-                            (this.__EVENT_MANAGER_PLUGINS_22 = [
+                        if ((this.__EVENT_MANAGER_PLUGINS_23 == null)) {
+                            (this.__EVENT_MANAGER_PLUGINS_23 = [
                                 new import3.ɵDomEventsPlugin(this.parent.get(import3.DOCUMENT)),
                                 new import3.ɵKeyEventsPlugin(this.parent.get(import3.DOCUMENT)),
-                                new import3.ɵHammerGesturesPlugin(this.parent.get(import3.DOCUMENT), this._HAMMER_GESTURE_CONFIG_21)
+                                new import3.ɵHammerGesturesPlugin(this.parent.get(import3.DOCUMENT), this._HAMMER_GESTURE_CONFIG_22)
                             ]);
                         }
-                        return this.__EVENT_MANAGER_PLUGINS_22;
+                        return this.__EVENT_MANAGER_PLUGINS_23;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_EventManager_23", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_EventManager_24", {
                     get: function () {
-                        if ((this.__EventManager_23 == null)) {
-                            (this.__EventManager_23 = new import3.EventManager(this._EVENT_MANAGER_PLUGINS_22, this.parent.get(import0.NgZone)));
+                        if ((this.__EventManager_24 == null)) {
+                            (this.__EventManager_24 = new import3.EventManager(this._EVENT_MANAGER_PLUGINS_23, this.parent.get(import0.NgZone)));
                         }
-                        return this.__EventManager_23;
+                        return this.__EventManager_24;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_\u0275DomRendererFactoryV2_25", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_\u0275DomRendererFactory2_26", {
                     get: function () {
-                        if ((this.__ɵDomRendererFactoryV2_25 == null)) {
-                            (this.__ɵDomRendererFactoryV2_25 = new import3.ɵDomRendererFactoryV2(this._EventManager_23, this._ɵDomSharedStylesHost_24));
+                        if ((this.__ɵDomRendererFactory2_26 == null)) {
+                            (this.__ɵDomRendererFactory2_26 = new import3.ɵDomRendererFactory2(this._EventManager_24, this._ɵDomSharedStylesHost_25));
                         }
-                        return this.__ɵDomRendererFactoryV2_25;
+                        return this.__ɵDomRendererFactory2_26;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_RendererFactoryV2_26", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_RendererFactory2_27", {
                     get: function () {
-                        if ((this.__RendererFactoryV2_26 == null)) {
-                            (this.__RendererFactoryV2_26 = this._ɵDomRendererFactoryV2_25);
+                        if ((this.__RendererFactory2_27 == null)) {
+                            (this.__RendererFactory2_27 = this._ɵDomRendererFactory2_26);
                         }
-                        return this.__RendererFactoryV2_26;
+                        return this.__RendererFactory2_27;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_\u0275SharedStylesHost_27", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_\u0275SharedStylesHost_28", {
                     get: function () {
-                        if ((this.__ɵSharedStylesHost_27 == null)) {
-                            (this.__ɵSharedStylesHost_27 = this._ɵDomSharedStylesHost_24);
+                        if ((this.__ɵSharedStylesHost_28 == null)) {
+                            (this.__ɵSharedStylesHost_28 = this._ɵDomSharedStylesHost_25);
                         }
-                        return this.__ɵSharedStylesHost_27;
+                        return this.__ɵSharedStylesHost_28;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_Testability_28", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_Testability_29", {
                     get: function () {
-                        if ((this.__Testability_28 == null)) {
-                            (this.__Testability_28 = new import0.Testability(this.parent.get(import0.NgZone)));
+                        if ((this.__Testability_29 == null)) {
+                            (this.__Testability_29 = new import0.Testability(this.parent.get(import0.NgZone)));
                         }
-                        return this.__Testability_28;
+                        return this.__Testability_29;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_Meta_29", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_Meta_30", {
                     get: function () {
-                        if ((this.__Meta_29 == null)) {
-                            (this.__Meta_29 = new import3.Meta(this.parent.get(import3.DOCUMENT)));
+                        if ((this.__Meta_30 == null)) {
+                            (this.__Meta_30 = new import3.Meta(this.parent.get(import3.DOCUMENT)));
                         }
-                        return this.__Meta_29;
+                        return this.__Meta_30;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_Title_30", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_Title_31", {
                     get: function () {
-                        if ((this.__Title_30 == null)) {
-                            (this.__Title_30 = new import3.Title(this.parent.get(import3.DOCUMENT)));
+                        if ((this.__Title_31 == null)) {
+                            (this.__Title_31 = new import3.Title(this.parent.get(import3.DOCUMENT)));
                         }
-                        return this.__Title_30;
+                        return this.__Title_31;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_ROUTER_CONFIGURATION_31", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_ROUTER_CONFIGURATION_32", {
                     get: function () {
-                        if ((this.__ROUTER_CONFIGURATION_31 == null)) {
-                            (this.__ROUTER_CONFIGURATION_31 = {
+                        if ((this.__ROUTER_CONFIGURATION_32 == null)) {
+                            (this.__ROUTER_CONFIGURATION_32 = {
                                 useHash: true,
                                 preloadingStrategy: import1.PreloadSelectedModules
                             });
                         }
-                        return this.__ROUTER_CONFIGURATION_31;
+                        return this.__ROUTER_CONFIGURATION_32;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_LocationStrategy_32", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_LocationStrategy_33", {
                     get: function () {
-                        if ((this.__LocationStrategy_32 == null)) {
-                            (this.__LocationStrategy_32 = import4.ɵc(this.parent.get(import2.PlatformLocation), this.parent.get(import2.APP_BASE_HREF, null), this._ROUTER_CONFIGURATION_31));
+                        if ((this.__LocationStrategy_33 == null)) {
+                            (this.__LocationStrategy_33 = import4.ɵc(this.parent.get(import2.PlatformLocation), this.parent.get(import2.APP_BASE_HREF, null), this._ROUTER_CONFIGURATION_32));
                         }
-                        return this.__LocationStrategy_32;
+                        return this.__LocationStrategy_33;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_Location_33", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_Location_34", {
                     get: function () {
-                        if ((this.__Location_33 == null)) {
-                            (this.__Location_33 = new import2.Location(this._LocationStrategy_32));
+                        if ((this.__Location_34 == null)) {
+                            (this.__Location_34 = new import2.Location(this._LocationStrategy_33));
                         }
-                        return this.__Location_33;
+                        return this.__Location_34;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_UrlSerializer_34", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_UrlSerializer_35", {
                     get: function () {
-                        if ((this.__UrlSerializer_34 == null)) {
-                            (this.__UrlSerializer_34 = new import4.DefaultUrlSerializer());
+                        if ((this.__UrlSerializer_35 == null)) {
+                            (this.__UrlSerializer_35 = new import4.DefaultUrlSerializer());
                         }
-                        return this.__UrlSerializer_34;
+                        return this.__UrlSerializer_35;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_RouterOutletMap_35", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_RouterOutletMap_36", {
                     get: function () {
-                        if ((this.__RouterOutletMap_35 == null)) {
-                            (this.__RouterOutletMap_35 = new import4.RouterOutletMap());
+                        if ((this.__RouterOutletMap_36 == null)) {
+                            (this.__RouterOutletMap_36 = new import4.RouterOutletMap());
                         }
-                        return this.__RouterOutletMap_35;
+                        return this.__RouterOutletMap_36;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_NgModuleFactoryLoader_36", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_NgModuleFactoryLoader_37", {
                     get: function () {
-                        if ((this.__NgModuleFactoryLoader_36 == null)) {
-                            (this.__NgModuleFactoryLoader_36 = new import0.SystemJsNgModuleLoader(this._Compiler_15, this.parent.get(import0.SystemJsNgModuleLoaderConfig, null)));
+                        if ((this.__NgModuleFactoryLoader_37 == null)) {
+                            (this.__NgModuleFactoryLoader_37 = new import0.SystemJsNgModuleLoader(this._Compiler_16, this.parent.get(import0.SystemJsNgModuleLoaderConfig, null)));
                         }
-                        return this.__NgModuleFactoryLoader_36;
+                        return this.__NgModuleFactoryLoader_37;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_ROUTES_37", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_ROUTES_38", {
                     get: function () {
-                        if ((this.__ROUTES_37 == null)) {
-                            (this.__ROUTES_37 = [[
+                        if ((this.__ROUTES_38 == null)) {
+                            (this.__ROUTES_38 = [[
                                     {
                                         path: '',
                                         component: import8.Welcome
@@ -332,67 +332,67 @@ System.register(["@angular/core", "./module.lazy", "@angular/common", "@angular/
                                 ]
                             ]);
                         }
-                        return this.__ROUTES_37;
+                        return this.__ROUTES_38;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_Router_38", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_Router_39", {
                     get: function () {
-                        if ((this.__Router_38 == null)) {
-                            (this.__Router_38 = import4.ɵe(this._ApplicationRef_14, this._UrlSerializer_34, this._RouterOutletMap_35, this._Location_33, this, this._NgModuleFactoryLoader_36, this._Compiler_15, this._ROUTES_37, this._ROUTER_CONFIGURATION_31, this.parent.get(import4.UrlHandlingStrategy, null), this.parent.get(import4.RouteReuseStrategy, null)));
+                        if ((this.__Router_39 == null)) {
+                            (this.__Router_39 = import4.ɵe(this._ApplicationRef_15, this._UrlSerializer_35, this._RouterOutletMap_36, this._Location_34, this, this._NgModuleFactoryLoader_37, this._Compiler_16, this._ROUTES_38, this._ROUTER_CONFIGURATION_32, this.parent.get(import4.UrlHandlingStrategy, null), this.parent.get(import4.RouteReuseStrategy, null)));
                         }
-                        return this.__Router_38;
+                        return this.__Router_39;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_ActivatedRoute_39", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_ActivatedRoute_40", {
                     get: function () {
-                        if ((this.__ActivatedRoute_39 == null)) {
-                            (this.__ActivatedRoute_39 = import4.ɵf(this._Router_38));
+                        if ((this.__ActivatedRoute_40 == null)) {
+                            (this.__ActivatedRoute_40 = import4.ɵf(this._Router_39));
                         }
-                        return this.__ActivatedRoute_39;
+                        return this.__ActivatedRoute_40;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_NoPreloading_43", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_NoPreloading_44", {
                     get: function () {
-                        if ((this.__NoPreloading_43 == null)) {
-                            (this.__NoPreloading_43 = new import4.NoPreloading());
+                        if ((this.__NoPreloading_44 == null)) {
+                            (this.__NoPreloading_44 = new import4.NoPreloading());
                         }
-                        return this.__NoPreloading_43;
+                        return this.__NoPreloading_44;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_PreloadAllModules_44", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_PreloadAllModules_45", {
                     get: function () {
-                        if ((this.__PreloadAllModules_44 == null)) {
-                            (this.__PreloadAllModules_44 = new import4.PreloadAllModules());
+                        if ((this.__PreloadAllModules_45 == null)) {
+                            (this.__PreloadAllModules_45 = new import4.PreloadAllModules());
                         }
-                        return this.__PreloadAllModules_44;
+                        return this.__PreloadAllModules_45;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_ROUTER_INITIALIZER_45", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_ROUTER_INITIALIZER_46", {
                     get: function () {
-                        if ((this.__ROUTER_INITIALIZER_45 == null)) {
-                            (this.__ROUTER_INITIALIZER_45 = import4.ɵg(this._Router_38, this._ApplicationRef_14, this._RouterPreloader_42, this._ROUTER_CONFIGURATION_31));
+                        if ((this.__ROUTER_INITIALIZER_46 == null)) {
+                            (this.__ROUTER_INITIALIZER_46 = import4.ɵi(this._ɵg_11));
                         }
-                        return this.__ROUTER_INITIALIZER_45;
+                        return this.__ROUTER_INITIALIZER_46;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(AppLazyModuleInjector.prototype, "_APP_BOOTSTRAP_LISTENER_46", {
+                Object.defineProperty(AppLazyModuleInjector.prototype, "_APP_BOOTSTRAP_LISTENER_47", {
                     get: function () {
-                        if ((this.__APP_BOOTSTRAP_LISTENER_46 == null)) {
-                            (this.__APP_BOOTSTRAP_LISTENER_46 = [this._ROUTER_INITIALIZER_45]);
+                        if ((this.__APP_BOOTSTRAP_LISTENER_47 == null)) {
+                            (this.__APP_BOOTSTRAP_LISTENER_47 = [this._ROUTER_INITIALIZER_46]);
                         }
-                        return this.__APP_BOOTSTRAP_LISTENER_46;
+                        return this.__APP_BOOTSTRAP_LISTENER_47;
                     },
                     enumerable: true,
                     configurable: true
@@ -407,16 +407,18 @@ System.register(["@angular/core", "./module.lazy", "@angular/common", "@angular/
                     this._AppLazyModule_6 = new import1.AppLazyModule();
                     this._ErrorHandler_9 = import3.ɵa();
                     this._NgProbeToken_10 = [import4.ɵb()];
-                    this._APP_INITIALIZER_11 = [
-                        import0.ɵp,
-                        import3.ɵc(this.parent.get(import3.NgProbeToken, null), this._NgProbeToken_10)
+                    this._ɵg_11 = new import4.ɵg(this);
+                    this._APP_INITIALIZER_12 = [
+                        import0.ɵo,
+                        import3.ɵc(this.parent.get(import3.NgProbeToken, null), this._NgProbeToken_10),
+                        import4.ɵh(this._ɵg_11)
                     ];
-                    this._ApplicationInitStatus_12 = new import0.ApplicationInitStatus(this._APP_INITIALIZER_11);
-                    this._ɵf_13 = new import0.ɵf(this.parent.get(import0.NgZone), this.parent.get(import0.ɵConsole), this, this._ErrorHandler_9, this, this._ApplicationInitStatus_12);
-                    this._ɵDomSharedStylesHost_24 = new import3.ɵDomSharedStylesHost(this.parent.get(import3.DOCUMENT));
-                    this._PreloadSelectedModules_40 = new import1.PreloadSelectedModules();
-                    this._PreloadingStrategy_41 = this._PreloadSelectedModules_40;
-                    this._RouterPreloader_42 = new import4.RouterPreloader(this._Router_38, this._NgModuleFactoryLoader_36, this._Compiler_15, this, this._PreloadingStrategy_41);
+                    this._ApplicationInitStatus_13 = new import0.ApplicationInitStatus(this._APP_INITIALIZER_12);
+                    this._ɵf_14 = new import0.ɵf(this.parent.get(import0.NgZone), this.parent.get(import0.ɵConsole), this, this._ErrorHandler_9, this, this._ApplicationInitStatus_13);
+                    this._ɵDomSharedStylesHost_25 = new import3.ɵDomSharedStylesHost(this.parent.get(import3.DOCUMENT));
+                    this._PreloadSelectedModules_41 = new import1.PreloadSelectedModules();
+                    this._PreloadingStrategy_42 = this._PreloadSelectedModules_41;
+                    this._RouterPreloader_43 = new import4.RouterPreloader(this._Router_39, this._NgModuleFactoryLoader_37, this._Compiler_16, this, this._PreloadingStrategy_42);
                     return this._AppLazyModule_6;
                 };
                 AppLazyModuleInjector.prototype.getInternal = function (token, notFoundResult) {
@@ -453,120 +455,123 @@ System.register(["@angular/core", "./module.lazy", "@angular/common", "@angular/
                     if ((token === import0.NgProbeToken)) {
                         return this._NgProbeToken_10;
                     }
+                    if ((token === import4.ɵg)) {
+                        return this._ɵg_11;
+                    }
                     if ((token === import0.APP_INITIALIZER)) {
-                        return this._APP_INITIALIZER_11;
+                        return this._APP_INITIALIZER_12;
                     }
                     if ((token === import0.ApplicationInitStatus)) {
-                        return this._ApplicationInitStatus_12;
+                        return this._ApplicationInitStatus_13;
                     }
                     if ((token === import0.ɵf)) {
-                        return this._ɵf_13;
+                        return this._ɵf_14;
                     }
                     if ((token === import0.ApplicationRef)) {
-                        return this._ApplicationRef_14;
+                        return this._ApplicationRef_15;
                     }
                     if ((token === import0.Compiler)) {
-                        return this._Compiler_15;
+                        return this._Compiler_16;
                     }
                     if ((token === import0.APP_ID)) {
-                        return this._APP_ID_16;
+                        return this._APP_ID_17;
                     }
                     if ((token === import0.IterableDiffers)) {
-                        return this._IterableDiffers_17;
+                        return this._IterableDiffers_18;
                     }
                     if ((token === import0.KeyValueDiffers)) {
-                        return this._KeyValueDiffers_18;
+                        return this._KeyValueDiffers_19;
                     }
                     if ((token === import3.DomSanitizer)) {
-                        return this._DomSanitizer_19;
+                        return this._DomSanitizer_20;
                     }
                     if ((token === import0.Sanitizer)) {
-                        return this._Sanitizer_20;
+                        return this._Sanitizer_21;
                     }
                     if ((token === import3.HAMMER_GESTURE_CONFIG)) {
-                        return this._HAMMER_GESTURE_CONFIG_21;
+                        return this._HAMMER_GESTURE_CONFIG_22;
                     }
                     if ((token === import3.EVENT_MANAGER_PLUGINS)) {
-                        return this._EVENT_MANAGER_PLUGINS_22;
+                        return this._EVENT_MANAGER_PLUGINS_23;
                     }
                     if ((token === import3.EventManager)) {
-                        return this._EventManager_23;
+                        return this._EventManager_24;
                     }
                     if ((token === import3.ɵDomSharedStylesHost)) {
-                        return this._ɵDomSharedStylesHost_24;
+                        return this._ɵDomSharedStylesHost_25;
                     }
-                    if ((token === import3.ɵDomRendererFactoryV2)) {
-                        return this._ɵDomRendererFactoryV2_25;
+                    if ((token === import3.ɵDomRendererFactory2)) {
+                        return this._ɵDomRendererFactory2_26;
                     }
-                    if ((token === import0.RendererFactoryV2)) {
-                        return this._RendererFactoryV2_26;
+                    if ((token === import0.RendererFactory2)) {
+                        return this._RendererFactory2_27;
                     }
                     if ((token === import3.ɵSharedStylesHost)) {
-                        return this._ɵSharedStylesHost_27;
+                        return this._ɵSharedStylesHost_28;
                     }
                     if ((token === import0.Testability)) {
-                        return this._Testability_28;
+                        return this._Testability_29;
                     }
                     if ((token === import3.Meta)) {
-                        return this._Meta_29;
+                        return this._Meta_30;
                     }
                     if ((token === import3.Title)) {
-                        return this._Title_30;
+                        return this._Title_31;
                     }
                     if ((token === import4.ROUTER_CONFIGURATION)) {
-                        return this._ROUTER_CONFIGURATION_31;
+                        return this._ROUTER_CONFIGURATION_32;
                     }
                     if ((token === import2.LocationStrategy)) {
-                        return this._LocationStrategy_32;
+                        return this._LocationStrategy_33;
                     }
                     if ((token === import2.Location)) {
-                        return this._Location_33;
+                        return this._Location_34;
                     }
                     if ((token === import4.UrlSerializer)) {
-                        return this._UrlSerializer_34;
+                        return this._UrlSerializer_35;
                     }
                     if ((token === import4.RouterOutletMap)) {
-                        return this._RouterOutletMap_35;
+                        return this._RouterOutletMap_36;
                     }
                     if ((token === import0.NgModuleFactoryLoader)) {
-                        return this._NgModuleFactoryLoader_36;
+                        return this._NgModuleFactoryLoader_37;
                     }
                     if ((token === import4.ROUTES)) {
-                        return this._ROUTES_37;
+                        return this._ROUTES_38;
                     }
                     if ((token === import4.Router)) {
-                        return this._Router_38;
+                        return this._Router_39;
                     }
                     if ((token === import4.ActivatedRoute)) {
-                        return this._ActivatedRoute_39;
+                        return this._ActivatedRoute_40;
                     }
                     if ((token === import1.PreloadSelectedModules)) {
-                        return this._PreloadSelectedModules_40;
+                        return this._PreloadSelectedModules_41;
                     }
                     if ((token === import4.PreloadingStrategy)) {
-                        return this._PreloadingStrategy_41;
+                        return this._PreloadingStrategy_42;
                     }
                     if ((token === import4.RouterPreloader)) {
-                        return this._RouterPreloader_42;
+                        return this._RouterPreloader_43;
                     }
                     if ((token === import4.NoPreloading)) {
-                        return this._NoPreloading_43;
+                        return this._NoPreloading_44;
                     }
                     if ((token === import4.PreloadAllModules)) {
-                        return this._PreloadAllModules_44;
+                        return this._PreloadAllModules_45;
                     }
                     if ((token === import4.ROUTER_INITIALIZER)) {
-                        return this._ROUTER_INITIALIZER_45;
+                        return this._ROUTER_INITIALIZER_46;
                     }
                     if ((token === import0.APP_BOOTSTRAP_LISTENER)) {
-                        return this._APP_BOOTSTRAP_LISTENER_46;
+                        return this._APP_BOOTSTRAP_LISTENER_47;
                     }
                     return notFoundResult;
                 };
                 AppLazyModuleInjector.prototype.destroyInternal = function () {
-                    this._ɵf_13.ngOnDestroy();
-                    this._ɵDomSharedStylesHost_24.ngOnDestroy();
-                    this._RouterPreloader_42.ngOnDestroy();
+                    this._ɵf_14.ngOnDestroy();
+                    this._ɵDomSharedStylesHost_25.ngOnDestroy();
+                    this._RouterPreloader_43.ngOnDestroy();
                 };
                 return AppLazyModuleInjector;
             }(import0.ɵNgModuleInjector));

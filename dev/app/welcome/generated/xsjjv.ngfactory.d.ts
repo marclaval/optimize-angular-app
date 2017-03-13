@@ -5,6 +5,6 @@
  */
 import * as import0 from '@angular/core';
 import * as import1 from './xsjjv';
-export declare const RenderType_Xsjjv: import0.RendererTypeV2;
+export declare const RenderType_Xsjjv: import0.RendererType2;
 export declare function View_Xsjjv_0(): import0.ɵViewDefinition;
 export declare const XsjjvNgFactory: import0.ComponentFactory<import1.Xsjjv>;

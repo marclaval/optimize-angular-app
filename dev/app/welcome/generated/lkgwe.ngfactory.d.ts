@@ -5,6 +5,6 @@
  */
 import * as import0 from '@angular/core';
 import * as import1 from './lkgwe';
-export declare const RenderType_Lkgwe: import0.RendererTypeV2;
+export declare const RenderType_Lkgwe: import0.RendererType2;
 export declare function View_Lkgwe_0(): import0.ɵViewDefinition;
 export declare const LkgweNgFactory: import0.ComponentFactory<import1.Lkgwe>;

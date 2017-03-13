@@ -5,6 +5,6 @@
  */
 import * as import0 from '@angular/core';
 import * as import1 from './qahef';
-export declare const RenderType_Qahef: import0.RendererTypeV2;
+export declare const RenderType_Qahef: import0.RendererType2;
 export declare function View_Qahef_0(): import0.ɵViewDefinition;
 export declare const QahefNgFactory: import0.ComponentFactory<import1.Qahef>;

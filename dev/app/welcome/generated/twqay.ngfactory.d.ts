@@ -5,6 +5,6 @@
  */
 import * as import0 from '@angular/core';
 import * as import1 from './twqay';
-export declare const RenderType_Twqay: import0.RendererTypeV2;
+export declare const RenderType_Twqay: import0.RendererType2;
 export declare function View_Twqay_0(): import0.ɵViewDefinition;
 export declare const TwqayNgFactory: import0.ComponentFactory<import1.Twqay>;

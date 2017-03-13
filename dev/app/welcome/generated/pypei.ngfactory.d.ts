@@ -5,6 +5,6 @@
  */
 import * as import0 from '@angular/core';
 import * as import1 from './pypei';
-export declare const RenderType_Pypei: import0.RendererTypeV2;
+export declare const RenderType_Pypei: import0.RendererType2;
 export declare function View_Pypei_0(): import0.ɵViewDefinition;
 export declare const PypeiNgFactory: import0.ComponentFactory<import1.Pypei>;

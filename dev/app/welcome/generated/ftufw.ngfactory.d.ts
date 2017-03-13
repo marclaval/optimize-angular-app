@@ -5,6 +5,6 @@
  */
 import * as import0 from '@angular/core';
 import * as import1 from './ftufw';
-export declare const RenderType_Ftufw: import0.RendererTypeV2;
+export declare const RenderType_Ftufw: import0.RendererType2;
 export declare function View_Ftufw_0(): import0.ɵViewDefinition;
 export declare const FtufwNgFactory: import0.ComponentFactory<import1.Ftufw>;
