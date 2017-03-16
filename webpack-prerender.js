@@ -99,7 +99,7 @@ module.exports = function makeWebpackConfig() {
     }),
 
     new ScriptExtHtmlWebpackPlugin({
-      defaultAttribute: 'async'
+      defaultAttribute: 'defer'
     }),
 
     new webpack.LoaderOptionsPlugin({
