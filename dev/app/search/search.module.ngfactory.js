@@ -153,26 +153,17 @@ System.register(["@angular/core", "./search.module", "@angular/common", "@angula
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(SearchModuleInjector.prototype, "_ROUTES_15", {
-                    get: function () {
-                        if ((this.__ROUTES_15 == null)) {
-                            (this.__ROUTES_15 = [[{
-                                        path: '',
-                                        component: import6.Search
-                                    }
-                                ]]);
-                        }
-                        return this.__ROUTES_15;
-                    },
-                    enumerable: true,
-                    configurable: true
-                });
                 SearchModuleInjector.prototype.createInternal = function () {
                     this._CommonModule_0 = new import2.CommonModule();
                     this._HttpModule_1 = new import3.HttpModule();
                     this._JsonpModule_2 = new import3.JsonpModule();
-                    this._RouterModule_3 = new import4.RouterModule(this.parent.get(import4.ɵa, null));
+                    this._RouterModule_3 = new import4.RouterModule(this.parent.get(import4.ɵa, null), this.parent.get(import4.Router, null));
                     this._SearchModule_4 = new import1.SearchModule();
+                    this._ROUTES_15 = [[{
+                                path: '',
+                                component: import6.Search
+                            }
+                        ]];
                     return this._SearchModule_4;
                 };
                 SearchModuleInjector.prototype.getInternal = function (token, notFoundResult) {
@@ -231,6 +222,7 @@ System.register(["@angular/core", "./search.module", "@angular/common", "@angula
                 return SearchModuleInjector;
             }(import0.ɵNgModuleInjector));
             exports_1("SearchModuleNgFactory", SearchModuleNgFactory = new import0.NgModuleFactory(SearchModuleInjector, import1.SearchModule));
+            //# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3NlYXJjaC9zZWFyY2gubW9kdWxlLm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3NlYXJjaC9zZWFyY2gubW9kdWxlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbF0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7In0=
         }
     };
 });

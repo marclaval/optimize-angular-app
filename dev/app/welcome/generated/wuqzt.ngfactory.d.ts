@@ -6,5 +6,5 @@
 import * as import0 from '@angular/core';
 import * as import1 from './wuqzt';
 export declare const RenderType_Wuqzt: import0.RendererType2;
-export declare function View_Wuqzt_0(): import0.ɵViewDefinition;
+export declare function View_Wuqzt_0(log: any): import0.ɵViewDefinition;
 export declare const WuqztNgFactory: import0.ComponentFactory<import1.Wuqzt>;

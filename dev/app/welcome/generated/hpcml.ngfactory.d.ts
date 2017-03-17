@@ -6,5 +6,5 @@
 import * as import0 from '@angular/core';
 import * as import1 from './hpcml';
 export declare const RenderType_Hpcml: import0.RendererType2;
-export declare function View_Hpcml_0(): import0.ɵViewDefinition;
+export declare function View_Hpcml_0(log: any): import0.ɵViewDefinition;
 export declare const HpcmlNgFactory: import0.ComponentFactory<import1.Hpcml>;

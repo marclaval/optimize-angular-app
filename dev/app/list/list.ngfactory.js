@@ -7,15 +7,15 @@
 System.register(["@angular/core", "./list", "../../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.ngfactory", "@ng-bootstrap/ng-bootstrap/pagination/pagination", "@ng-bootstrap/ng-bootstrap/pagination/pagination-config"], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
-    function View_List_0() {
+    function View_List_0(log) {
         return import0.ɵvid(0, [
-            import0.ɵted(null, ['\n    ']),
-            import0.ɵeld(0, null, null, 10, 'div', [], null, null, null, null, null),
-            import0.ɵted(null, ['\n      ']),
-            import0.ɵeld(0, null, null, 1, 'h2', [], null, null, null, null, null),
-            import0.ɵted(null, ['Paginated list']),
-            import0.ɵted(null, ['\n      ']),
-            import0.ɵeld(0, null, null, 1, 'ngb-pagination', [], null, [[
+            (log()(), import0.ɵted(null, ['\n    '])),
+            (log()(), import0.ɵeld(0, null, null, 10, 'div', [], null, null, null, null, null)),
+            (log()(), import0.ɵted(null, ['\n      '])),
+            (log()(), import0.ɵeld(0, null, null, 1, 'h2', [], null, null, null, null, null)),
+            (log()(), import0.ɵted(null, ['Paginated list'])),
+            (log()(), import0.ɵted(null, ['\n      '])),
+            (log()(), import0.ɵeld(0, null, null, 1, 'ngb-pagination', [], null, [[
                     null,
                     'pageChange'
                 ]
@@ -27,8 +27,8 @@ System.register(["@angular/core", "./list", "../../node_modules/@ng-bootstrap/ng
                     allowDefault = (pd_0 && allowDefault);
                 }
                 return allowDefault;
-            }, import2.View_NgbPagination_0, import2.RenderType_NgbPagination),
-            import0.ɵdid(286720, null, 0, import3.NgbPagination, [import4.NgbPaginationConfig], {
+            }, import2.View_NgbPagination_0, import2.RenderType_NgbPagination)),
+            (log()(), import0.ɵdid(286720, null, 0, import3.NgbPagination, [import4.NgbPaginationConfig], {
                 collectionSize: [
                     0,
                     'collectionSize'
@@ -37,15 +37,15 @@ System.register(["@angular/core", "./list", "../../node_modules/@ng-bootstrap/ng
                     1,
                     'page'
                 ]
-            }, { pageChange: 'pageChange' }),
-            import0.ɵted(null, ['\n      ']),
-            import0.ɵeld(0, null, null, 1, 'pre', [], null, null, null, null, null),
-            import0.ɵted(null, [
+            }, { pageChange: 'pageChange' })),
+            (log()(), import0.ɵted(null, ['\n      '])),
+            (log()(), import0.ɵeld(0, null, null, 1, 'pre', [], null, null, null, null, null)),
+            (log()(), import0.ɵted(null, [
                 'Current page: ',
                 ''
-            ]),
-            import0.ɵted(null, ['\n    ']),
-            import0.ɵted(null, ['\n  '])
+            ])),
+            (log()(), import0.ɵted(null, ['\n    '])),
+            (log()(), import0.ɵted(null, ['\n  ']))
         ], function (check, view) {
             var comp = view.component;
             var currVal_0 = 70;
@@ -53,18 +53,26 @@ System.register(["@angular/core", "./list", "../../node_modules/@ng-bootstrap/ng
             check(view, 7, 0, currVal_0, currVal_1);
         }, function (check, view) {
             var comp = view.component;
-            var currVal_0 = comp.page;
-            check(view, 10, 0, currVal_0);
+            check(view, 1, 0);
+            check(view, 3, 0);
+            check(view, 6, 0);
+            check(view, 9, 0);
+            var currVal_2 = comp.page;
+            check(view, 10, 0, currVal_2);
         });
     }
     exports_1("View_List_0", View_List_0);
-    function View_List_Host_0() {
+    function View_List_Host_0(log) {
         return import0.ɵvid(0, [
-            import0.ɵeld(0, null, null, 1, 'list', [], null, null, null, View_List_0, RenderType_List),
-            import0.ɵdid(24576, null, 0, import1.List, [], null, null)
-        ], null, null);
+            (log()(), import0.ɵeld(0, null, null, 1, 'list', [], null, null, null, View_List_0, RenderType_List)),
+            (log()(), import0.ɵdid(24576, null, 0, import1.List, [], null, null))
+        ], function (check, view) {
+            check(view, 1, 0);
+        }, function (check, view) {
+            check(view, 0, 0);
+        });
     }
-    var import0, import1, import2, import3, import4, styles_List, RenderType_List, RenderType_List_Host, ListNgFactory;
+    var import0, import1, import2, import3, import4, styles_List, RenderType_List, ListNgFactory;
     return {
         setters: [
             function (import0_1) {
@@ -95,12 +103,8 @@ System.register(["@angular/core", "./list", "../../node_modules/@ng-bootstrap/ng
                 styles: styles_List,
                 data: {}
             }));
-            RenderType_List_Host = import0.ɵcrt({
-                encapsulation: 2,
-                styles: [],
-                data: {}
-            });
             exports_1("ListNgFactory", ListNgFactory = import0.ɵccf('list', import1.List, View_List_Host_0));
+            //# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL2xpc3QvbGlzdC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9Vc2Vycy9tbGF2YWwvZGV2L2dpdGh1Yi9wbGF5Z3JvdW5kL29wdGltaXplLWFuZ3VsYXItYXBwL2FwcC9saXN0L2xpc3QudHMiLCJuZzovLy9Vc2Vycy9tbGF2YWwvZGV2L2dpdGh1Yi9wbGF5Z3JvdW5kL29wdGltaXplLWFuZ3VsYXItYXBwL2FwcC9saXN0L2xpc3QudHMuTGlzdC5odG1sIiwibmc6Ly8vVXNlcnMvbWxhdmFsL2Rldi9naXRodWIvcGxheWdyb3VuZC9vcHRpbWl6ZS1hbmd1bGFyLWFwcC9hcHAvbGlzdC9saXN0LnRzLkxpc3RfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbCwiXG4gICAgPGRpdj5cbiAgICAgIDxoMj5QYWdpbmF0ZWQgbGlzdDwvaDI+XG4gICAgICA8bmdiLXBhZ2luYXRpb24gW2NvbGxlY3Rpb25TaXplXT1cIjcwXCIgWyhwYWdlKV09XCJwYWdlXCI+PC9uZ2ItcGFnaW5hdGlvbj5cbiAgICAgIDxwcmU+Q3VycmVudCBwYWdlOiB7e3BhZ2V9fTwvcHJlPlxuICAgIDwvZGl2PlxuICAiLCI8bGlzdD48L2xpc3Q+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztJQ0FBO0lBQ0k7SUFBSztJQUNIO0lBQUk7SUFBbUI7TUFDdkI7UUFBQTtRQUFBO01BQUE7SUFBQTtNQUFBO01BQUE7TUFBc0M7UUFBQTtRQUFBO01BQUE7TUFBdEM7SUFBQTtJQUFBO01BQUE7UUFBQTtRQUFBO01BQUE7O01BQUE7UUFBQTtRQUFBO01BQUE7O0lBQUE7S0FBQTtJQUF1RTtJQUN2RTtJQUFLO01BQUE7TUFBQTtJQUFBO0lBQUE7SUFBNEI7SUFDN0I7Ozs7SUFGWTtJQUFzQjtJQUF0QyxlQUFnQixVQUFzQixTQUF0Qzs7O0lBRkY7SUFDRTtJQUNBO0lBQ0E7SUFBSztJQUFBOzs7OztJQ0pYO0lBQUE7OztJQUFBOztJQUFBOzs7In0=
         }
     };
 });

@@ -66,20 +66,6 @@ System.register(["@angular/core", "./list.module", "@angular/common", "@ng-boots
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(ListModuleInjector.prototype, "_ROUTES_5", {
-                    get: function () {
-                        if ((this.__ROUTES_5 == null)) {
-                            (this.__ROUTES_5 = [[{
-                                        path: '',
-                                        component: import7.List
-                                    }
-                                ]]);
-                        }
-                        return this.__ROUTES_5;
-                    },
-                    enumerable: true,
-                    configurable: true
-                });
                 Object.defineProperty(ListModuleInjector.prototype, "_NgbPaginationConfig_6", {
                     get: function () {
                         if ((this.__NgbPaginationConfig_6 == null)) {
@@ -93,8 +79,13 @@ System.register(["@angular/core", "./list.module", "@angular/common", "@ng-boots
                 ListModuleInjector.prototype.createInternal = function () {
                     this._CommonModule_0 = new import2.CommonModule();
                     this._NgbPaginationModule_1 = new import3.NgbPaginationModule();
-                    this._RouterModule_2 = new import4.RouterModule(this.parent.get(import4.ɵa, null));
+                    this._RouterModule_2 = new import4.RouterModule(this.parent.get(import4.ɵa, null), this.parent.get(import4.Router, null));
                     this._ListModule_3 = new import1.ListModule();
+                    this._ROUTES_5 = [[{
+                                path: '',
+                                component: import7.List
+                            }
+                        ]];
                     return this._ListModule_3;
                 };
                 ListModuleInjector.prototype.getInternal = function (token, notFoundResult) {
@@ -126,6 +117,7 @@ System.register(["@angular/core", "./list.module", "@angular/common", "@ng-boots
                 return ListModuleInjector;
             }(import0.ɵNgModuleInjector));
             exports_1("ListModuleNgFactory", ListModuleNgFactory = new import0.NgModuleFactory(ListModuleInjector, import1.ListModule));
+            //# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL2xpc3QvbGlzdC5tb2R1bGUubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvbWxhdmFsL2Rldi9naXRodWIvcGxheWdyb3VuZC9vcHRpbWl6ZS1hbmd1bGFyLWFwcC9hcHAvbGlzdC9saXN0Lm1vZHVsZS50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGxdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsifQ==
         }
     };
 });

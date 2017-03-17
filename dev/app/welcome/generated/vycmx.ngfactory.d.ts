@@ -6,5 +6,5 @@
 import * as import0 from '@angular/core';
 import * as import1 from './vycmx';
 export declare const RenderType_Vycmx: import0.RendererType2;
-export declare function View_Vycmx_0(): import0.ɵViewDefinition;
+export declare function View_Vycmx_0(log: any): import0.ɵViewDefinition;
 export declare const VycmxNgFactory: import0.ComponentFactory<import1.Vycmx>;

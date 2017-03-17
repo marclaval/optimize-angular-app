@@ -60,25 +60,16 @@ System.register(["@angular/core", "./subscribe.module", "@angular/forms", "@angu
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(SubscribeModuleInjector.prototype, "_ROUTES_5", {
-                    get: function () {
-                        if ((this.__ROUTES_5 == null)) {
-                            (this.__ROUTES_5 = [[{
-                                        path: '',
-                                        component: import5.Subscribe
-                                    }
-                                ]]);
-                        }
-                        return this.__ROUTES_5;
-                    },
-                    enumerable: true,
-                    configurable: true
-                });
                 SubscribeModuleInjector.prototype.createInternal = function () {
                     this._ɵba_0 = new import2.ɵba();
                     this._FormsModule_1 = new import2.FormsModule();
-                    this._RouterModule_2 = new import3.RouterModule(this.parent.get(import3.ɵa, null));
+                    this._RouterModule_2 = new import3.RouterModule(this.parent.get(import3.ɵa, null), this.parent.get(import3.Router, null));
                     this._SubscribeModule_3 = new import1.SubscribeModule();
+                    this._ROUTES_5 = [[{
+                                path: '',
+                                component: import5.Subscribe
+                            }
+                        ]];
                     return this._SubscribeModule_3;
                 };
                 SubscribeModuleInjector.prototype.getInternal = function (token, notFoundResult) {
@@ -107,6 +98,7 @@ System.register(["@angular/core", "./subscribe.module", "@angular/forms", "@angu
                 return SubscribeModuleInjector;
             }(import0.ɵNgModuleInjector));
             exports_1("SubscribeModuleNgFactory", SubscribeModuleNgFactory = new import0.NgModuleFactory(SubscribeModuleInjector, import1.SubscribeModule));
+            //# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3N1YnNjcmliZS9zdWJzY3JpYmUubW9kdWxlLm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3N1YnNjcmliZS9zdWJzY3JpYmUubW9kdWxlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbF0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsifQ==
         }
     };
 });

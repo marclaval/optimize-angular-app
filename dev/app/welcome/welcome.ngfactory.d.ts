@@ -6,5 +6,5 @@
 import * as import0 from '@angular/core';
 import * as import201 from './welcome';
 export declare const RenderType_Welcome: import0.RendererType2;
-export declare function View_Welcome_0(): import0.ɵViewDefinition;
+export declare function View_Welcome_0(log: any): import0.ɵViewDefinition;
 export declare const WelcomeNgFactory: import0.ComponentFactory<import201.Welcome>;

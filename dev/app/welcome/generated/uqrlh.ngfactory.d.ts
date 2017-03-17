@@ -6,5 +6,5 @@
 import * as import0 from '@angular/core';
 import * as import1 from './uqrlh';
 export declare const RenderType_Uqrlh: import0.RendererType2;
-export declare function View_Uqrlh_0(): import0.ɵViewDefinition;
+export declare function View_Uqrlh_0(log: any): import0.ɵViewDefinition;
 export declare const UqrlhNgFactory: import0.ComponentFactory<import1.Uqrlh>;

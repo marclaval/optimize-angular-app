@@ -6,5 +6,5 @@
 import * as import0 from '@angular/core';
 import * as import1 from './lbjem';
 export declare const RenderType_Lbjem: import0.RendererType2;
-export declare function View_Lbjem_0(): import0.ɵViewDefinition;
+export declare function View_Lbjem_0(log: any): import0.ɵViewDefinition;
 export declare const LbjemNgFactory: import0.ComponentFactory<import1.Lbjem>;

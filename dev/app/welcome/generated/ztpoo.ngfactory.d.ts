@@ -6,5 +6,5 @@
 import * as import0 from '@angular/core';
 import * as import1 from './ztpoo';
 export declare const RenderType_Ztpoo: import0.RendererType2;
-export declare function View_Ztpoo_0(): import0.ɵViewDefinition;
+export declare function View_Ztpoo_0(log: any): import0.ɵViewDefinition;
 export declare const ZtpooNgFactory: import0.ComponentFactory<import1.Ztpoo>;

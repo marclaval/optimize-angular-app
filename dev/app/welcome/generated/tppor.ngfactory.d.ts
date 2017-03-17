@@ -6,5 +6,5 @@
 import * as import0 from '@angular/core';
 import * as import1 from './tppor';
 export declare const RenderType_Tppor: import0.RendererType2;
-export declare function View_Tppor_0(): import0.ɵViewDefinition;
+export declare function View_Tppor_0(log: any): import0.ɵViewDefinition;
 export declare const TpporNgFactory: import0.ComponentFactory<import1.Tppor>;

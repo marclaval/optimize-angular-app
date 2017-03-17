@@ -7,10 +7,10 @@
 System.register(["@angular/core", "./cgieg"], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
-    function View_Cgieg_0() {
+    function View_Cgieg_0(log) {
         return import0.ɵvid(0, [
-            import0.ɵted(null, ['\n    ']),
-            import0.ɵeld(0, null, null, 1, 'span', [], [
+            (log()(), import0.ɵted(null, ['\n    '])),
+            (log()(), import0.ɵeld(0, null, null, 1, 'span', [], [
                 [
                     0,
                     'aria-label',
@@ -21,10 +21,10 @@ System.register(["@angular/core", "./cgieg"], function (exports_1, context_1) {
                     'hidden',
                     0
                 ]
-            ], null, null, null, null),
-            import0.ɵted(null, ['This is a dummy component for Cgieg']),
-            import0.ɵted(null, ['\n    ']),
-            import0.ɵeld(0, null, null, 0, 'div', [], null, [[
+            ], null, null, null, null)),
+            (log()(), import0.ɵted(null, ['This is a dummy component for Cgieg'])),
+            (log()(), import0.ɵted(null, ['\n    '])),
+            (log()(), import0.ɵeld(0, null, null, 0, 'div', [], null, [[
                     null,
                     'click'
                 ]
@@ -36,23 +36,28 @@ System.register(["@angular/core", "./cgieg"], function (exports_1, context_1) {
                     allowDefault = (pd_0 && allowDefault);
                 }
                 return allowDefault;
-            }, null, null),
-            import0.ɵted(null, ['\n    '])
+            }, null, null)),
+            (log()(), import0.ɵted(null, ['\n    ']))
         ], null, function (check, view) {
             var comp = view.component;
             var currVal_0 = comp.msg;
             var currVal_1 = false;
             check(view, 1, 0, currVal_0, currVal_1);
+            check(view, 4, 0);
         });
     }
     exports_1("View_Cgieg_0", View_Cgieg_0);
-    function View_Cgieg_Host_0() {
+    function View_Cgieg_Host_0(log) {
         return import0.ɵvid(0, [
-            import0.ɵeld(0, null, null, 1, 'd-cgieg', [], null, null, null, View_Cgieg_0, RenderType_Cgieg),
-            import0.ɵdid(24576, null, 0, import1.Cgieg, [], null, null)
-        ], null, null);
+            (log()(), import0.ɵeld(0, null, null, 1, 'd-cgieg', [], null, null, null, View_Cgieg_0, RenderType_Cgieg)),
+            (log()(), import0.ɵdid(24576, null, 0, import1.Cgieg, [], null, null))
+        ], function (check, view) {
+            check(view, 1, 0);
+        }, function (check, view) {
+            check(view, 0, 0);
+        });
     }
-    var import0, import1, styles_Cgieg, RenderType_Cgieg, RenderType_Cgieg_Host, CgiegNgFactory;
+    var import0, import1, styles_Cgieg, RenderType_Cgieg, CgiegNgFactory;
     return {
         setters: [
             function (import0_1) {
@@ -74,12 +79,8 @@ System.register(["@angular/core", "./cgieg"], function (exports_1, context_1) {
                 styles: styles_Cgieg,
                 data: {}
             }));
-            RenderType_Cgieg_Host = import0.ɵcrt({
-                encapsulation: 2,
-                styles: [],
-                data: {}
-            });
             exports_1("CgiegNgFactory", CgiegNgFactory = import0.ɵccf('d-cgieg', import1.Cgieg, View_Cgieg_Host_0));
+            //# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3dlbGNvbWUvZ2VuZXJhdGVkL2NnaWVnLm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3dlbGNvbWUvZ2VuZXJhdGVkL2NnaWVnLnRzIiwibmc6Ly8vVXNlcnMvbWxhdmFsL2Rldi9naXRodWIvcGxheWdyb3VuZC9vcHRpbWl6ZS1hbmd1bGFyLWFwcC9hcHAvd2VsY29tZS9nZW5lcmF0ZWQvY2dpZWcudHMuQ2dpZWcuaHRtbCIsIm5nOi8vL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3dlbGNvbWUvZ2VuZXJhdGVkL2NnaWVnLnRzLkNnaWVnX0hvc3QuaHRtbCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsIlxuICAgIDxzcGFuIFthdHRyLmFyaWEtbGFiZWxdPVwibXNnXCIgW2hpZGRlbl09XCJmYWxzZVwiPlRoaXMgaXMgYSBkdW1teSBjb21wb25lbnQgZm9yIENnaWVnPC9zcGFuPlxuICAgIDxkaXYgKGNsaWNrKT1cImRvTm90aGluZygkZXZlbnQpXCI+PC9kaXY+XG4gICAgIiwiPGQtY2dpZWc+PC9kLWNnaWVnPiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7SUNBQTtJQUNJO01BQUE7UUFBQTtRQUFBO1FBQUE7TUFBQTs7TUFBQTtRQUFBO1FBQUE7UUFBQTtNQUFBOztJQUFBO0tBQUE7SUFBK0M7SUFBMEM7TUFDekY7UUFBQTtRQUFBO01BQUE7SUFBQTtNQUFBO01BQUE7TUFBSztRQUFBO1FBQUE7TUFBQTtNQUFMO0lBQUE7SUFBdUM7Ozs7SUFEakM7SUFBd0I7SUFBOUIsZUFBTSxVQUF3QixTQUE5QjtJQUNBOzs7OztJQ0ZKO0lBQUE7OztJQUFBOztJQUFBOzs7In0=
         }
     };
 });
