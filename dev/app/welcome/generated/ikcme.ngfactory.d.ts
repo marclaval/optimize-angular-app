@@ -6,5 +6,5 @@
 import * as import0 from '@angular/core';
 import * as import1 from './ikcme';
 export declare const RenderType_Ikcme: import0.RendererType2;
-export declare function View_Ikcme_0(log: any): import0.ɵViewDefinition;
+export declare function View_Ikcme_0(l: any): import0.ɵViewDefinition;
 export declare const IkcmeNgFactory: import0.ComponentFactory<import1.Ikcme>;

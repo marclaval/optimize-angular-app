@@ -6,5 +6,5 @@
 import * as import0 from '@angular/core';
 import * as import1 from './eroor';
 export declare const RenderType_Eroor: import0.RendererType2;
-export declare function View_Eroor_0(log: any): import0.ɵViewDefinition;
+export declare function View_Eroor_0(l: any): import0.ɵViewDefinition;
 export declare const EroorNgFactory: import0.ComponentFactory<import1.Eroor>;

@@ -6,5 +6,5 @@
 import * as import0 from '@angular/core';
 import * as import1 from './hwgcn';
 export declare const RenderType_Hwgcn: import0.RendererType2;
-export declare function View_Hwgcn_0(log: any): import0.ɵViewDefinition;
+export declare function View_Hwgcn_0(l: any): import0.ɵViewDefinition;
 export declare const HwgcnNgFactory: import0.ComponentFactory<import1.Hwgcn>;

@@ -6,5 +6,5 @@
 import * as import0 from '@angular/core';
 import * as import1 from './qucvl';
 export declare const RenderType_Qucvl: import0.RendererType2;
-export declare function View_Qucvl_0(log: any): import0.ɵViewDefinition;
+export declare function View_Qucvl_0(l: any): import0.ɵViewDefinition;
 export declare const QucvlNgFactory: import0.ComponentFactory<import1.Qucvl>;

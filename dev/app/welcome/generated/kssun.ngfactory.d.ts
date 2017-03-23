@@ -6,5 +6,5 @@
 import * as import0 from '@angular/core';
 import * as import1 from './kssun';
 export declare const RenderType_Kssun: import0.RendererType2;
-export declare function View_Kssun_0(log: any): import0.ɵViewDefinition;
+export declare function View_Kssun_0(l: any): import0.ɵViewDefinition;
 export declare const KssunNgFactory: import0.ComponentFactory<import1.Kssun>;

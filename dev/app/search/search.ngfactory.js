@@ -7,28 +7,27 @@
 System.register(["@angular/core", "./search", "@angular/common", "@angular/http"], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
-    function View_Search_1(log) {
+    function View_Search_1(l) {
         return import0.ɵvid(0, [
-            (log()(), import0.ɵeld(0, null, null, 1, 'div', [], null, null, null, null, null)),
-            (log()(), import0.ɵted(null, [
+            (l()(), import0.ɵeld(0, null, null, 1, 'div', [], null, null, null, null, null)),
+            (l()(), import0.ɵted(null, [
                 '',
                 ''
             ]))
-        ], null, function (check, view) {
-            check(view, 0, 0);
-            var currVal_0 = view.context.$implicit;
-            check(view, 1, 0, currVal_0);
+        ], null, function (ck, v) {
+            var currVal_0 = v.context.$implicit;
+            ck(v, 1, 0, currVal_0);
         });
     }
-    function View_Search_0(log) {
+    function View_Search_0(l) {
         return import0.ɵvid(0, [
-            (log()(), import0.ɵted(null, ['\n    '])),
-            (log()(), import0.ɵeld(0, null, null, 12, 'div', [], null, null, null, null, null)),
-            (log()(), import0.ɵted(null, ['\n      '])),
-            (log()(), import0.ɵeld(0, null, null, 1, 'h2', [], null, null, null, null, null)),
-            (log()(), import0.ɵted(null, ['Search'])),
-            (log()(), import0.ɵted(null, ['\n      '])),
-            (log()(), import0.ɵeld(0, [[
+            (l()(), import0.ɵted(null, ['\n    '])),
+            (l()(), import0.ɵeld(0, null, null, 12, 'div', [], null, null, null, null, null)),
+            (l()(), import0.ɵted(null, ['\n      '])),
+            (l()(), import0.ɵeld(0, null, null, 1, 'h2', [], null, null, null, null, null)),
+            (l()(), import0.ɵted(null, ['Search'])),
+            (l()(), import0.ɵted(null, ['\n      '])),
+            (l()(), import0.ɵeld(0, [[
                     'foo',
                     1
                 ]
@@ -42,24 +41,24 @@ System.register(["@angular/core", "./search", "@angular/common", "@angular/http"
                     'text'
                 ]
             ], null, null, null, null, null)),
-            (log()(), import0.ɵted(null, ['\n      '])),
-            (log()(), import0.ɵeld(0, null, null, 1, 'button', [], null, [[
+            (l()(), import0.ɵted(null, ['\n      '])),
+            (l()(), import0.ɵeld(0, null, null, 1, 'button', [], null, [[
                     null,
                     'click'
                 ]
-            ], function (view, eventName, $event) {
-                var allowDefault = true;
-                var comp = view.component;
-                if (('click' === eventName)) {
-                    var pd_0 = (comp.search(import0.ɵnov(view, 6).value) !== false);
-                    allowDefault = (pd_0 && allowDefault);
+            ], function (v, en, $event) {
+                var ad = true;
+                var co = v.component;
+                if (('click' === en)) {
+                    var pd_0 = (co.search(import0.ɵnov(v, 6).value) !== false);
+                    ad = (pd_0 && ad);
                 }
-                return allowDefault;
+                return ad;
             }, null, null)),
-            (log()(), import0.ɵted(null, ['Search'])),
-            (log()(), import0.ɵted(null, ['\n      '])),
-            (log()(), import0.ɵand(8388608, null, null, 1, null, View_Search_1)),
-            (log()(), import0.ɵdid(401408, null, 0, import2.NgForOf, [
+            (l()(), import0.ɵted(null, ['Search'])),
+            (l()(), import0.ɵted(null, ['\n      '])),
+            (l()(), import0.ɵand(8388608, null, null, 1, null, View_Search_1)),
+            import0.ɵdid(401408, null, 0, import2.NgForOf, [
                 import0.ViewContainerRef,
                 import0.TemplateRef,
                 import0.IterableDiffers
@@ -67,30 +66,21 @@ System.register(["@angular/core", "./search", "@angular/common", "@angular/http"
                     0,
                     'ngForOf'
                 ]
-            }, null)),
-            (log()(), import0.ɵted(null, ['\n    '])),
-            (log()(), import0.ɵted(null, ['\n  ']))
-        ], function (check, view) {
-            var comp = view.component;
-            var currVal_0 = comp.pages;
-            check(view, 12, 0, currVal_0);
-        }, function (check, view) {
-            check(view, 1, 0);
-            check(view, 3, 0);
-            check(view, 6, 0);
-            check(view, 8, 0);
-        });
+            }, null),
+            (l()(), import0.ɵted(null, ['\n    '])),
+            (l()(), import0.ɵted(null, ['\n  ']))
+        ], function (ck, v) {
+            var co = v.component;
+            var currVal_0 = co.pages;
+            ck(v, 12, 0, currVal_0);
+        }, null);
     }
     exports_1("View_Search_0", View_Search_0);
-    function View_Search_Host_0(log) {
+    function View_Search_Host_0(l) {
         return import0.ɵvid(0, [
-            (log()(), import0.ɵeld(0, null, null, 1, 'search', [], null, null, null, View_Search_0, RenderType_Search)),
-            (log()(), import0.ɵdid(24576, null, 0, import1.Search, [import3.Http], null, null))
-        ], function (check, view) {
-            check(view, 1, 0);
-        }, function (check, view) {
-            check(view, 0, 0);
-        });
+            (l()(), import0.ɵeld(0, null, null, 1, 'search', [], null, null, null, View_Search_0, RenderType_Search)),
+            import0.ɵdid(24576, null, 0, import1.Search, [import3.Http], null, null)
+        ], null, null);
     }
     var import0, import1, import2, import3, styles_Search, RenderType_Search, SearchNgFactory;
     return {
@@ -120,8 +110,8 @@ System.register(["@angular/core", "./search", "@angular/common", "@angular/http"
                 styles: styles_Search,
                 data: {}
             }));
-            exports_1("SearchNgFactory", SearchNgFactory = import0.ɵccf('search', import1.Search, View_Search_Host_0));
-            //# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3NlYXJjaC9zZWFyY2gubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvbWxhdmFsL2Rldi9naXRodWIvcGxheWdyb3VuZC9vcHRpbWl6ZS1hbmd1bGFyLWFwcC9hcHAvc2VhcmNoL3NlYXJjaC50cyIsIm5nOi8vL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3NlYXJjaC9zZWFyY2gudHMuU2VhcmNoLmh0bWwiLCJuZzovLy9Vc2Vycy9tbGF2YWwvZGV2L2dpdGh1Yi9wbGF5Z3JvdW5kL29wdGltaXplLWFuZ3VsYXItYXBwL2FwcC9zZWFyY2gvc2VhcmNoLnRzLlNlYXJjaF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOltudWxsLCJcbiAgICA8ZGl2PlxuICAgICAgPGgyPlNlYXJjaDwvaDI+XG4gICAgICA8aW5wdXQgdHlwZT1cInRleHRcIiBwbGFjZWhvbGRlcj1cIlNlYXJjaCBvbiBXaWtpcGVkaWFcIiAjZm9vPlxuICAgICAgPGJ1dHRvbiAoY2xpY2spPVwic2VhcmNoKGZvby52YWx1ZSlcIj5TZWFyY2g8L2J1dHRvbj5cbiAgICAgIDxkaXYgKm5nRm9yPVwibGV0IHBhZ2Ugb2YgcGFnZXNcIj57e3BhZ2V9fTwvZGl2PlxuICAgIDwvZGl2PlxuICAiLCI8c2VhcmNoPjwvc2VhcmNoPiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztJQ0tNO0lBQWdDO01BQUE7TUFBQTtJQUFBO0lBQUE7OztJQUFoQztJQUFnQztJQUFBOzs7OztJQUx0QztJQUNJO0lBQUs7SUFDSDtJQUFJO0lBQVc7TUFDZjtRQUFBO1FBQUE7TUFBQTtJQUFBO01BQUE7UUFBQTtRQUFBO01BQUE7O01BQUE7UUFBQTtRQUFBO01BQUE7O0lBQUE7S0FBQTtJQUEwRDtNQUMxRDtRQUFBO1FBQUE7TUFBQTtJQUFBO01BQUE7TUFBQTtNQUFRO1FBQUE7UUFBQTtNQUFBO01BQVI7SUFBQTtJQUFvQztJQUFlO0lBQ25EO0lBQUE7Ozs7SUFBQTtPQUFBO1FBQUE7UUFBQTtNQUFBO0lBQUE7SUFBOEM7SUFDMUM7Ozs7SUFEQztJQUFMLGdCQUFLLFNBQUw7O0lBSkY7SUFDRTtJQUNBO0lBQ0E7Ozs7O0lDSk47SUFBQTs7O0lBQUE7O0lBQUE7OzsifQ==
+            exports_1("SearchNgFactory", SearchNgFactory = import0.ɵccf('search', import1.Search, View_Search_Host_0, {}, {}, []));
+            //# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3NlYXJjaC9zZWFyY2gubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvbWxhdmFsL2Rldi9naXRodWIvcGxheWdyb3VuZC9vcHRpbWl6ZS1hbmd1bGFyLWFwcC9hcHAvc2VhcmNoL3NlYXJjaC50cyIsIm5nOi8vL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3NlYXJjaC9zZWFyY2gudHMuU2VhcmNoLmh0bWwiLCJuZzovLy9Vc2Vycy9tbGF2YWwvZGV2L2dpdGh1Yi9wbGF5Z3JvdW5kL29wdGltaXplLWFuZ3VsYXItYXBwL2FwcC9zZWFyY2gvc2VhcmNoLnRzLlNlYXJjaF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIlxuICAgIDxkaXY+XG4gICAgICA8aDI+U2VhcmNoPC9oMj5cbiAgICAgIDxpbnB1dCB0eXBlPVwidGV4dFwiIHBsYWNlaG9sZGVyPVwiU2VhcmNoIG9uIFdpa2lwZWRpYVwiICNmb28+XG4gICAgICA8YnV0dG9uIChjbGljayk9XCJzZWFyY2goZm9vLnZhbHVlKVwiPlNlYXJjaDwvYnV0dG9uPlxuICAgICAgPGRpdiAqbmdGb3I9XCJsZXQgcGFnZSBvZiBwYWdlc1wiPnt7cGFnZX19PC9kaXY+XG4gICAgPC9kaXY+XG4gICIsIjxzZWFyY2g+PC9zZWFyY2g+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0lDS007SUFBZ0M7TUFBQTtNQUFBO0lBQUE7SUFBQTs7O0lBQUE7SUFBQTs7Ozs7SUFMdEM7SUFDSTtJQUFLO0lBQ0g7SUFBSTtJQUFXO01BQ2Y7UUFBQTtRQUFBO01BQUE7SUFBQTtNQUFBO1FBQUE7UUFBQTtNQUFBOztNQUFBO1FBQUE7UUFBQTtNQUFBOztJQUFBO0tBQUE7SUFBMEQ7TUFDMUQ7UUFBQTtRQUFBO01BQUE7SUFBQTtNQUFBO01BQUE7TUFBUTtRQUFBO1FBQUE7TUFBQTtNQUFSO0lBQUE7SUFBb0M7SUFBZTtJQUNuRDtnQkFBQTs7OztJQUFBO09BQUE7UUFBQTtRQUFBO01BQUE7SUFBQTtJQUE4QztJQUMxQzs7OztJQURDO0lBQUwsVUFBSyxTQUFMOzs7OztJQ0xOO2dCQUFBOzs7OyJ9
         }
     };
 });

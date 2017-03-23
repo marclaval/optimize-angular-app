@@ -6,5 +6,5 @@
 import * as import0 from '@angular/core';
 import * as import1 from './lymtc';
 export declare const RenderType_Lymtc: import0.RendererType2;
-export declare function View_Lymtc_0(log: any): import0.ɵViewDefinition;
+export declare function View_Lymtc_0(l: any): import0.ɵViewDefinition;
 export declare const LymtcNgFactory: import0.ComponentFactory<import1.Lymtc>;

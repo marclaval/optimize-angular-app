@@ -7,55 +7,50 @@
 System.register(["@angular/core", "./iwqqs"], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
-    function View_Iwqqs_0(log) {
+    function View_Iwqqs_0(l) {
         return import0.ɵvid(0, [
-            (log()(), import0.ɵted(null, ['\n    '])),
-            (log()(), import0.ɵeld(0, null, null, 1, 'span', [], [
+            (l()(), import0.ɵted(null, ['\n    '])),
+            (l()(), import0.ɵeld(0, null, null, 1, 'span', [], [
                 [
-                    0,
+                    1,
                     'aria-label',
                     0
                 ],
                 [
-                    3,
+                    8,
                     'hidden',
                     0
                 ]
             ], null, null, null, null)),
-            (log()(), import0.ɵted(null, ['This is a dummy component for Iwqqs'])),
-            (log()(), import0.ɵted(null, ['\n    '])),
-            (log()(), import0.ɵeld(0, null, null, 0, 'div', [], null, [[
+            (l()(), import0.ɵted(null, ['This is a dummy component for Iwqqs'])),
+            (l()(), import0.ɵted(null, ['\n    '])),
+            (l()(), import0.ɵeld(0, null, null, 0, 'div', [], null, [[
                     null,
                     'click'
                 ]
-            ], function (view, eventName, $event) {
-                var allowDefault = true;
-                var comp = view.component;
-                if (('click' === eventName)) {
-                    var pd_0 = (comp.doNothing($event) !== false);
-                    allowDefault = (pd_0 && allowDefault);
+            ], function (v, en, $event) {
+                var ad = true;
+                var co = v.component;
+                if (('click' === en)) {
+                    var pd_0 = (co.doNothing($event) !== false);
+                    ad = (pd_0 && ad);
                 }
-                return allowDefault;
+                return ad;
             }, null, null)),
-            (log()(), import0.ɵted(null, ['\n    ']))
-        ], null, function (check, view) {
-            var comp = view.component;
-            var currVal_0 = comp.msg;
+            (l()(), import0.ɵted(null, ['\n    ']))
+        ], null, function (ck, v) {
+            var co = v.component;
+            var currVal_0 = co.msg;
             var currVal_1 = false;
-            check(view, 1, 0, currVal_0, currVal_1);
-            check(view, 4, 0);
+            ck(v, 1, 0, currVal_0, currVal_1);
         });
     }
     exports_1("View_Iwqqs_0", View_Iwqqs_0);
-    function View_Iwqqs_Host_0(log) {
+    function View_Iwqqs_Host_0(l) {
         return import0.ɵvid(0, [
-            (log()(), import0.ɵeld(0, null, null, 1, 'd-iwqqs', [], null, null, null, View_Iwqqs_0, RenderType_Iwqqs)),
-            (log()(), import0.ɵdid(24576, null, 0, import1.Iwqqs, [], null, null))
-        ], function (check, view) {
-            check(view, 1, 0);
-        }, function (check, view) {
-            check(view, 0, 0);
-        });
+            (l()(), import0.ɵeld(0, null, null, 1, 'd-iwqqs', [], null, null, null, View_Iwqqs_0, RenderType_Iwqqs)),
+            import0.ɵdid(24576, null, 0, import1.Iwqqs, [], null, null)
+        ], null, null);
     }
     var import0, import1, styles_Iwqqs, RenderType_Iwqqs, IwqqsNgFactory;
     return {
@@ -79,8 +74,8 @@ System.register(["@angular/core", "./iwqqs"], function (exports_1, context_1) {
                 styles: styles_Iwqqs,
                 data: {}
             }));
-            exports_1("IwqqsNgFactory", IwqqsNgFactory = import0.ɵccf('d-iwqqs', import1.Iwqqs, View_Iwqqs_Host_0));
-            //# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3dlbGNvbWUvZ2VuZXJhdGVkL2l3cXFzLm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3dlbGNvbWUvZ2VuZXJhdGVkL2l3cXFzLnRzIiwibmc6Ly8vVXNlcnMvbWxhdmFsL2Rldi9naXRodWIvcGxheWdyb3VuZC9vcHRpbWl6ZS1hbmd1bGFyLWFwcC9hcHAvd2VsY29tZS9nZW5lcmF0ZWQvaXdxcXMudHMuSXdxcXMuaHRtbCIsIm5nOi8vL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3dlbGNvbWUvZ2VuZXJhdGVkL2l3cXFzLnRzLkl3cXFzX0hvc3QuaHRtbCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsIlxuICAgIDxzcGFuIFthdHRyLmFyaWEtbGFiZWxdPVwibXNnXCIgW2hpZGRlbl09XCJmYWxzZVwiPlRoaXMgaXMgYSBkdW1teSBjb21wb25lbnQgZm9yIEl3cXFzPC9zcGFuPlxuICAgIDxkaXYgKGNsaWNrKT1cImRvTm90aGluZygkZXZlbnQpXCI+PC9kaXY+XG4gICAgIiwiPGQtaXdxcXM+PC9kLWl3cXFzPiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7SUNBQTtJQUNJO01BQUE7UUFBQTtRQUFBO1FBQUE7TUFBQTs7TUFBQTtRQUFBO1FBQUE7UUFBQTtNQUFBOztJQUFBO0tBQUE7SUFBK0M7SUFBMEM7TUFDekY7UUFBQTtRQUFBO01BQUE7SUFBQTtNQUFBO01BQUE7TUFBSztRQUFBO1FBQUE7TUFBQTtNQUFMO0lBQUE7SUFBdUM7Ozs7SUFEakM7SUFBd0I7SUFBOUIsZUFBTSxVQUF3QixTQUE5QjtJQUNBOzs7OztJQ0ZKO0lBQUE7OztJQUFBOztJQUFBOzs7In0=
+            exports_1("IwqqsNgFactory", IwqqsNgFactory = import0.ɵccf('d-iwqqs', import1.Iwqqs, View_Iwqqs_Host_0, {}, {}, []));
+            //# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3dlbGNvbWUvZ2VuZXJhdGVkL2l3cXFzLm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3dlbGNvbWUvZ2VuZXJhdGVkL2l3cXFzLnRzIiwibmc6Ly8vVXNlcnMvbWxhdmFsL2Rldi9naXRodWIvcGxheWdyb3VuZC9vcHRpbWl6ZS1hbmd1bGFyLWFwcC9hcHAvd2VsY29tZS9nZW5lcmF0ZWQvaXdxcXMudHMuSXdxcXMuaHRtbCIsIm5nOi8vL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3dlbGNvbWUvZ2VuZXJhdGVkL2l3cXFzLnRzLkl3cXFzX0hvc3QuaHRtbCJdLCJzb3VyY2VzQ29udGVudCI6WyIgIiwiXG4gICAgPHNwYW4gW2F0dHIuYXJpYS1sYWJlbF09XCJtc2dcIiBbaGlkZGVuXT1cImZhbHNlXCI+VGhpcyBpcyBhIGR1bW15IGNvbXBvbmVudCBmb3IgSXdxcXM8L3NwYW4+XG4gICAgPGRpdiAoY2xpY2spPVwiZG9Ob3RoaW5nKCRldmVudClcIj48L2Rpdj5cbiAgICAiLCI8ZC1pd3Fxcz48L2QtaXdxcXM+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7OztJQ0FBO0lBQ0k7TUFBQTtRQUFBO1FBQUE7UUFBQTtNQUFBOztNQUFBO1FBQUE7UUFBQTtRQUFBO01BQUE7O0lBQUE7S0FBQTtJQUErQztJQUEwQztNQUN6RjtRQUFBO1FBQUE7TUFBQTtJQUFBO01BQUE7TUFBQTtNQUFLO1FBQUE7UUFBQTtNQUFBO01BQUw7SUFBQTtJQUF1Qzs7OztJQURqQztJQUF3QjtJQUE5QixTQUFNLFVBQXdCLFNBQTlCOzs7OztJQ0RKO2dCQUFBOzs7OyJ9
         }
     };
 });
