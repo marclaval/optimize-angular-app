@@ -1,5 +1,5 @@
 (self._S=self._S||[]).push((function(){/*
- Angular v4.0.0-rc.6
+ Angular v4.0.0
  (c) 2010-2017 Google, Inc. https://angular.io/
  License: MIT
 
