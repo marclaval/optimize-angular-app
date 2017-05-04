@@ -30,8 +30,8 @@ OPTS=(
   # Otherwise the zone.js file is not imported anywhere and gets dropped.
   # See index.html
   #node_modules/zone.js/dist/zone.js
-  "lib/vendor/testability.externs.js"
-  "lib/vendor/zone_externs.js"
+  "node_modules/@angular/core/src/testability/testability.externs.js"
+  "node_modules/zone.js/dist/zone_externs.js"
 
   $(find lib/vendor/rxjs -name '*.js')
   node_modules/@angular/core/@angular/core.js
@@ -92,8 +92,8 @@ OPTS=(
   # Otherwise the zone.js file is not imported anywhere and gets dropped.
   # See index.html
   #node_modules/zone.js/dist/zone.js
-  "lib/vendor/testability.externs.js"
-  "lib/vendor/zone_externs.js"
+  "node_modules/@angular/core/src/testability/testability.externs.js"
+  "node_modules/zone.js/dist/zone_externs.js"
   $(cat tmp/modules.txt)
 
   # Trim files not imported (transitively) from bootstrap.js

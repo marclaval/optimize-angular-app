@@ -29,7 +29,7 @@ scenarios.forEach((scenario) => {
 
     it('should load the welcome page', function() {
       if (!isBaseline){
-        expect(protractor.element(by.css('h2')).getText()).toEqual('Welcome');
+        expect<any>(protractor.element(by.css('h2')).getText()).toEqual('Welcome');
       } else {
         expect(true).toBeTruthy();
       }
@@ -39,11 +39,11 @@ scenarios.forEach((scenario) => {
       if (!isBaseline) {
         protractor.element.all(by.css('a')).get(2).click();
         protractor.browser.driver.wait(protractor.until.elementLocated(By.css('list')), 10000).then(() => {
-          expect(protractor.element(by.css('h2')).getText()).toEqual('Paginated list');
+          expect<any>(protractor.element(by.css('h2')).getText()).toEqual('Paginated list');
 
-          expect(protractor.element(by.css('pre')).getText()).toEqual('Current page: 1');
+          expect<any>(protractor.element(by.css('pre')).getText()).toEqual('Current page: 1');
           protractor.element.all(by.css('a.page-link')).get(4).click();
-          expect(protractor.element(by.css('pre')).getText()).toEqual('Current page: 4');
+          expect<any>(protractor.element(by.css('pre')).getText()).toEqual('Current page: 4');
         });
       } else {
         expect(true).toBeTruthy();
@@ -54,11 +54,11 @@ scenarios.forEach((scenario) => {
       if (!isBaseline) {
         protractor.element.all(by.css('a')).get(3).click();
         protractor.browser.driver.wait(protractor.until.elementLocated(By.css('subscribe')), 10000).then(() => {
-          expect(protractor.element(by.css('h2')).getText()).toEqual('Subscribe');
+          expect<any>(protractor.element(by.css('h2')).getText()).toEqual('Subscribe');
 
-          expect(protractor.element(by.css('pre')).getText()).toEqual('Value entered: ');
+          expect<any>(protractor.element(by.css('pre')).getText()).toEqual('Value entered: ');
           protractor.element(by.css('input')).sendKeys('foo');
-          expect(protractor.element(by.css('pre')).getText()).toEqual('Value entered: foo');
+          expect<any>(protractor.element(by.css('pre')).getText()).toEqual('Value entered: foo');
         });
       } else {
         expect(true).toBeTruthy();
@@ -69,13 +69,13 @@ scenarios.forEach((scenario) => {
       if (!isBaseline) {
         protractor.element.all(by.css('a')).get(4).click();
         protractor.browser.driver.wait(protractor.until.elementLocated(By.css('search')), 10000).then(() => {
-          expect(protractor.element(by.css('h2')).getText()).toEqual('Search');
+          expect<any>(protractor.element(by.css('h2')).getText()).toEqual('Search');
 
-          expect(protractor.element.all(by.css('div')).count()).toEqual(3);
+          expect<any>(protractor.element.all(by.css('div')).count()).toEqual(3);
           protractor.element(by.css('input')).sendKeys('foo');
           protractor.element(by.css('button')).click();
           protractor.browser.driver.wait(protractor.until.elementLocated(By.css('search > div > div')), 10000);
-          expect(protractor.element.all(by.css('div')).count()).toEqual(13);
+          expect<any>(protractor.element.all(by.css('div')).count()).toEqual(13);
         });
       } else {
         expect(true).toBeTruthy();
