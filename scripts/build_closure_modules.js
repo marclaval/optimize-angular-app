@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 
+let conf = fs.readFileSync('./closure.lazy.conf', 'utf-8');
 const main = fs.readFileSync('./tmp/0.MF', 'utf-8').split('\n');
 const bundle1 = fs.readFileSync('./tmp/1.MF', 'utf-8').split('\n');
 const bundle2 = fs.readFileSync('./tmp/2.MF', 'utf-8').split('\n');
@@ -13,7 +14,7 @@ removeDuplicates(main, bundle3);
 
 let out = '';
 out += main.join('\n');
-out += '--module=main:' + (main.length - 1 + 2) + '\n\n'; //Remove empty line, add the 2 externs
+out += '--module=main:' + (main.length - 1 + 3) + '\n\n'; //Remove empty line, add the 3 externs
 
 out += bundle1.join('\n');
 out += '\n--module=bundle1:' + bundle1.length + ':main\n\n';
@@ -24,7 +25,8 @@ out += '\n--module=bundle2:' + bundle2.length + ':main\n\n';
 out += bundle3.join('\n');
 out += '\n--module=bundle3:' + bundle3.length + ':main\n\n';
 
-fs.writeFileSync('./tmp/modules.txt', out, 'utf-8');
+conf = conf.replace('#LIST_OF_FILES#', out);
+fs.writeFileSync('./tmp/closure.lazy.conf', conf, 'utf-8');
 
 function removeDuplicates(reference, bundle) {
   const refLength = bundle.length;
