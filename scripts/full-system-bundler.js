@@ -41,7 +41,8 @@ var config = {
     '@angular/platform-server': 'n:@angular/platform-server/@angular/platform-server.es5.js',
     '@angular/router': 'n:@angular/router/@angular/router.es5.js',
     "@ng-bootstrap/ng-bootstrap": "n:@ng-bootstrap/ng-bootstrap",
-    "rxjs": "n:rxjs"
+    "rxjs": "n:rxjs",
+    "tslib": "n:tslib/tslib.js"
   },
   packages: {
     "app": {main: isAoT ? "main.aot.js" : (isLazy ? "main.lazy.js" : "main.jit.js"), defaultExtension: "js"},
