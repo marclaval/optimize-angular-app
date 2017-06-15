@@ -27,6 +27,7 @@ The build task executes a number of independent steps which can be executed sepa
 - `npm run aot-rollup`
 - `npm run aot-systemjs`
 - `npm run aot-webpack`
+- `npm run laxyloading-closure`
 - `npm run lazyloading-systemjs`
 - `npm run lazyloading-webpack`
 - `npm run prerender`
