@@ -12,7 +12,7 @@
     "bundling-full": "npm run dev && node ./scripts/full-system-bundler.js",
     "treeshaking-rollup": "rollup -c rollup-jit.js",
     "treeshaking-webpack": "webpack --config webpack-jit.js --progress --profile --bail",
-    "aot-closure": "ngc -p tsconfig-aot.json && ngc -p tsconfig-closure.json && bash ./scripts/build_closure.sh",
+    "aot-closure": "ngc -p tsconfig-aot.json && ngc -p tsconfig-closure.json && java -jar node_modules/google-closure-compiler/compiler.jar --flagfile closure.conf --entry_point=./tmp/es6/app/main.aot --output_manifest=./tmp/manifest.MF --js_output_file=dist/aot-closure/bundle.js",
     "aot-rollup": "ngc -p tsconfig-aot.json && rollup -c rollup-aot.js",
     "aot-systemjs": "ngc -p tsconfig-aot.json && tsc -p tsconfig-systemjs-aot.json && node ./scripts/full-system-bundler.js --aot",
     "aot-webpack": "webpack --config webpack-aot.js --progress --profile --bail",
@@ -85,7 +85,7 @@
     "script-ext-html-webpack-plugin": "1.8.1",
     "raw-loader": "0.5.1",
     "@ngtools/webpack": "1.4.1",
-    "google-closure-compiler": "20170409.0.0",
+    "google-closure-compiler": "20170521.0.0",
     "core-js-builder ": "2.4.1"
   }
 }
