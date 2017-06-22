@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './lkgwe';
-export declare const RenderType_Lkgwe: import0.RendererType2;
-export declare function View_Lkgwe_0(l: any): import0.ɵViewDefinition;
-export declare const LkgweNgFactory: import0.ComponentFactory<import1.Lkgwe>;
+import * as i0 from '@angular/core';
+import * as i1 from './lkgwe';
+export declare const RenderType_Lkgwe: i0.RendererType2;
+export declare function View_Lkgwe_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Lkgwe_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const LkgweNgFactory: i0.ComponentFactory<i1.Lkgwe>;

@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './hzjqj';
-export declare const RenderType_Hzjqj: import0.RendererType2;
-export declare function View_Hzjqj_0(l: any): import0.ɵViewDefinition;
-export declare const HzjqjNgFactory: import0.ComponentFactory<import1.Hzjqj>;
+import * as i0 from '@angular/core';
+import * as i1 from './hzjqj';
+export declare const RenderType_Hzjqj: i0.RendererType2;
+export declare function View_Hzjqj_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Hzjqj_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const HzjqjNgFactory: i0.ComponentFactory<i1.Hzjqj>;

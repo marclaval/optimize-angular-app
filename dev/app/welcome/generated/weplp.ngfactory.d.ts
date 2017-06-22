@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './weplp';
-export declare const RenderType_Weplp: import0.RendererType2;
-export declare function View_Weplp_0(l: any): import0.ɵViewDefinition;
-export declare const WeplpNgFactory: import0.ComponentFactory<import1.Weplp>;
+import * as i0 from '@angular/core';
+import * as i1 from './weplp';
+export declare const RenderType_Weplp: i0.RendererType2;
+export declare function View_Weplp_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Weplp_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const WeplpNgFactory: i0.ComponentFactory<i1.Weplp>;

@@ -3,6 +3,6 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './list.module';
-export declare const ListModuleNgFactory: import0.NgModuleFactory<import1.ListModule>;
+import * as i0 from '@angular/core';
+import * as i1 from './list.module';
+export declare const ListModuleNgFactory: i0.NgModuleFactory<i1.ListModule>;

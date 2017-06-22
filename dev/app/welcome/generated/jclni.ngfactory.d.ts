@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './jclni';
-export declare const RenderType_Jclni: import0.RendererType2;
-export declare function View_Jclni_0(l: any): import0.ɵViewDefinition;
-export declare const JclniNgFactory: import0.ComponentFactory<import1.Jclni>;
+import * as i0 from '@angular/core';
+import * as i1 from './jclni';
+export declare const RenderType_Jclni: i0.RendererType2;
+export declare function View_Jclni_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Jclni_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const JclniNgFactory: i0.ComponentFactory<i1.Jclni>;

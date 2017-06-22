@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './qucvl';
-export declare const RenderType_Qucvl: import0.RendererType2;
-export declare function View_Qucvl_0(l: any): import0.ɵViewDefinition;
-export declare const QucvlNgFactory: import0.ComponentFactory<import1.Qucvl>;
+import * as i0 from '@angular/core';
+import * as i1 from './qucvl';
+export declare const RenderType_Qucvl: i0.RendererType2;
+export declare function View_Qucvl_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Qucvl_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const QucvlNgFactory: i0.ComponentFactory<i1.Qucvl>;

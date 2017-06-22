@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './bgwjk';
-export declare const RenderType_Bgwjk: import0.RendererType2;
-export declare function View_Bgwjk_0(l: any): import0.ɵViewDefinition;
-export declare const BgwjkNgFactory: import0.ComponentFactory<import1.Bgwjk>;
+import * as i0 from '@angular/core';
+import * as i1 from './bgwjk';
+export declare const RenderType_Bgwjk: i0.RendererType2;
+export declare function View_Bgwjk_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Bgwjk_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const BgwjkNgFactory: i0.ComponentFactory<i1.Bgwjk>;

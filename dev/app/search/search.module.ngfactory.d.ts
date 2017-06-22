@@ -3,6 +3,6 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './search.module';
-export declare const SearchModuleNgFactory: import0.NgModuleFactory<import1.SearchModule>;
+import * as i0 from '@angular/core';
+import * as i1 from './search.module';
+export declare const SearchModuleNgFactory: i0.NgModuleFactory<i1.SearchModule>;

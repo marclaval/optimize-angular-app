@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './gfumm';
-export declare const RenderType_Gfumm: import0.RendererType2;
-export declare function View_Gfumm_0(l: any): import0.ɵViewDefinition;
-export declare const GfummNgFactory: import0.ComponentFactory<import1.Gfumm>;
+import * as i0 from '@angular/core';
+import * as i1 from './gfumm';
+export declare const RenderType_Gfumm: i0.RendererType2;
+export declare function View_Gfumm_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Gfumm_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const GfummNgFactory: i0.ComponentFactory<i1.Gfumm>;

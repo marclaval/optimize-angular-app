@@ -7,84 +7,51 @@
 System.register(["@angular/core", "./list", "../../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.ngfactory", "@ng-bootstrap/ng-bootstrap/pagination/pagination", "@ng-bootstrap/ng-bootstrap/pagination/pagination-config"], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
-    function View_List_0(l) {
-        return import0.ɵvid(0, [
-            (l()(), import0.ɵted(null, ['\n    '])),
-            (l()(), import0.ɵeld(0, null, null, 10, 'div', [], null, null, null, null, null)),
-            (l()(), import0.ɵted(null, ['\n      '])),
-            (l()(), import0.ɵeld(0, null, null, 1, 'h2', [], null, null, null, null, null)),
-            (l()(), import0.ɵted(null, ['Paginated list'])),
-            (l()(), import0.ɵted(null, ['\n      '])),
-            (l()(), import0.ɵeld(0, null, null, 1, 'ngb-pagination', [[
-                    'role',
-                    'navigation'
-                ]
-            ], null, [[
-                    null,
-                    'pageChange'
-                ]
-            ], function (v, en, $event) {
+    function View_List_0(_l) {
+        return i0.ɵvid(0, [(_l()(), i0.ɵted(null, ['\n    '])), (_l()(), i0.ɵeld(0, null, null, 10, 'div', [], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['\n      '])), (_l()(),
+                i0.ɵeld(0, null, null, 1, 'h2', [], null, null, null, null, null)), (_l()(), i0.ɵted(null, ['Paginated list'])), (_l()(), i0.ɵted(null, ['\n      '])), (_l()(), i0.ɵeld(0, null, null, 1, 'ngb-pagination', [['role', 'navigation']], null, [[null, 'pageChange']], function (_v, en, $event) {
                 var ad = true;
-                var co = v.component;
+                var _co = _v.component;
                 if (('pageChange' === en)) {
-                    var pd_0 = ((co.page = $event) !== false);
+                    var pd_0 = ((_co.page = $event) !== false);
                     ad = (pd_0 && ad);
                 }
                 return ad;
-            }, import2.View_NgbPagination_0, import2.RenderType_NgbPagination)),
-            import0.ɵdid(286720, null, 0, import3.NgbPagination, [import4.NgbPaginationConfig], {
-                collectionSize: [
-                    0,
-                    'collectionSize'
-                ],
-                page: [
-                    1,
-                    'page'
-                ]
-            }, { pageChange: 'pageChange' }),
-            (l()(), import0.ɵted(null, ['\n      '])),
-            (l()(), import0.ɵeld(0, null, null, 1, 'pre', [], null, null, null, null, null)),
-            (l()(), import0.ɵted(null, [
-                'Current page: ',
-                ''
-            ])),
-            (l()(), import0.ɵted(null, ['\n    '])),
-            (l()(), import0.ɵted(null, ['\n  ']))
-        ], function (ck, v) {
-            var co = v.component;
+            }, i2.View_NgbPagination_0, i2.RenderType_NgbPagination)), i0.ɵdid(573440, null, 0, i3.NgbPagination, [i4.NgbPaginationConfig], { collectionSize: [0, 'collectionSize'],
+                page: [1, 'page'] }, { pageChange: 'pageChange' }), (_l()(), i0.ɵted(null, ['\n      '])), (_l()(), i0.ɵeld(0, null, null, 1, 'pre', [], null, null, null, null, null)), (_l()(),
+                i0.ɵted(null, ['Current page: ', ''])), (_l()(), i0.ɵted(null, ['\n    '])), (_l()(), i0.ɵted(null, ['\n  ']))], function (_ck, _v) {
+            var _co = _v.component;
             var currVal_0 = 70;
-            var currVal_1 = co.page;
-            ck(v, 7, 0, currVal_0, currVal_1);
-        }, function (ck, v) {
-            var co = v.component;
-            var currVal_2 = co.page;
-            ck(v, 10, 0, currVal_2);
+            var currVal_1 = _co.page;
+            _ck(_v, 7, 0, currVal_0, currVal_1);
+        }, function (_ck, _v) {
+            var _co = _v.component;
+            var currVal_2 = _co.page;
+            _ck(_v, 10, 0, currVal_2);
         });
     }
     exports_1("View_List_0", View_List_0);
-    function View_List_Host_0(l) {
-        return import0.ɵvid(0, [
-            (l()(), import0.ɵeld(0, null, null, 1, 'list', [], null, null, null, View_List_0, RenderType_List)),
-            import0.ɵdid(24576, null, 0, import1.List, [], null, null)
-        ], null, null);
+    function View_List_Host_0(_l) {
+        return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 1, 'list', [], null, null, null, View_List_0, RenderType_List)), i0.ɵdid(49152, null, 0, i1.List, [], null, null)], null, null);
     }
-    var import0, import1, import2, import3, import4, styles_List, RenderType_List, ListNgFactory;
+    exports_1("View_List_Host_0", View_List_Host_0);
+    var i0, i1, i2, i3, i4, styles_List, RenderType_List, ListNgFactory;
     return {
         setters: [
-            function (import0_1) {
-                import0 = import0_1;
+            function (i0_1) {
+                i0 = i0_1;
             },
-            function (import1_1) {
-                import1 = import1_1;
+            function (i1_1) {
+                i1 = i1_1;
             },
-            function (import2_1) {
-                import2 = import2_1;
+            function (i2_1) {
+                i2 = i2_1;
             },
-            function (import3_1) {
-                import3 = import3_1;
+            function (i3_1) {
+                i3 = i3_1;
             },
-            function (import4_1) {
-                import4 = import4_1;
+            function (i4_1) {
+                i4 = i4_1;
             }
         ],
         execute: function () {/**
@@ -94,13 +61,10 @@ System.register(["@angular/core", "./list", "../../node_modules/@ng-bootstrap/ng
              */
             /* tslint:disable */
             styles_List = [];
-            exports_1("RenderType_List", RenderType_List = import0.ɵcrt({
-                encapsulation: 2,
-                styles: styles_List,
-                data: {}
-            }));
-            exports_1("ListNgFactory", ListNgFactory = import0.ɵccf('list', import1.List, View_List_Host_0, {}, {}, []));
-            //# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL2xpc3QvbGlzdC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9Vc2Vycy9tbGF2YWwvZGV2L2dpdGh1Yi9wbGF5Z3JvdW5kL29wdGltaXplLWFuZ3VsYXItYXBwL2FwcC9saXN0L2xpc3QudHMiLCJuZzovLy9Vc2Vycy9tbGF2YWwvZGV2L2dpdGh1Yi9wbGF5Z3JvdW5kL29wdGltaXplLWFuZ3VsYXItYXBwL2FwcC9saXN0L2xpc3QudHMuTGlzdC5odG1sIiwibmc6Ly8vVXNlcnMvbWxhdmFsL2Rldi9naXRodWIvcGxheWdyb3VuZC9vcHRpbWl6ZS1hbmd1bGFyLWFwcC9hcHAvbGlzdC9saXN0LnRzLkxpc3RfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCJcbiAgICA8ZGl2PlxuICAgICAgPGgyPlBhZ2luYXRlZCBsaXN0PC9oMj5cbiAgICAgIDxuZ2ItcGFnaW5hdGlvbiBbY29sbGVjdGlvblNpemVdPVwiNzBcIiBbKHBhZ2UpXT1cInBhZ2VcIj48L25nYi1wYWdpbmF0aW9uPlxuICAgICAgPHByZT5DdXJyZW50IHBhZ2U6IHt7cGFnZX19PC9wcmU+XG4gICAgPC9kaXY+XG4gICIsIjxsaXN0PjwvbGlzdD4iXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0lDQUE7SUFDSTtJQUFLO0lBQ0g7SUFBSTtJQUFtQjtNQUN2QjtRQUFBO1FBQUE7TUFBQTtNQUFBO1FBQUE7UUFBQTtNQUFBO0lBQUE7TUFBQTtNQUFBO01BQXNDO1FBQUE7UUFBQTtNQUFBO01BQXRDO0lBQUE7Z0JBQUE7TUFBQTtRQUFBO1FBQUE7TUFBQTs7TUFBQTtRQUFBO1FBQUE7TUFBQTs7SUFBQTtLQUFBO0lBQXVFO0lBQ3ZFO0lBQUs7TUFBQTtNQUFBO0lBQUE7SUFBQTtJQUE0QjtJQUM3Qjs7OztJQUZZO0lBQXNCO0lBQXRDLFNBQWdCLFVBQXNCLFNBQXRDOzs7SUFDSztJQUFBOzs7OztJQ0pYO2dCQUFBOzs7OyJ9
+            exports_1("RenderType_List", RenderType_List = i0.ɵcrt({ encapsulation: 2, styles: styles_List,
+                data: {} }));
+            exports_1("ListNgFactory", ListNgFactory = i0.ɵccf('list', i1.List, View_List_Host_0, {}, {}, []));
+            //# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL2xpc3QvbGlzdC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9Vc2Vycy9tbGF2YWwvZGV2L2dpdGh1Yi9wbGF5Z3JvdW5kL29wdGltaXplLWFuZ3VsYXItYXBwL2FwcC9saXN0L2xpc3QudHMiLCJuZzovLy9Vc2Vycy9tbGF2YWwvZGV2L2dpdGh1Yi9wbGF5Z3JvdW5kL29wdGltaXplLWFuZ3VsYXItYXBwL2FwcC9saXN0L2xpc3QudHMuTGlzdC5odG1sIiwibmc6Ly8vVXNlcnMvbWxhdmFsL2Rldi9naXRodWIvcGxheWdyb3VuZC9vcHRpbWl6ZS1hbmd1bGFyLWFwcC9hcHAvbGlzdC9saXN0LnRzLkxpc3RfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCJcbiAgICA8ZGl2PlxuICAgICAgPGgyPlBhZ2luYXRlZCBsaXN0PC9oMj5cbiAgICAgIDxuZ2ItcGFnaW5hdGlvbiBbY29sbGVjdGlvblNpemVdPVwiNzBcIiBbKHBhZ2UpXT1cInBhZ2VcIj48L25nYi1wYWdpbmF0aW9uPlxuICAgICAgPHByZT5DdXJyZW50IHBhZ2U6IHt7cGFnZX19PC9wcmU+XG4gICAgPC9kaXY+XG4gICIsIjxsaXN0PjwvbGlzdD4iXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7OztvQkNBQSwyQ0FDSTtNQUFBO01BQUEsOEJBQUssNkNBQ0g7YUFBQTtVQUFBLDRDQUFJO01BQUEscUJBQW1CLDZDQUN2QjtNQUFBO01BQUE7UUFBQTtRQUFBO1FBQXNDO1VBQUE7VUFBQTtRQUFBO1FBQXRDO01BQUEsK0RBQUE7TUFBQTtVQUFBLDRDQUF1RTtNQUFBLGVBQ3ZFO01BQUEsd0VBQUs7YUFBQSx1Q0FBNEI7TUFBQSxhQUM3Qjs7SUFGWTtJQUFzQjtJQUF0QyxXQUFnQixVQUFzQixTQUF0Qzs7O0lBQ0s7SUFBQTs7OztvQkNKWDtNQUFBLCtFQUFBO01BQUE7Ozs7In0=
         }
     };
 });

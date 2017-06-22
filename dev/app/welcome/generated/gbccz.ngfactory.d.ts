@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './gbccz';
-export declare const RenderType_Gbccz: import0.RendererType2;
-export declare function View_Gbccz_0(l: any): import0.ɵViewDefinition;
-export declare const GbcczNgFactory: import0.ComponentFactory<import1.Gbccz>;
+import * as i0 from '@angular/core';
+import * as i1 from './gbccz';
+export declare const RenderType_Gbccz: i0.RendererType2;
+export declare function View_Gbccz_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Gbccz_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const GbcczNgFactory: i0.ComponentFactory<i1.Gbccz>;

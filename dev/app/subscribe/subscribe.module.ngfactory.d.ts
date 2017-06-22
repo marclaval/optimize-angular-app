@@ -3,6 +3,6 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './subscribe.module';
-export declare const SubscribeModuleNgFactory: import0.NgModuleFactory<import1.SubscribeModule>;
+import * as i0 from '@angular/core';
+import * as i1 from './subscribe.module';
+export declare const SubscribeModuleNgFactory: i0.NgModuleFactory<i1.SubscribeModule>;

@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './ewamj';
-export declare const RenderType_Ewamj: import0.RendererType2;
-export declare function View_Ewamj_0(l: any): import0.ɵViewDefinition;
-export declare const EwamjNgFactory: import0.ComponentFactory<import1.Ewamj>;
+import * as i0 from '@angular/core';
+import * as i1 from './ewamj';
+export declare const RenderType_Ewamj: i0.RendererType2;
+export declare function View_Ewamj_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Ewamj_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const EwamjNgFactory: i0.ComponentFactory<i1.Ewamj>;

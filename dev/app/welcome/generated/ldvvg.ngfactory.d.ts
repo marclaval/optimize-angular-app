@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './ldvvg';
-export declare const RenderType_Ldvvg: import0.RendererType2;
-export declare function View_Ldvvg_0(l: any): import0.ɵViewDefinition;
-export declare const LdvvgNgFactory: import0.ComponentFactory<import1.Ldvvg>;
+import * as i0 from '@angular/core';
+import * as i1 from './ldvvg';
+export declare const RenderType_Ldvvg: i0.RendererType2;
+export declare function View_Ldvvg_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Ldvvg_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const LdvvgNgFactory: i0.ComponentFactory<i1.Ldvvg>;

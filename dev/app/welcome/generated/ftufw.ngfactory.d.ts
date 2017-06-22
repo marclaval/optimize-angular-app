@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './ftufw';
-export declare const RenderType_Ftufw: import0.RendererType2;
-export declare function View_Ftufw_0(l: any): import0.ɵViewDefinition;
-export declare const FtufwNgFactory: import0.ComponentFactory<import1.Ftufw>;
+import * as i0 from '@angular/core';
+import * as i1 from './ftufw';
+export declare const RenderType_Ftufw: i0.RendererType2;
+export declare function View_Ftufw_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Ftufw_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const FtufwNgFactory: i0.ComponentFactory<i1.Ftufw>;

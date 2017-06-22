@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './enjpm';
-export declare const RenderType_Enjpm: import0.RendererType2;
-export declare function View_Enjpm_0(l: any): import0.ɵViewDefinition;
-export declare const EnjpmNgFactory: import0.ComponentFactory<import1.Enjpm>;
+import * as i0 from '@angular/core';
+import * as i1 from './enjpm';
+export declare const RenderType_Enjpm: i0.RendererType2;
+export declare function View_Enjpm_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Enjpm_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const EnjpmNgFactory: i0.ComponentFactory<i1.Enjpm>;

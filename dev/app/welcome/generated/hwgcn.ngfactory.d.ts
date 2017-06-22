@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './hwgcn';
-export declare const RenderType_Hwgcn: import0.RendererType2;
-export declare function View_Hwgcn_0(l: any): import0.ɵViewDefinition;
-export declare const HwgcnNgFactory: import0.ComponentFactory<import1.Hwgcn>;
+import * as i0 from '@angular/core';
+import * as i1 from './hwgcn';
+export declare const RenderType_Hwgcn: i0.RendererType2;
+export declare function View_Hwgcn_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Hwgcn_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const HwgcnNgFactory: i0.ComponentFactory<i1.Hwgcn>;

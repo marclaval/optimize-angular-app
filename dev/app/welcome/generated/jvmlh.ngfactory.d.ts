@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './jvmlh';
-export declare const RenderType_Jvmlh: import0.RendererType2;
-export declare function View_Jvmlh_0(l: any): import0.ɵViewDefinition;
-export declare const JvmlhNgFactory: import0.ComponentFactory<import1.Jvmlh>;
+import * as i0 from '@angular/core';
+import * as i1 from './jvmlh';
+export declare const RenderType_Jvmlh: i0.RendererType2;
+export declare function View_Jvmlh_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Jvmlh_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const JvmlhNgFactory: i0.ComponentFactory<i1.Jvmlh>;

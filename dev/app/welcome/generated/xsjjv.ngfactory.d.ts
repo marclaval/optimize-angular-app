@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './xsjjv';
-export declare const RenderType_Xsjjv: import0.RendererType2;
-export declare function View_Xsjjv_0(l: any): import0.ɵViewDefinition;
-export declare const XsjjvNgFactory: import0.ComponentFactory<import1.Xsjjv>;
+import * as i0 from '@angular/core';
+import * as i1 from './xsjjv';
+export declare const RenderType_Xsjjv: i0.RendererType2;
+export declare function View_Xsjjv_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Xsjjv_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const XsjjvNgFactory: i0.ComponentFactory<i1.Xsjjv>;

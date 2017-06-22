@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './gdgte';
-export declare const RenderType_Gdgte: import0.RendererType2;
-export declare function View_Gdgte_0(l: any): import0.ɵViewDefinition;
-export declare const GdgteNgFactory: import0.ComponentFactory<import1.Gdgte>;
+import * as i0 from '@angular/core';
+import * as i1 from './gdgte';
+export declare const RenderType_Gdgte: i0.RendererType2;
+export declare function View_Gdgte_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Gdgte_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const GdgteNgFactory: i0.ComponentFactory<i1.Gdgte>;

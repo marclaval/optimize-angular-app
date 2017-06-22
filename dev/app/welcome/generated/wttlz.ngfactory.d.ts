@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './wttlz';
-export declare const RenderType_Wttlz: import0.RendererType2;
-export declare function View_Wttlz_0(l: any): import0.ɵViewDefinition;
-export declare const WttlzNgFactory: import0.ComponentFactory<import1.Wttlz>;
+import * as i0 from '@angular/core';
+import * as i1 from './wttlz';
+export declare const RenderType_Wttlz: i0.RendererType2;
+export declare function View_Wttlz_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Wttlz_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const WttlzNgFactory: i0.ComponentFactory<i1.Wttlz>;

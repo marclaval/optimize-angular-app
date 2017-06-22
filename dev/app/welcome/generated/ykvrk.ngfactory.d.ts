@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './ykvrk';
-export declare const RenderType_Ykvrk: import0.RendererType2;
-export declare function View_Ykvrk_0(l: any): import0.ɵViewDefinition;
-export declare const YkvrkNgFactory: import0.ComponentFactory<import1.Ykvrk>;
+import * as i0 from '@angular/core';
+import * as i1 from './ykvrk';
+export declare const RenderType_Ykvrk: i0.RendererType2;
+export declare function View_Ykvrk_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Ykvrk_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const YkvrkNgFactory: i0.ComponentFactory<i1.Ykvrk>;

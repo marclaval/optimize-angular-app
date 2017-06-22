@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './niiqz';
-export declare const RenderType_Niiqz: import0.RendererType2;
-export declare function View_Niiqz_0(l: any): import0.ɵViewDefinition;
-export declare const NiiqzNgFactory: import0.ComponentFactory<import1.Niiqz>;
+import * as i0 from '@angular/core';
+import * as i1 from './niiqz';
+export declare const RenderType_Niiqz: i0.RendererType2;
+export declare function View_Niiqz_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Niiqz_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const NiiqzNgFactory: i0.ComponentFactory<i1.Niiqz>;

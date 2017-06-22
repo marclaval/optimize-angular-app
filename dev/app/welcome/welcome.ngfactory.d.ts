@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import201 from './welcome';
-export declare const RenderType_Welcome: import0.RendererType2;
-export declare function View_Welcome_0(l: any): import0.ɵViewDefinition;
-export declare const WelcomeNgFactory: import0.ComponentFactory<import201.Welcome>;
+import * as i0 from '@angular/core';
+import * as i201 from './welcome';
+export declare const RenderType_Welcome: i0.RendererType2;
+export declare function View_Welcome_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Welcome_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const WelcomeNgFactory: i0.ComponentFactory<i201.Welcome>;

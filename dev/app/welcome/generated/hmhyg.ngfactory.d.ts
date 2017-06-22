@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './hmhyg';
-export declare const RenderType_Hmhyg: import0.RendererType2;
-export declare function View_Hmhyg_0(l: any): import0.ɵViewDefinition;
-export declare const HmhygNgFactory: import0.ComponentFactory<import1.Hmhyg>;
+import * as i0 from '@angular/core';
+import * as i1 from './hmhyg';
+export declare const RenderType_Hmhyg: i0.RendererType2;
+export declare function View_Hmhyg_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Hmhyg_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const HmhygNgFactory: i0.ComponentFactory<i1.Hmhyg>;

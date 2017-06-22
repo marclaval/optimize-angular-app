@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './uqrlh';
-export declare const RenderType_Uqrlh: import0.RendererType2;
-export declare function View_Uqrlh_0(l: any): import0.ɵViewDefinition;
-export declare const UqrlhNgFactory: import0.ComponentFactory<import1.Uqrlh>;
+import * as i0 from '@angular/core';
+import * as i1 from './uqrlh';
+export declare const RenderType_Uqrlh: i0.RendererType2;
+export declare function View_Uqrlh_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Uqrlh_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const UqrlhNgFactory: i0.ComponentFactory<i1.Uqrlh>;

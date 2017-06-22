@@ -4,45 +4,35 @@
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
 /* tslint:disable */
-System.register(["@angular/core", "./list.module", "@angular/common", "@ng-bootstrap/ng-bootstrap/pagination/pagination.module", "@angular/router", "@ng-bootstrap/ng-bootstrap/pagination/pagination-config", "./list.ngfactory", "./list"], function (exports_1, context_1) {
+System.register(["@angular/core", "./list.module", "./list.ngfactory", "@angular/common", "@ng-bootstrap/ng-bootstrap/pagination/pagination-config", "@ng-bootstrap/ng-bootstrap/pagination/pagination.module", "@angular/router", "./list"], function (exports_1, context_1) {
     "use strict";
-    var __extends = (this && this.__extends) || (function () {
-        var extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return function (d, b) {
-            extendStatics(d, b);
-            function __() { this.constructor = d; }
-            d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-        };
-    })();
     var __moduleName = context_1 && context_1.id;
-    var import0, import1, import2, import3, import4, import5, import6, import7, ListModuleInjector, ListModuleNgFactory;
+    var i0, i1, i2, i3, i4, i5, i6, i7, ListModuleNgFactory;
     return {
         setters: [
-            function (import0_1) {
-                import0 = import0_1;
+            function (i0_1) {
+                i0 = i0_1;
             },
-            function (import1_1) {
-                import1 = import1_1;
+            function (i1_1) {
+                i1 = i1_1;
             },
-            function (import2_1) {
-                import2 = import2_1;
+            function (i2_1) {
+                i2 = i2_1;
             },
-            function (import3_1) {
-                import3 = import3_1;
+            function (i3_1) {
+                i3 = i3_1;
             },
-            function (import4_1) {
-                import4 = import4_1;
+            function (i4_1) {
+                i4 = i4_1;
             },
-            function (import5_1) {
-                import5 = import5_1;
+            function (i5_1) {
+                i5 = i5_1;
             },
-            function (import6_1) {
-                import6 = import6_1;
+            function (i6_1) {
+                i6 = i6_1;
             },
-            function (import7_1) {
-                import7 = import7_1;
+            function (i7_1) {
+                i7 = i7_1;
             }
         ],
         execute: function () {/**
@@ -51,73 +41,14 @@ System.register(["@angular/core", "./list.module", "@angular/common", "@ng-boots
              * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
              */
             /* tslint:disable */
-            ListModuleInjector = (function (_super) {
-                __extends(ListModuleInjector, _super);
-                function ListModuleInjector(parent) {
-                    return _super.call(this, parent, [import6.ListNgFactory], []) || this;
-                }
-                Object.defineProperty(ListModuleInjector.prototype, "_NgLocalization_4", {
-                    get: function () {
-                        if ((this.__NgLocalization_4 == null)) {
-                            (this.__NgLocalization_4 = new import2.NgLocaleLocalization(this.parent.get(import0.LOCALE_ID)));
-                        }
-                        return this.__NgLocalization_4;
-                    },
-                    enumerable: true,
-                    configurable: true
-                });
-                Object.defineProperty(ListModuleInjector.prototype, "_NgbPaginationConfig_6", {
-                    get: function () {
-                        if ((this.__NgbPaginationConfig_6 == null)) {
-                            (this.__NgbPaginationConfig_6 = new import5.NgbPaginationConfig());
-                        }
-                        return this.__NgbPaginationConfig_6;
-                    },
-                    enumerable: true,
-                    configurable: true
-                });
-                ListModuleInjector.prototype.createInternal = function () {
-                    this._CommonModule_0 = new import2.CommonModule();
-                    this._NgbPaginationModule_1 = new import3.NgbPaginationModule();
-                    this._RouterModule_2 = new import4.RouterModule(this.parent.get(import4.ɵa, null), this.parent.get(import4.Router, null));
-                    this._ListModule_3 = new import1.ListModule();
-                    this._ROUTES_5 = [[{
-                                path: '',
-                                component: import7.List
-                            }
-                        ]];
-                    return this._ListModule_3;
-                };
-                ListModuleInjector.prototype.getInternal = function (token, notFoundResult) {
-                    if ((token === import2.CommonModule)) {
-                        return this._CommonModule_0;
-                    }
-                    if ((token === import3.NgbPaginationModule)) {
-                        return this._NgbPaginationModule_1;
-                    }
-                    if ((token === import4.RouterModule)) {
-                        return this._RouterModule_2;
-                    }
-                    if ((token === import1.ListModule)) {
-                        return this._ListModule_3;
-                    }
-                    if ((token === import2.NgLocalization)) {
-                        return this._NgLocalization_4;
-                    }
-                    if ((token === import4.ROUTES)) {
-                        return this._ROUTES_5;
-                    }
-                    if ((token === import5.NgbPaginationConfig)) {
-                        return this._NgbPaginationConfig_6;
-                    }
-                    return notFoundResult;
-                };
-                ListModuleInjector.prototype.destroyInternal = function () {
-                };
-                return ListModuleInjector;
-            }(import0.ɵNgModuleInjector));
-            exports_1("ListModuleNgFactory", ListModuleNgFactory = new import0.NgModuleFactory(ListModuleInjector, import1.ListModule));
-            //# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL2xpc3QvbGlzdC5tb2R1bGUubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvbWxhdmFsL2Rldi9naXRodWIvcGxheWdyb3VuZC9vcHRpbWl6ZS1hbmd1bGFyLWFwcC9hcHAvbGlzdC9saXN0Lm1vZHVsZS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyIgIl0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OyJ9
+            exports_1("ListModuleNgFactory", ListModuleNgFactory = i0.ɵcmf(i1.ListModule, [], function (_l) {
+                return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i2.ListNgFactory]], [3, i0.ComponentFactoryResolver], i0.NgModuleRef]),
+                    i0.ɵmpd(4608, i3.NgLocalization, i3.NgLocaleLocalization, [i0.LOCALE_ID]), i0.ɵmpd(4608, i4.NgbPaginationConfig, i4.NgbPaginationConfig, []), i0.ɵmpd(512, i3.CommonModule, i3.CommonModule, []), i0.ɵmpd(512, i5.NgbPaginationModule, i5.NgbPaginationModule, []), i0.ɵmpd(512, i6.RouterModule, i6.RouterModule, [[2, i6.ɵa], [2, i6.Router]]), i0.ɵmpd(512, i1.ListModule, i1.ListModule, []),
+                    i0.ɵmpd(1024, i6.ROUTES, function () {
+                        return [[{ path: '', component: i7.List }]];
+                    }, [])]);
+            }));
+            //# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL2xpc3QvbGlzdC5tb2R1bGUubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvbWxhdmFsL2Rldi9naXRodWIvcGxheWdyb3VuZC9vcHRpbWl6ZS1hbmd1bGFyLWFwcC9hcHAvbGlzdC9saXN0Lm1vZHVsZS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyIgIl0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsifQ==
         }
     };
 });

@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './jlfkz';
-export declare const RenderType_Jlfkz: import0.RendererType2;
-export declare function View_Jlfkz_0(l: any): import0.ɵViewDefinition;
-export declare const JlfkzNgFactory: import0.ComponentFactory<import1.Jlfkz>;
+import * as i0 from '@angular/core';
+import * as i1 from './jlfkz';
+export declare const RenderType_Jlfkz: i0.RendererType2;
+export declare function View_Jlfkz_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Jlfkz_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const JlfkzNgFactory: i0.ComponentFactory<i1.Jlfkz>;

@@ -3,6 +3,6 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './module.lazy';
-export declare const AppLazyModuleNgFactory: import0.NgModuleFactory<import1.AppLazyModule>;
+import * as i0 from '@angular/core';
+import * as i1 from './module.lazy';
+export declare const AppLazyModuleNgFactory: i0.NgModuleFactory<i1.AppLazyModule>;

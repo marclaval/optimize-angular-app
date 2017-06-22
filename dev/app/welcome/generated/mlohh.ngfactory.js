@@ -7,59 +7,36 @@
 System.register(["@angular/core", "./mlohh"], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
-    function View_Mlohh_0(l) {
-        return import0.ɵvid(0, [
-            (l()(), import0.ɵted(null, ['\n    '])),
-            (l()(), import0.ɵeld(0, null, null, 1, 'span', [], [
-                [
-                    1,
-                    'aria-label',
-                    0
-                ],
-                [
-                    8,
-                    'hidden',
-                    0
-                ]
-            ], null, null, null, null)),
-            (l()(), import0.ɵted(null, ['This is a dummy component for Mlohh'])),
-            (l()(), import0.ɵted(null, ['\n    '])),
-            (l()(), import0.ɵeld(0, null, null, 0, 'div', [], null, [[
-                    null,
-                    'click'
-                ]
-            ], function (v, en, $event) {
+    function View_Mlohh_0(_l) {
+        return i0.ɵvid(0, [(_l()(), i0.ɵted(null, ['\n    '])), (_l()(), i0.ɵeld(0, null, null, 1, 'span', [], [[1, 'aria-label', 0], [8, 'hidden', 0]], null, null, null, null)), (_l()(), i0.ɵted(null, ['This is a dummy component for Mlohh'])),
+            (_l()(), i0.ɵted(null, ['\n    '])), (_l()(), i0.ɵeld(0, null, null, 0, 'div', [], null, [[null, 'click']], function (_v, en, $event) {
                 var ad = true;
-                var co = v.component;
+                var _co = _v.component;
                 if (('click' === en)) {
-                    var pd_0 = (co.doNothing($event) !== false);
+                    var pd_0 = (_co.doNothing($event) !== false);
                     ad = (pd_0 && ad);
                 }
                 return ad;
-            }, null, null)),
-            (l()(), import0.ɵted(null, ['\n    ']))
-        ], null, function (ck, v) {
-            var co = v.component;
-            var currVal_0 = co.msg;
+            }, null, null)), (_l()(), i0.ɵted(null, ['\n    ']))], null, function (_ck, _v) {
+            var _co = _v.component;
+            var currVal_0 = _co.msg;
             var currVal_1 = false;
-            ck(v, 1, 0, currVal_0, currVal_1);
+            _ck(_v, 1, 0, currVal_0, currVal_1);
         });
     }
     exports_1("View_Mlohh_0", View_Mlohh_0);
-    function View_Mlohh_Host_0(l) {
-        return import0.ɵvid(0, [
-            (l()(), import0.ɵeld(0, null, null, 1, 'd-mlohh', [], null, null, null, View_Mlohh_0, RenderType_Mlohh)),
-            import0.ɵdid(24576, null, 0, import1.Mlohh, [], null, null)
-        ], null, null);
+    function View_Mlohh_Host_0(_l) {
+        return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 1, 'd-mlohh', [], null, null, null, View_Mlohh_0, RenderType_Mlohh)), i0.ɵdid(49152, null, 0, i1.Mlohh, [], null, null)], null, null);
     }
-    var import0, import1, styles_Mlohh, RenderType_Mlohh, MlohhNgFactory;
+    exports_1("View_Mlohh_Host_0", View_Mlohh_Host_0);
+    var i0, i1, styles_Mlohh, RenderType_Mlohh, MlohhNgFactory;
     return {
         setters: [
-            function (import0_1) {
-                import0 = import0_1;
+            function (i0_1) {
+                i0 = i0_1;
             },
-            function (import1_1) {
-                import1 = import1_1;
+            function (i1_1) {
+                i1 = i1_1;
             }
         ],
         execute: function () {/**
@@ -69,13 +46,10 @@ System.register(["@angular/core", "./mlohh"], function (exports_1, context_1) {
              */
             /* tslint:disable */
             styles_Mlohh = [];
-            exports_1("RenderType_Mlohh", RenderType_Mlohh = import0.ɵcrt({
-                encapsulation: 2,
-                styles: styles_Mlohh,
-                data: {}
-            }));
-            exports_1("MlohhNgFactory", MlohhNgFactory = import0.ɵccf('d-mlohh', import1.Mlohh, View_Mlohh_Host_0, {}, {}, []));
-            //# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3dlbGNvbWUvZ2VuZXJhdGVkL21sb2hoLm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3dlbGNvbWUvZ2VuZXJhdGVkL21sb2hoLnRzIiwibmc6Ly8vVXNlcnMvbWxhdmFsL2Rldi9naXRodWIvcGxheWdyb3VuZC9vcHRpbWl6ZS1hbmd1bGFyLWFwcC9hcHAvd2VsY29tZS9nZW5lcmF0ZWQvbWxvaGgudHMuTWxvaGguaHRtbCIsIm5nOi8vL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3dlbGNvbWUvZ2VuZXJhdGVkL21sb2hoLnRzLk1sb2hoX0hvc3QuaHRtbCJdLCJzb3VyY2VzQ29udGVudCI6WyIgIiwiXG4gICAgPHNwYW4gW2F0dHIuYXJpYS1sYWJlbF09XCJtc2dcIiBbaGlkZGVuXT1cImZhbHNlXCI+VGhpcyBpcyBhIGR1bW15IGNvbXBvbmVudCBmb3IgTWxvaGg8L3NwYW4+XG4gICAgPGRpdiAoY2xpY2spPVwiZG9Ob3RoaW5nKCRldmVudClcIj48L2Rpdj5cbiAgICAiLCI8ZC1tbG9oaD48L2QtbWxvaGg+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7OztJQ0FBO0lBQ0k7TUFBQTtRQUFBO1FBQUE7UUFBQTtNQUFBOztNQUFBO1FBQUE7UUFBQTtRQUFBO01BQUE7O0lBQUE7S0FBQTtJQUErQztJQUEwQztNQUN6RjtRQUFBO1FBQUE7TUFBQTtJQUFBO01BQUE7TUFBQTtNQUFLO1FBQUE7UUFBQTtNQUFBO01BQUw7SUFBQTtJQUF1Qzs7OztJQURqQztJQUF3QjtJQUE5QixTQUFNLFVBQXdCLFNBQTlCOzs7OztJQ0RKO2dCQUFBOzs7OyJ9
+            exports_1("RenderType_Mlohh", RenderType_Mlohh = i0.ɵcrt({ encapsulation: 2, styles: styles_Mlohh,
+                data: {} }));
+            exports_1("MlohhNgFactory", MlohhNgFactory = i0.ɵccf('d-mlohh', i1.Mlohh, View_Mlohh_Host_0, {}, {}, []));
+            //# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3dlbGNvbWUvZ2VuZXJhdGVkL21sb2hoLm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3dlbGNvbWUvZ2VuZXJhdGVkL21sb2hoLnRzIiwibmc6Ly8vVXNlcnMvbWxhdmFsL2Rldi9naXRodWIvcGxheWdyb3VuZC9vcHRpbWl6ZS1hbmd1bGFyLWFwcC9hcHAvd2VsY29tZS9nZW5lcmF0ZWQvbWxvaGgudHMuTWxvaGguaHRtbCIsIm5nOi8vL1VzZXJzL21sYXZhbC9kZXYvZ2l0aHViL3BsYXlncm91bmQvb3B0aW1pemUtYW5ndWxhci1hcHAvYXBwL3dlbGNvbWUvZ2VuZXJhdGVkL21sb2hoLnRzLk1sb2hoX0hvc3QuaHRtbCJdLCJzb3VyY2VzQ29udGVudCI6WyIgIiwiXG4gICAgPHNwYW4gW2F0dHIuYXJpYS1sYWJlbF09XCJtc2dcIiBbaGlkZGVuXT1cImZhbHNlXCI+VGhpcyBpcyBhIGR1bW15IGNvbXBvbmVudCBmb3IgTWxvaGg8L3NwYW4+XG4gICAgPGRpdiAoY2xpY2spPVwiZG9Ob3RoaW5nKCRldmVudClcIj48L2Rpdj5cbiAgICAiLCI8ZC1tbG9oaD48L2QtbWxvaGg+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7b0JDQUEsMkNBQ0k7TUFBQTtNQUFBLDRDQUErQztNQUEwQywyQ0FDekY7VUFBQTtZQUFBO1lBQUE7WUFBSztjQUFBO2NBQUE7WUFBQTtZQUFMO1VBQUEsZ0NBQXVDOzs7UUFEakM7UUFBd0I7UUFBOUIsV0FBTSxVQUF3QixTQUE5Qjs7OztvQkNESjtNQUFBLGlGQUFBO01BQUE7Ozs7In0=
         }
     };
 });

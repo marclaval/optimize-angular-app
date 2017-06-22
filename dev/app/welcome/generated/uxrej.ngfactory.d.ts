@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './uxrej';
-export declare const RenderType_Uxrej: import0.RendererType2;
-export declare function View_Uxrej_0(l: any): import0.ɵViewDefinition;
-export declare const UxrejNgFactory: import0.ComponentFactory<import1.Uxrej>;
+import * as i0 from '@angular/core';
+import * as i1 from './uxrej';
+export declare const RenderType_Uxrej: i0.RendererType2;
+export declare function View_Uxrej_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Uxrej_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const UxrejNgFactory: i0.ComponentFactory<i1.Uxrej>;

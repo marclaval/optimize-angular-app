@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './gubhv';
-export declare const RenderType_Gubhv: import0.RendererType2;
-export declare function View_Gubhv_0(l: any): import0.ɵViewDefinition;
-export declare const GubhvNgFactory: import0.ComponentFactory<import1.Gubhv>;
+import * as i0 from '@angular/core';
+import * as i1 from './gubhv';
+export declare const RenderType_Gubhv: i0.RendererType2;
+export declare function View_Gubhv_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Gubhv_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const GubhvNgFactory: i0.ComponentFactory<i1.Gubhv>;

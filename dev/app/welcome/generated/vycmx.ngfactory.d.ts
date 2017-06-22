@@ -3,8 +3,9 @@
  * Do not edit.
  * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
  */
-import * as import0 from '@angular/core';
-import * as import1 from './vycmx';
-export declare const RenderType_Vycmx: import0.RendererType2;
-export declare function View_Vycmx_0(l: any): import0.ɵViewDefinition;
-export declare const VycmxNgFactory: import0.ComponentFactory<import1.Vycmx>;
+import * as i0 from '@angular/core';
+import * as i1 from './vycmx';
+export declare const RenderType_Vycmx: i0.RendererType2;
+export declare function View_Vycmx_0(_l: any): i0.ɵViewDefinition;
+export declare function View_Vycmx_Host_0(_l: any): i0.ɵViewDefinition;
+export declare const VycmxNgFactory: i0.ComponentFactory<i1.Vycmx>;
