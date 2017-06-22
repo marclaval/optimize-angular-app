@@ -117,7 +117,9 @@ module.exports = function makeWebpackConfig() {
       mangle: true,
       output: {comments: false},
       sourceMap: true
-    })
+    }),
+
+    new webpack.optimize.ModuleConcatenationPlugin()
   ];
 
   return config;
